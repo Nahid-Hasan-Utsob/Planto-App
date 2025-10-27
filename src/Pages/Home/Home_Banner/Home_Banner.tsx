@@ -2,42 +2,46 @@ import { MdSlowMotionVideo } from "react-icons/md";
 import CommonButton from "../../../components/Common_button";
 import CommonText from "../../../components/CommonText";
 import { Link } from "react-router-dom";
-
-import Hero_Cards from "../../../components/Hero_Cards";
-
-
-
+import ReviewCard from "../../../components/Review_Card";
+import Product_Card from "../../../components/Product_Card";
 
 export default function Home_Banner() {
   return (
-    <section>
-      <div>
+  <section className="flex item-start  justify-around mt-[60px]">
+      <section>
+      <div className="flex flex-col gap-5 mt-10">
         <CommonText
           text="Breath Natureal "
-          className="text-[115px] font-semibold primary-text-color"
+          className="text-7xl font-semibold primary-text-color"
         ></CommonText>
 
         <CommonText
-          text="plant is a living organism that makes its own food using sunlight, water, and air.It gives us oxygen, keeps the Earth cool, and provides shelter for many living beings. "
-          className="text-[23px]  secondary-text-color w-[57%]"
+          text="plant is a living organism that makes its own food using sunlight, water, and air.It gives us oxygen"
+          className="text-xl  secondary-text-color w-3/8"
         ></CommonText>
 
-        <div className="flex gap-10">
+        <div className="flex gap-10 items-center">
           <CommonButton
             text="Explore"
-            className="primary-text-color text-[28px] py-3.5 px-14 rounded-md  border-2"
+            className="primary-text-color text-xl py-2 px-10 rounded-md  border-2"
           ></CommonButton>
           <Link to={"/"}>
-            <p className="primary-text-color text-[28px] px-8 flex items-center gap-5">
-              <MdSlowMotionVideo className="text-[70px]"></MdSlowMotionVideo>{" "}
+            <p className="primary-text-color text-xl flex items-center gap-5">
+              <MdSlowMotionVideo className="text-5xl"></MdSlowMotionVideo>{" "}
               Live Demo...
             </p>
           </Link>
         </div>
- 
-        <Hero_Cards></Hero_Cards>
+
         
       </div>
+      <div className="mt-[150px]">
+        <ReviewCard></ReviewCard>
+      </div>
     </section>
+    <section>
+      <Product_Card></Product_Card>
+    </section>
+  </section>
   );
 }

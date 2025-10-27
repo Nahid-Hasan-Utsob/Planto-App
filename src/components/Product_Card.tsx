@@ -3,11 +3,11 @@ import product from "../assets/product.png";
 
 const Product_Card: React.FC = () => {
   return (
-    <div className="relative w-[300px] bg-transparent rounded-3xl  shadow-lg">
+    <div className="relative w-[400px] h-[550px] bg-transparent rounded-3xl shadow-lg m-3 p-1">
       {/* Glass Background SVG */}
       <svg
-        viewBox="0 0 450 700"
-        className="w-full  absolute inset-0"
+        viewBox="0 0 450 550"
+        className="w-full h-full absolute inset-0"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -46,8 +46,13 @@ const Product_Card: React.FC = () => {
           </filter>
         </defs>
 
+        {/* SVG Path */}
         <path
-          d="M50 0 C 150 20, 300 20, 400 0 L400 0 A50 50 0 0 1 450 50 V450 A50 50 0 0 1 400 500 H50 A50 50 0 0 1 0 450 V50 A50 50 0 0 1 50 0 Z"
+          d="M50 0 C 150 20, 300 20, 400 0 
+             L400 0 A50 50 0 0 1 450 50 
+             V500 A50 50 0 0 1 400 550 
+             H50 A50 50 0 0 1 0 500 
+             V50 A50 50 0 0 1 50 0 Z"
           fill="url(#glassGradient)"
           stroke="rgba(255,255,255,0.3)"
           strokeWidth="1.5"
@@ -56,23 +61,20 @@ const Product_Card: React.FC = () => {
       </svg>
 
       {/* Content */}
-      <div className="relative flex flex-col  items-center justify-start text-center text-white p-6 space-y-4 ">
+      <div className="relative flex flex-col items-center justify-start text-center text-white p-6 space-y-4">
         <img
           src={product}
           alt="Product"
-          className=" object-contain drop-shadow-lg -mt-[120px]"
+          className="object-contain drop-shadow-lg -mt-[120px]"
         />
-        <h2 className="text-2xl font-semibold -mt-[50px]">Modern Headphone</h2>
+        <h2 className="text-2xl font-semibold -mt-[50px]">Calathea plant</h2>
         <p className="text-gray-200 text-sm">
-          High-quality wireless headphone with noise cancellation.
+       Trendy House Plant
         </p>
-        <div className="flex justify-center space-x-1">
-          <span className="text-yellow-400 text-xl">★</span>
-          <span className="text-yellow-400 text-xl">★</span>
-          <span className="text-yellow-400 text-xl">★</span>
-          <span className="text-yellow-400 text-xl">★</span>
-          <span className="text-yellow-400 text-xl opacity-50">★</span>
-        </div>
+  
+        <button className="mt-4 bg-yellow-400 text-black font-semibold px-6 py-2 rounded-full shadow-lg hover:bg-yellow-500 transition">
+          Buy Now
+        </button>
       </div>
     </div>
   );
