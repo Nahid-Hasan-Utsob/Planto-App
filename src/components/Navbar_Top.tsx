@@ -96,7 +96,7 @@ export default function Navbar_Top() {
                           </div>
                               <SlHandbag></SlHandbag>
                               <TbMenuDeep></TbMenuDeep>
-                     
+                          
                   </div>
         </div>
       </div>
