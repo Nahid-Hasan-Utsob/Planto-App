@@ -6,7 +6,9 @@ import products from '../../assets/product.png';
 // Swiper imports
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Mousewheel, Pagination } from 'swiper/modules';
+// @ts-ignore
 import 'swiper/css';
+// @ts-ignore
 import 'swiper/css/pagination';
 
 const BestCardsPage: React.FC = () => {
