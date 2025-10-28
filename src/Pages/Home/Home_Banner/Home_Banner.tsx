@@ -36,7 +36,7 @@ export default function Home_Banner() {
         
       </div>
       <div className="mt-[150px]">
-        <ReviewCard></ReviewCard>
+        
       </div>
     </section>
     <section>

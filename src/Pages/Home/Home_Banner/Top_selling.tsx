@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Main_Product_Card from '../../../components/Main_Product_Card'
 import img from "../../../assets/product.png";
 export default function Top_selling() {
