@@ -7,33 +7,33 @@ import Product_Card from "../../../components/Product_Card";
 
 export default function Home_Banner() {
   return (
-    <section className="flex items-center  justify-between mt-32">
+    <section className="flex lg:flex-row flex-col  items-center  justify-between lg:mt-36">
       <section>
-        <div className="flex flex-col gap-5 mt-10">
+        <div className="flex flex-col gap-6 mt-10 text-center lg:text-start">
           <CommonText
             text="Breath Natureal "
-            className="text-7xl font-semibold primary-text-color"
+            className="lg:text-7xl md:text-5xl text-4xl  font-semibold primary-text-color"
           ></CommonText>
 
           <CommonText
             text="plant is a living organism that makes its own food using sunlight, water, and air.It gives us oxygen"
-            className="text-xl  secondary-text-color w-3/8"
+            className="lg:text-xl md:text-base text-xs  secondary-text-color lg:w-3/8 w-[90%]"
           ></CommonText>
 
-          <div className="flex gap-10 items-center">
+          <div className="flex md:flex-row flex-col md:gap-10 items-center">
             <CommonButton
               text="Explore"
-              className="primary-text-color text-xl py-2 px-10 rounded-md  border-2"
+              className="md:primary-text-color font-bold lg:text-xl  md:px-10 text-[14px] w-full md:w-fit py-2 rounded-md  lg:border-2 bg-yellow-500 md:bg-none text-black "
             ></CommonButton>
-            <Link to={"/"}>
+            <Link to={"/"} className="hidden md:block">
               <p className="primary-text-color text-xl flex items-center gap-5">
-                <MdSlowMotionVideo className="text-5xl"></MdSlowMotionVideo>{" "}
+                <MdSlowMotionVideo className="text-5xl"></MdSlowMotionVideo>
                 Live Demo...
               </p>
             </Link>
           </div>
         </div>
-        <div className="mt-[150px]"></div>
+        <div className="md:mt-[150px] mt-10"></div>
       </section>
       <section>
         <Product_Card></Product_Card>

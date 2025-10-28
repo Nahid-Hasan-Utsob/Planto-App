@@ -52,7 +52,7 @@ export default function Navbar_Top() {
               src="https://img.icons8.com/?size=100&id=18047&format=png&color=000000"
               alt=""
             />
-            <p className="text-2xl font-black text-[#FFFFFF]">Planto.</p>
+            <p className="md:text-2xl text-xl font-black text-[#FFFFFF]">Planto.</p>
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -61,8 +61,8 @@ export default function Navbar_Top() {
           </ul>
         </div>
         <div className="navbar-end">
-          <div className="flex items-center gap-14 text-2xl primary-text-color">
-            <div className="">
+          <div className="flex items-center lg:gap-14 gap-8 md:text-2xl text-xl primary-text-color">
+            <div className="hidden md:block">
               <IoIosSearch></IoIosSearch>
             </div>
             <SlHandbag></SlHandbag>
