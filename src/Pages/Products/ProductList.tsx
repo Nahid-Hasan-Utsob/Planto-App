@@ -1,4 +1,3 @@
-import React from "react";
 import { useProducts } from "../../hooks/useProducts";
 
 export default function ProductList() {

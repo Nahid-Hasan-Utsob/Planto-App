@@ -4,7 +4,6 @@ import Home_Banner from "./Home_Banner/Home_Banner";
 import Style_Common_Text from "../../components/Style_Common_Text";
 import Hero_Cards from "../../components/Hero_Cards";
 import Top_selling from "./Home_Banner/Top_selling";
-import ProductList from "../Products/ProductList";
 import Customer_Review from "./Customer_Review/Customer_Review";
 import Best_Cards from "../../components/Best_Section/Best_Cards";
 
