@@ -18,9 +18,9 @@ const Hero_Card: React.FC<HeroCardProps> = ({ data, reverse = false }) => {
   const { title, description, image, price, rating } = data;
 
   return (
-    <section className="relative w-full lg:h-[400px] h-[340px] md:h-360px">
+    <section className="relative w-full lg:h-[400px] h-[340px]">
       {/* Glass Background */}
-      <div className="absolute inset-0 bg-white/5 border border-white/20 shadow-lg lg:rounded-[100px] rounded-xl px-2">
+      <div className="lg:absolute lg:inset-0 bg-white/5 border border-white/20 shadow-lg lg:rounded-[100px] rounded-xl px-2">
         <div
           className={`flex  items-center lg:flex-row flex-col lg:justify-between lg:-mt-[180px] lg:px-10 ${
             reverse ? "lg:flex-row-reverse" : "lg:flex-row flex-col"
@@ -33,7 +33,7 @@ const Hero_Card: React.FC<HeroCardProps> = ({ data, reverse = false }) => {
             }`}
           >
             <img
-              className={`lg:w-[75%] lg:h-full  w-full md:-mt-0.5 -mt-[30px] ${
+              className={`lg:w-[75%] lg:h-full  w-full -mt-[30px] md:-mt-[55px] ${
                 reverse ? "lg:mr-[-41px]" : "lg:ml-0"
               } object-cover transition-all duration-300`}
               src={image}
@@ -66,7 +66,7 @@ const Hero_Card: React.FC<HeroCardProps> = ({ data, reverse = false }) => {
                 <span className="text-red-500">Rs.</span> {price}/-
               </p>
               {/* Rating Section */}
-              <div className="flex mt-1 md:hidden">
+              <div className="flex mt-1 lg:hidden">
                 {Array.from({ length: 5 }, (_, i) => (
                   <span key={i} className="text-yellow-400 text-xs">
                     {i < (rating || 0) ? "★" : "☆"}
