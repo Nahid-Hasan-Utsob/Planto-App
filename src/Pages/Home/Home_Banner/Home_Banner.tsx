@@ -7,7 +7,7 @@ import Product_Card from "../../../components/Product_Card";
 
 export default function Home_Banner() {
   return (
-    <section className="flex item-start  justify-around mt-[60px]">
+    <section className="flex items-center  justify-between mt-32">
       <section>
         <div className="flex flex-col gap-5 mt-10">
           <CommonText
