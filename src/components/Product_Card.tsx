@@ -3,7 +3,7 @@ import product from "../assets/product.png";
 
 const Product_Card: React.FC = () => {
   return (
-    <div className="relative w-[400px] h-[550px] bg-transparent rounded-3xl shadow-lg m-3 p-1">
+    <div className="relative md:w-[400px] md:h-[550px] bg-transparent rounded-3xl shadow-lg md:m-3 p-1">
       {/* Glass Background SVG */}
       <svg
         viewBox="0 0 450 550"
@@ -61,18 +61,18 @@ const Product_Card: React.FC = () => {
       </svg>
 
       {/* Content */}
-      <div className="relative flex flex-col items-center justify-start text-center text-white p-6 space-y-4">
+      <div className="relative flex flex-col items-center justify-start text-center text-white md:p-6 pb-4 md:space-y-4 space-y-2">
         <img
           src={product}
           alt="Product"
-          className="object-contain drop-shadow-lg -mt-[120px]"
+          className="object-contain drop-shadow-lg md:-mt-[120px]"
         />
-        <h2 className="text-2xl font-semibold -mt-[50px]">Calathea plant</h2>
-        <p className="text-gray-200 text-sm">
+        <h2 className="md:text-2xl text-xl font-semibold -mt-[50px]">Calathea plant</h2>
+        <p className="text-gray-200 md:text-sm text-[12px]">
        Trendy House Plant
         </p>
   
-        <button className="mt-4 bg-yellow-400 text-black font-semibold px-6 py-2 rounded-full shadow-lg hover:bg-yellow-500 transition">
+        <button className="md:mt-4 mt-2 bg-yellow-400 text-black md:font-semibold font-bold px-6 py-2 rounded-full shadow-lg md:text-base text-[14px] hover:bg-yellow-500 transition">
           Buy Now
         </button>
       </div>

@@ -15,7 +15,7 @@ const Home_Main_Layout: React.FC = () => {
 >
         <Navbar_Top></Navbar_Top>
       <Home_Banner></Home_Banner>
-      <Style_Common_Text className="text-[40px] my-21 text-white" text="Our Trendy plants"></Style_Common_Text>
+      <Style_Common_Text className="md:text-[40px] text-[24px] md:my-21 py-10 text-white" text="Our Trendy plants"></Style_Common_Text>
       <Hero_Cards></Hero_Cards>
   </div>
         <Style_Common_Text className="text-[40px] my-21 text-white" text="Our Top Selling"></Style_Common_Text>

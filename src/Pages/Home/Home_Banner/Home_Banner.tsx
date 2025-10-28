@@ -7,7 +7,7 @@ import Product_Card from "../../../components/Product_Card";
 
 export default function Home_Banner() {
   return (
-    <section className="flex lg:flex-row flex-col  items-center  justify-between lg:mt-36">
+    <section className="flex lg:flex-row flex-col  items-center  justify-between lg:mt-36 mt-15">
       <section>
         <div className="flex flex-col gap-6 mt-10 text-center lg:text-start">
           <CommonText
