@@ -1,0 +1,498 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Areca Palm",
+      "description": "Yo, this Areca Palm is straight-up tropical vibes – feathery fronds that clean the air and look fire in any bright corner. Low-key needs indirect light and you’re golden.",
+      "category": "Indoor Plants",
+      "price": 599,
+      "discountPercentage": 8.25,
+      "rating": 4.7,
+      "stock": 50,
+      "tags": ["plant", "indoor", "air-purifying"],
+      "brand": "GreenLeaf",
+      "sku": "PLT-ARC-001",
+      "weight": 2.4,
+      "dimensions": { "width": 30.2, "height": 80.5, "depth": 30.2 },
+      "warrantyInformation": "15 days replacement warranty",
+      "shippingInformation": "Ships in 3-5 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Bro, this plant is legit stunning! Leaves are super lush, I water every 3-4 days and it’s thriving like a champ.",
+          "date": "2025-05-12T08:41:02.053Z",
+          "reviewerName": "Sarah Ahmed",
+          "reviewerEmail": "sarah.ahmed@example.com"
+        },
+        {
+          "rating": 4,
+          "comment": "Came in a solid box, plant was safe. After two days it got even greener, bro. That light tropical scent? Chef’s kiss.",
+          "date": "2025-05-13T11:11:22.053Z",
+          "reviewerName": "Imran Khan",
+          "reviewerEmail": "imran.khan@example.com"
+        }
+      ],
+      "returnPolicy": "No return policy after 7 days of delivery.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-05-01T10:41:02.053Z", "updatedAt": "2025-05-20T09:41:02.053Z", "barcode": "PLANT-00045923984", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/5XDRY0mg/areca-palm.jpg"],
+      "thumbnail": "https://i.ibb.co.com/5XDRY0mg/areca-palm.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Snake Plant",
+      "description": "Snake Plant aka Mother-in-law’s Tongue – the ultimate low-maintenance king. Survives in low light, barely needs water, perfect for lazy plant parents.",
+      "category": "Indoor Plants",
+      "price": 279,
+      "discountPercentage": 12.5,
+      "rating": 4.6,
+      "stock": 75,
+      "tags": ["plant", "low-maintenance", "bedroom"],
+      "brand": "NatureNest",
+      "sku": "PLT-SNK-002",
+      "weight": 1.8,
+      "dimensions": { "width": 22.5, "height": 60.2, "depth": 22.5 },
+      "warrantyInformation": "1 month leaf replacement guarantee",
+      "shippingInformation": "Ships in 2-4 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Bro, if you forget to water plants, this is your guy. Those upright leaves give mad modern vibes on my side table.",
+          "date": "2025-06-02T12:41:02.053Z",
+          "reviewerName": "Anika Rahman",
+          "reviewerEmail": "anika.rahman@example.com"
+        }
+      ],
+      "returnPolicy": "Return available within 10 days with proper condition.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-05-01T12:11:02.053Z", "updatedAt": "2025-05-28T09:41:02.053Z", "barcode": "PLANT-00059383837", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/F4gXtf1V/snake-plant.jpg"],
+      "thumbnail": "https://i.ibb.co.com/F4gXtf1V/snake-plant.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Money Plant in Ceramic Pot",
+      "description": "Money Plant = instant good luck + positivity. Comes in a dope handcrafted ceramic pot. Perfect for desk, shelf, or window sill flex.",
+      "category": "Indoor Plants",
+      "price": 349,
+      "discountPercentage": 10.5,
+      "rating": 4.8,
+      "stock": 60,
+      "tags": ["plant", "indoor", "lucky"],
+      "brand": "LeafyAura",
+      "sku": "PLT-MNY-003",
+      "weight": 1.9,
+      "dimensions": { "width": 25.4, "height": 55.0, "depth": 25.4 },
+      "warrantyInformation": "15 days leaf replacement warranty",
+      "shippingInformation": "Ships in 3 days nationwide",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Bro, this thing grew like crazy in a week! Pot is smooth AF, looks clean on my window. Instant mood boost.",
+          "date": "2025-06-10T10:30:22.053Z",
+          "reviewerName": "Sadia Noor",
+          "reviewerEmail": "sadia.noor@example.com"
+        }
+      ],
+      "returnPolicy": "Replacement available within 7 days.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-05-10T10:41:02.053Z", "updatedAt": "2025-05-25T09:41:02.053Z", "barcode": "PLANT-00064593838", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/Nggy36Df/money-plant-ceramic.jpg"],
+      "thumbnail": "https://i.ibb.co.com/Nggy36Df/money-plant-ceramic.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Hibiscus Rosa-Sinensis",
+      "description": "Hibiscus drops fire red blooms all year. Full sun + regular water = garden glow-up. Perfect for balcony or yard drip.",
+      "category": "Outdoor Plants",
+      "price": 449,
+      "discountPercentage": 15.0,
+      "rating": 4.5,
+      "stock": 40,
+      "tags": ["outdoor", "flowering", "tropical"],
+      "brand": "BloomGarden",
+      "sku": "PLT-HIB-004",
+      "weight": 3.2,
+      "dimensions": { "width": 45.0, "height": 90.0, "depth": 45.0 },
+      "warrantyInformation": "7 days replacement if damaged on arrival",
+      "shippingInformation": "Ships in 4-6 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Bro, planted it in the front yard and it bloomed in 7 days! Butterflies keep coming. Straight fire.",
+          "date": "2025-06-18T14:22:10.053Z",
+          "reviewerName": "Fahim Reza",
+          "reviewerEmail": "fahim.reza@example.com"
+        }
+      ],
+      "returnPolicy": "No returns after planting.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-05-12T11:15:02.053Z", "updatedAt": "2025-06-01T09:41:02.053Z", "barcode": "PLANT-00071234567", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/4ggGnmtS/hibiscus.jpg"],
+      "thumbnail": "https://i.ibb.co.com/4ggGnmtS/hibiscus.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Jade Plant (Crassula Ovata)",
+      "description": "Jade Plant = money magnet vibes. Thick glossy leaves, barely needs water. Perfect desk flex or gift for the squad.",
+      "category": "Succulents & Cacti",
+      "price": 229,
+      "discountPercentage": 11.0,
+      "rating": 4.8,
+      "stock": 90,
+      "tags": ["succulent", "low-maintenance", "office"],
+      "brand": "DesertBloom",
+      "sku": "PLT-JAD-005",
+      "weight": 1.1,
+      "dimensions": { "width": 18.0, "height": 25.0, "depth": 18.0 },
+      "warrantyInformation": "10 days replacement warranty",
+      "shippingInformation": "Ships in 2-3 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Bro, this little guy is adorable! Sitting on my desk, growing like crazy. Perfect gift energy.",
+          "date": "2025-06-20T09:10:33.053Z",
+          "reviewerName": "Nabila Hossain",
+          "reviewerEmail": "nabila.hossain@example.com"
+        },
+        {
+          "rating": 4,
+          "comment": "Came with a couple bent leaves but bounced back fast. Super chill plant for busy bros.",
+          "date": "2025-06-22T16:45:12.053Z",
+          "reviewerName": "Arif Siddique",
+          "reviewerEmail": "arif.siddique@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 7 days if damaged.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-05-15T13:20:02.053Z", "updatedAt": "2025-06-05T09:41:02.053Z", "barcode": "PLANT-00082345678", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/99y3GrTK/jade-plant.jpg"],
+      "thumbnail": "https://i.ibb.co.com/99y3GrTK/jade-plant.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Boston Fern",
+      "description": "Boston Fern = lush, feathery drip. Hang it up, mist it, watch it cascade. Shade + humidity = happy fern.",
+      "category": "Hanging Plants",
+      "price": 529,
+      "discountPercentage": 9.5,
+      "rating": 4.4,
+      "stock": 35,
+      "tags": ["hanging", "fern", "shade"],
+      "brand": "GreenCanopy",
+      "sku": "PLT-BOS-006",
+      "weight": 2.8,
+      "dimensions": { "width": 50.0, "height": 70.0, "depth": 50.0 },
+      "warrantyInformation": "15 days replacement if wilted",
+      "shippingInformation": "Ships in 3-5 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Bro, my balcony is now a jungle! Fronds are thick and healthy. I mist it every morning – living its best life.",
+          "date": "2025-06-25T11:30:55.053Z",
+          "reviewerName": "Rina Akter",
+          "reviewerEmail": "rina.akter@example.com"
+        }
+      ],
+      "returnPolicy": "No return after 10 days.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-05-18T10:41:02.053Z", "updatedAt": "2025-06-10T09:41:02.053Z", "barcode": "PLANT-00093456789", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/hFxMF0LM/boston-fern.jpg"],
+      "thumbnail": "https://i.ibb.co.com/hFxMF0LM/boston-fern.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Marigold (Tagetes)",
+      "description": "Marigolds = bright orange & yellow vibes. Pest-repellent, border game strong. Full sun and they bloom non-stop.",
+      "category": "Flowering Plants",
+      "price": 149,
+      "discountPercentage": 20.0,
+      "rating": 4.7,
+      "stock": 120,
+      "tags": ["flowering", "annual", "garden"],
+      "brand": "SunnyBloom",
+      "sku": "PLT-MAR-007",
+      "weight": 0.8,
+      "dimensions": { "width": 20.0, "height": 35.0, "depth": 20.0 },
+      "warrantyInformation": "7 days replacement if not blooming",
+      "shippingInformation": "Ships in 2-3 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Bro, these marigolds are popping off! Planted around my veggies – no bugs, just vibes.",
+          "date": "2025-06-28T08:15:44.053Z",
+          "reviewerName": "Karim Hossain",
+          "reviewerEmail": "karim.hossain@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 5 days if seeds fail to germinate.",
+      "minimumOrderQuantity": 3,
+      "meta": { "createdAt": "2025-05-20T14:30:02.053Z", "updatedAt": "2025-06-15T09:41:02.053Z", "barcode": "PLANT-00104567890", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/1Jf23nLH/marigold.jpg"],
+      "thumbnail": "https://i.ibb.co.com/1Jf23nLH/marigold.jpg"
+    },
+    {
+      "id": 8,
+      "title": "ZZ Plant (Zamioculcas)",
+      "description": "ZZ Plant = indestructible legend. Glossy dark leaves, low light, water once a month. Perfect for forgetful bros.",
+      "category": "Indoor Plants",
+      "price": 649,
+      "discountPercentage": 7.0,
+      "rating": 4.9,
+      "stock": 55,
+      "tags": ["indoor", "low-light", "durable"],
+      "brand": "UrbanRoot",
+      "sku": "PLT-ZZ-008",
+      "weight": 3.5,
+      "dimensions": { "width": 35.0, "height": 75.0, "depth": 35.0 },
+      "warrantyInformation": "30 days replacement warranty",
+      "shippingInformation": "Ships in 3-5 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Bro, I water this thing once a month and it still looks like a showroom plant. Unkillable.",
+          "date": "2025-07-01T10:20:11.053Z",
+          "reviewerName": "Tanjila Rahman",
+          "reviewerEmail": "tanjila.rahman@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 14 days if unhealthy.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-05-22T11:11:02.053Z", "updatedAt": "2025-06-18T09:41:02.053Z", "barcode": "PLANT-00115678901", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/YTdLV2rv/zz-plant.jpg"],
+      "thumbnail": "https://i.ibb.co.com/YTdLV2rv/zz-plant.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Aloe Vera",
+      "description": "Aloe Vera = skincare + air purifier in one. Thick gel-filled leaves. Cut, use, heal. Low maintenance king.",
+      "category": "Succulents & Cacti",
+      "price": 199,
+      "discountPercentage": 14.0,
+      "rating": 4.6,
+      "stock": 100,
+      "tags": ["succulent", "medicinal", "healing"],
+      "brand": "HealingGreen",
+      "sku": "PLT-ALO-009",
+      "weight": 1.3,
+      "dimensions": { "width": 20.0, "height": 30.0, "depth": 20.0 },
+      "warrantyInformation": "10 days replacement",
+      "shippingInformation": "Ships in 2-4 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Bro, I use the gel for burns and dryness. Already growing new pups. Health + decor = win.",
+          "date": "2025-07-03T13:45:22.053Z",
+          "reviewerName": "Sumaiya Islam",
+          "reviewerEmail": "sumaiya.islam@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 7 days if damaged.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-05-25T09:30:02.053Z", "updatedAt": "2025-06-20T09:41:02.053Z", "barcode": "PLANT-00126789012", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/PzTykMv8/aloe-vera.jpg"],
+      "thumbnail": "https://i.ibb.co.com/PzTykMv8/aloe-vera.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Spider Plant",
+      "description": "Spider Plant = fast-growing, air-cleaning, pet-safe legend. Baby spiders everywhere. Hang it, flex it, propagate it.",
+      "category": "Hanging Plants",
+      "price": 299,
+      "discountPercentage": 13.0,
+      "rating": 4.7,
+      "stock": 70,
+      "tags": ["hanging", "air-purifying", "pet-safe"],
+      "brand": "FreshAir",
+      "sku": "PLT-SPI-010",
+      "weight": 1.6,
+      "dimensions": { "width": 40.0, "height": 50.0, "depth": 40.0 },
+      "warrantyInformation": "15 days replacement",
+      "shippingInformation": "Ships in 3-5 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "My cat stares at the baby spiders all day, bro! Grew so much in 2 months. Beginner-friendly 100%.",
+          "date": "2025-07-05T15:10:33.053Z",
+          "reviewerName": "Omar Faruk",
+          "reviewerEmail": "omar.faruk@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 10 days.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-05-28T12:45:02.053Z", "updatedAt": "2025-06-25T09:41:02.053Z", "barcode": "PLANT-00137890123", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/MxHV2VXG/spider-plant.jpg"],
+      "thumbnail": "https://i.ibb.co.com/MxHV2VXG/spider-plant.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Bougainvillea",
+      "description": "Bougainvillea = colorful bracts on fleek. Pink, purple, white – climbs walls and fences. Full sun = non-stop bloom.",
+      "category": "Outdoor Plants",
+      "price": 579,
+      "discountPercentage": 10.0,
+      "rating": 4.5,
+      "stock": 45,
+      "tags": ["climbing", "colorful", "sun-loving"],
+      "brand": "TropicalClimb",
+      "sku": "PLT-BOU-011",
+      "weight": 4.1,
+      "dimensions": { "width": 55.0, "height": 110.0, "depth": 55.0 },
+      "warrantyInformation": "7 days replacement if not rooted",
+      "shippingInformation": "Ships in 5-7 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Covered my fence in hot pink, bro! Blooms all summer. Worth every penny.",
+          "date": "2025-07-08T11:25:44.053Z",
+          "reviewerName": "Shaila Parvin",
+          "reviewerEmail": "shaila.parvin@example.com"
+        }
+      ],
+      "returnPolicy": "No returns after planting.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-06-01T10:15:02.053Z", "updatedAt": "2025-06-28T09:41:02.053Z", "barcode": "PLANT-00148901234", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/k2VQJff7/bougainvillea.jpg"],
+      "thumbnail": "https://i.ibb.co.com/k2VQJff7/bougainvillea.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Peace Lily",
+      "description": "Peace Lily = white blooms all year, air-cleaning, low-drama. Perfect for office or bedroom chill zone.",
+      "category": "Flowering Plants",
+      "price": 399,
+      "discountPercentage": 9.0,
+      "rating": 4.7,
+      "stock": 60,
+      "tags": ["flowering", "indoor", "air-purifying"],
+      "brand": "BlossomLeaf",
+      "sku": "PLT-PSC-012",
+      "weight": 2.0,
+      "dimensions": { "width": 28.0, "height": 65.0, "depth": 28.0 },
+      "warrantyInformation": "10 days replacement warranty",
+      "shippingInformation": "Ships in 3 days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "White flowers poppin’, office feels peaceful now, bro. Air feels fresher too.",
+          "date": "2025-07-10T09:41:02.053Z",
+          "reviewerName": "Tania Haque",
+          "reviewerEmail": "tania.haque@example.com"
+        }
+      ],
+      "returnPolicy": "Returnable within 7 days if unopened.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-06-05T14:20:02.053Z", "updatedAt": "2025-07-01T09:41:02.053Z", "barcode": "PLANT-00159012345", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/mrsTZSWW/peace-lily.jpg"],
+      "thumbnail": "https://i.ibb.co.com/mrsTZSWW/peace-lily.jpg"
+    },
+    {
+      "id": 13,
+      "title": "Echeveria 'Lola'",
+      "description": "Echeveria Lola = pastel lavender-pink rosette. Tiny but mighty. Desk flex, shelf drip, small space king.",
+      "category": "Succulents & Cacti",
+      "price": 329,
+      "discountPercentage": 12.0,
+      "rating": 4.8,
+      "stock": 80,
+      "tags": ["succulent", "decor", "small"],
+      "brand": "MiniGarden",
+      "sku": "PLT-ECH-013",
+      "weight": 0.9,
+      "dimensions": { "width": 15.0, "height": 18.0, "depth": 15.0 },
+      "warrantyInformation": "7 days replacement",
+      "shippingInformation": "Ships in 2-3 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Colors are even better IRL, bro! Looks sick next to my laptop.",
+          "date": "2025-07-12T16:30:55.053Z",
+          "reviewerName": "Zara Khan",
+          "reviewerEmail": "zara.khan@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 5 days if damaged.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-06-08T11:11:02.053Z", "updatedAt": "2025-07-05T09:41:02.053Z", "barcode": "PLANT-00160123456", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/spnYTLMy/echeveria-lola.jpg"],
+      "thumbnail": "https://i.ibb.co.com/spnYTLMy/echeveria-lola.jpg"
+    },
+    {
+      "id": 14,
+      "title": "Pothos (Devil's Ivy)",
+      "description": "Pothos = trailing vine, heart-shaped leaves, nearly unkillable. Low light? No problem. Shelf or hanging pot = flex.",
+      "category": "Hanging Plants",
+      "price": 249,
+      "discountPercentage": 15.0,
+      "rating": 4.9,
+      "stock": 95,
+      "tags": ["trailing", "low-light", "easy"],
+      "brand": "EverGreen",
+      "sku": "PLT-POT-014",
+      "weight": 1.4,
+      "dimensions": { "width": 30.0, "height": 45.0, "depth": 30.0 },
+      "warrantyInformation": "20 days replacement",
+      "shippingInformation": "Ships in 2-4 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Grows like crazy, bro! I cut and propagate every few months. Beginner plant GOAT.",
+          "date": "2025-07-15T10:15:33.053Z",
+          "reviewerName": "Rasel Ahmed",
+          "reviewerEmail": "rasel.ahmed@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 10 days.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-06-10T13:45:02.053Z", "updatedAt": "2025-07-08T09:41:02.053Z", "barcode": "PLANT-00171234567", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/ynBqrtbb/pothos.jpg"],
+      "thumbnail": "https://i.ibb.co.com/ynBqrtbb/pothos.jpg"
+    },
+    {
+      "id": 15,
+      "title": "Rose Bush (Hybrid Tea)",
+      "description": "Hybrid Tea Rose = deep red, fragrant, cut-flower royalty. Full sun, weekly care = bouquet-level blooms.",
+      "category": "Outdoor Plants",
+      "price": 899,
+      "discountPercentage": 8.0,
+      "rating": 4.6,
+      "stock": 25,
+      "tags": ["rose", "fragrant", "cut-flower"],
+      "brand": "RoyalBloom",
+      "sku": "PLT-ROS-015",
+      "weight": 5.0,
+      "dimensions": { "width": 50.0, "height": 120.0, "depth": 50.0 },
+      "warrantyInformation": "15 days replacement if no buds",
+      "shippingInformation": "Ships in 5-7 business days",
+      "availabilityStatus": "Low Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Fragrance is unreal, bro! First bloom was massive, lasted over a week in a vase.",
+          "date": "2025-07-18T12:20:44.053Z",
+          "reviewerName": "Fatema Begum",
+          "reviewerEmail": "fatema.begum@example.com"
+        }
+      ],
+      "returnPolicy": "No returns after planting.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-06-12T15:30:02.053Z", "updatedAt": "2025-07-10T09:41:02.053Z", "barcode": "PLANT-00182345678", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/twMDzP9N/rose-bush.jpg"],
+      "thumbnail": "https://i.ibb.co.com/twMDzP9N/rose-bush.jpg"
+    }
+  ]
+}

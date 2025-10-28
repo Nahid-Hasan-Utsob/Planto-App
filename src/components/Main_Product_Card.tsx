@@ -14,7 +14,7 @@ const StarRating: React.FC<{ rating: number }> = ({ rating }) => {
     stars.push(<FaRegStar key={`empty-${i}`} />);
 
   return (
-    <div className="flex text-yellow-400 gap-[2px] text-base">{stars}</div>
+    <div className="flex text-yellow-400 gap-[3px] text-base">{stars}</div>
   );
 };
 
@@ -24,15 +24,15 @@ interface ProductType {
   rating: number;
   price: number;
   description: string;
-  img: string;
+  thumbnail: string;
 }
 
 interface MainProductCardProps {
-  product: ProductType;
+  products: ProductType;
 }
 
 const Main_Product_Card: React.FC<MainProductCardProps> = ({ products }) => {
-  const { rating, title, price, description, img } = products;
+  const { rating, title, price, description, thumbnail } = products;
 
   return (
     <div className="relative w-[400px] h-[550px] bg-transparent rounded-3xl shadow-lg m-3 p-1">
@@ -94,12 +94,12 @@ const Main_Product_Card: React.FC<MainProductCardProps> = ({ products }) => {
       {/* Content */}
       <div className="relative flex flex-col justify-start text-white p-6 space-y-4">
         <img
-          src={img}
+          src={thumbnail}
           alt="Product"
           className="object-contain drop-shadow-lg -mt-[120px] w-[350px] h-[410px]"
         />
-        <div className="flex items-center justify-between -mt-[50px]">
-          <h2 className="text-2xl font-semibold ">{title}</h2>
+        <div className="flex items-center justify-between  -mt-[50px]">
+          <p className="text-2xl font-semibold h-[60px] flex items-center">{title}</p>
           <StarRating rating={rating} />
         </div>
 
@@ -107,7 +107,7 @@ const Main_Product_Card: React.FC<MainProductCardProps> = ({ products }) => {
 
         <div className="flex gap-5 justify-between mt-3">
           <p className="text-[35px] text-white">Rs. {price}/-</p>
-          <p className="primary-text-color flex items-center text-2xl py-[4px] px-4 rounded-md border-2 w-fit">
+          <p className="primary-text-color flex items-center text-2xl py-[5px] px-4 rounded-md border-2 w-fit">
             <SlHandbag />
           </p>
         </div>
