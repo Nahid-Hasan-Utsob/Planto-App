@@ -1,26 +1,23 @@
-import React, { useState, useEffect, useCallback, useRef } from 'react';
-import styles from './AddToCartButton.module.css';
+import React, { useState, useEffect, useCallback, useRef } from "react";
+import styles from "./AddToCartButton.module.css";
 
-// 💡 নতুন: Props টাইপ তৈরি করা হলো
 interface AddToCartButtonProps {
-  /** * যখন প্রোডাক্ট সফলভাবে কার্টে যোগ করার অ্যানিমেশন শেষ হবে, তখন এই ফাংশনটি কল হবে।
-   * এই ফাংশনটি আপনার অ্যাপ্লিকেশন লজিকে (যেমন Redux, Context, বা API কল) প্রোডাক্ট যোগ করবে।
-   */
+  
   onAddToCart?: () => void;
+
 }
 
 type Timer = ReturnType<typeof setTimeout> | undefined;
 
-// 💡 নতুন: Props হিসাবে onAddToCart গ্রহণ করা
 const AddToCartButton: React.FC<AddToCartButtonProps> = ({ onAddToCart }) => {
   const [isTapisRoulant, setIsTapisRoulant] = useState(false);
   const [isAdded, setIsAdded] = useState(false);
   const [isCanceled, setIsCanceled] = useState(false);
   const buttonRef = useRef<HTMLButtonElement>(null);
-  
+
   const objectAnimationRef = useRef<HTMLDivElement>(null);
   const tapisAnimationRef = useRef<HTMLDivElement>(null);
-  
+
   const timer = useRef<Timer>(undefined);
   const timer2 = useRef<Timer>(undefined);
 
@@ -39,87 +36,82 @@ const AddToCartButton: React.FC<AddToCartButtonProps> = ({ onAddToCart }) => {
 
   const handleButtonClick = () => {
     clearTimers();
-    
-    // Cancel লজিক (পূর্বের মতোই)
+
+    // Cancel logic
     if (isTapisRoulant && !isAdded) {
-      if (objectAnimationRef.current) objectAnimationRef.current.style.animationPlayState = 'paused';
-      if (tapisAnimationRef.current) tapisAnimationRef.current.style.animationPlayState = 'paused';
+      if (objectAnimationRef.current)
+        objectAnimationRef.current.style.animationPlayState = "paused";
+      if (tapisAnimationRef.current)
+        tapisAnimationRef.current.style.animationPlayState = "paused";
 
       setIsCanceled(true);
-      if (buttonRef.current) buttonRef.current.style.pointerEvents = 'none';
+      if (buttonRef.current) buttonRef.current.style.pointerEvents = "none";
 
       timer.current = setTimeout(() => {
-        if (buttonRef.current) buttonRef.current.style.pointerEvents = 'initial';
+        if (buttonRef.current) buttonRef.current.style.pointerEvents = "initial";
         setIsTapisRoulant(false);
         setIsCanceled(false);
       }, 1000);
-    } 
-    // Add to Cart লজিক
-    else if (!isTapisRoulant) {
+    } else if (!isTapisRoulant) {
+      // Add to Cart logic
       setIsTapisRoulant(true);
-      if (objectAnimationRef.current) objectAnimationRef.current.style.animationPlayState = 'running';
-      if (tapisAnimationRef.current) tapisAnimationRef.current.style.animationPlayState = 'running';
+      if (objectAnimationRef.current)
+        objectAnimationRef.current.style.animationPlayState = "running";
+      if (tapisAnimationRef.current)
+        tapisAnimationRef.current.style.animationPlayState = "running";
 
       timer.current = setTimeout(() => {
         setIsAdded(true);
-        // 💡 মূল পরিবর্তন: এখানে onAddToCart কল হবে
-        // onAddToCart(); 
-        
-        if (buttonRef.current) buttonRef.current.style.pointerEvents = 'none';
+        // onAddToCart && onAddToCart();
+
+        if (buttonRef.current) buttonRef.current.style.pointerEvents = "none";
 
         timer2.current = setTimeout(() => {
           setIsAdded(false);
           setIsTapisRoulant(false);
-          if (buttonRef.current) buttonRef.current.style.pointerEvents = 'initial';
+          if (buttonRef.current)
+            buttonRef.current.style.pointerEvents = "initial";
         }, 1600);
-      }, 1400); // অ্যানিমেশন শুরু হওয়ার 1.4 সেকেন্ড পরে (যখন প্রোডাক্ট স্ক্যানিং শেষ হয়)
+      }, 1400);
     }
   };
 
   const buttonClasses = [
     styles.btn,
-    isTapisRoulant ? styles['tapis-roulant'] : '',
-    isAdded ? styles.added : '',
-    isCanceled ? styles.canceled : '',
-  ].filter(Boolean).join(' ');
+    isTapisRoulant ? styles["tapis-roulant"] : "",
+    isAdded ? styles.added : "",
+    isCanceled ? styles.canceled : "",
+  ]
+    .filter(Boolean)
+    .join(" ");
 
   return (
     <div className={styles.container}>
-      <button 
-        ref={buttonRef}
-        className={buttonClasses} 
-        onClick={handleButtonClick}
-      >
+      <button ref={buttonRef} className={buttonClasses} onClick={handleButtonClick}>
         <span>
           <div className={styles.caddie}>
-            {/* ... caddie HTML structure ... */}
-            <div className={styles['caddie__top-support']}></div>
-            <div className={styles.caddie__top}></div>
-            <div className={styles['caddie__body']}></div>
-            <div className={styles.caddie__trou}></div>
-            <div className={styles.caddie__trou2}></div>
-            <div className={styles['caddie__body-left']}></div>
-            <div className={styles.caddie__roue}></div>
-            <div className={styles.caddie__roue2}></div>
-            <div className={styles.caddie__trou3}></div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <path d="M16 10a4 4 0 0 1-8 0" />
+            </svg>
           </div>
           Add to cart
         </span>
-        
-        {/* div:nth-child(2) - Conveyor belt container */}
+
         <div>
           <div ref={tapisAnimationRef}>
-            {Array.from({ length: 24 }).map((_, i) => <i key={i}></i>)}
+            {Array.from({ length: 24 }).map((_, i) => (
+              <i key={i}></i>
+            ))}
           </div>
         </div>
 
-        {/* div:nth-child(3) - Caisse (Scanner box) */}
         <div>
           <div></div>
           <div></div>
         </div>
 
-        {/* div:nth-child(4) - Objet (Product item) */}
         <div>
           <div ref={objectAnimationRef}>
             <div></div>
@@ -127,12 +119,10 @@ const AddToCartButton: React.FC<AddToCartButtonProps> = ({ onAddToCart }) => {
           </div>
         </div>
 
-        {/* div:nth-child(5) - notification succes */}
         <div>
           <div>$9.99</div>
         </div>
 
-        {/* div:nth-child(6) - notification cancel */}
         <div>
           <div>Canceled</div>
         </div>

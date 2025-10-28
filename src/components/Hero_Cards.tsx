@@ -17,6 +17,7 @@ export default function Hero_Cards() {
               description: product.description,
               image: product.images[0] || product.thumbnail,
               price: product.price,
+              rating: product.rating,
             }}
             reverse={idx % 2 !== 0} // alternate reverse
           />

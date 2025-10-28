@@ -7,7 +7,7 @@
       "category": "Indoor Plants",
       "price": 599,
       "discountPercentage": 8.25,
-      "rating": 4.7,
+      "rating": 2.7,
       "stock": 50,
       "tags": ["plant", "indoor", "air-purifying"],
       "brand": "GreenLeaf",
@@ -19,14 +19,14 @@
       "availabilityStatus": "In Stock",
       "reviews": [
         {
-          "rating": 5,
+          "rating": 3.5,
           "comment": "Bro, this plant is legit stunning! Leaves are super lush, I water every 3-4 days and it’s thriving like a champ.",
           "date": "2025-05-12T08:41:02.053Z",
           "reviewerName": "Sarah Ahmed",
           "reviewerEmail": "sarah.ahmed@example.com"
         },
         {
-          "rating": 4,
+          "rating": 2,
           "comment": "Came in a solid box, plant was safe. After two days it got even greener, bro. That light tropical scent? Chef’s kiss.",
           "date": "2025-05-13T11:11:22.053Z",
           "reviewerName": "Imran Khan",
@@ -46,7 +46,7 @@
       "category": "Indoor Plants",
       "price": 279,
       "discountPercentage": 12.5,
-      "rating": 4.6,
+      "rating": 2.6,
       "stock": 75,
       "tags": ["plant", "low-maintenance", "bedroom"],
       "brand": "NatureNest",
@@ -58,7 +58,7 @@
       "availabilityStatus": "In Stock",
       "reviews": [
         {
-          "rating": 5,
+          "rating": 2,
           "comment": "Bro, if you forget to water plants, this is your guy. Those upright leaves give mad modern vibes on my side table.",
           "date": "2025-06-02T12:41:02.053Z",
           "reviewerName": "Anika Rahman",
@@ -78,7 +78,7 @@
       "category": "Indoor Plants",
       "price": 349,
       "discountPercentage": 10.5,
-      "rating": 4.8,
+      "rating": 2.8,
       "stock": 60,
       "tags": ["plant", "indoor", "lucky"],
       "brand": "LeafyAura",
@@ -90,7 +90,7 @@
       "availabilityStatus": "In Stock",
       "reviews": [
         {
-          "rating": 5,
+          "rating": 2.6,
           "comment": "Bro, this thing grew like crazy in a week! Pot is smooth AF, looks clean on my window. Instant mood boost.",
           "date": "2025-06-10T10:30:22.053Z",
           "reviewerName": "Sadia Noor",
@@ -110,7 +110,7 @@
       "category": "Outdoor Plants",
       "price": 449,
       "discountPercentage": 15.0,
-      "rating": 4.5,
+      "rating": 2.5,
       "stock": 40,
       "tags": ["outdoor", "flowering", "tropical"],
       "brand": "BloomGarden",
@@ -122,7 +122,7 @@
       "availabilityStatus": "In Stock",
       "reviews": [
         {
-          "rating": 5,
+          "rating": 2.9,
           "comment": "Bro, planted it in the front yard and it bloomed in 7 days! Butterflies keep coming. Straight fire.",
           "date": "2025-06-18T14:22:10.053Z",
           "reviewerName": "Fahim Reza",
@@ -136,13 +136,13 @@
       "thumbnail": "https://i.ibb.co.com/4ggGnmtS/hibiscus.jpg"
     },
     {
-      "id": 5,
+      "id": 2,
       "title": "Jade Plant (Crassula Ovata)",
       "description": "Jade Plant — money magnet, thick glossy leaves. Low water, perfect for desk or gifting.",
       "category": "Succulents & Cacti",
       "price": 229,
       "discountPercentage": 11.0,
-      "rating": 4.8,
+      "rating": 2.8,
       "stock": 90,
       "tags": ["succulent", "low-maintenance", "office"],
       "brand": "DesertBloom",
@@ -154,14 +154,14 @@
       "availabilityStatus": "In Stock",
       "reviews": [
         {
-          "rating": 5,
+          "rating": 1,
           "comment": "Bro, this little guy is adorable! Sitting on my desk, growing like crazy. Perfect gift energy.",
           "date": "2025-06-20T09:10:33.053Z",
           "reviewerName": "Nabila Hossain",
           "reviewerEmail": "nabila.hossain@example.com"
         },
         {
-          "rating": 4,
+          "rating": 2,
           "comment": "Came with a couple bent leaves but bounced back fast. Super chill plant for busy bros.",
           "date": "2025-06-22T16:45:12.053Z",
           "reviewerName": "Arif Siddique",
@@ -181,7 +181,7 @@
       "category": "Hanging Plants",
       "price": 529,
       "discountPercentage": 9.5,
-      "rating": 4.4,
+      "rating": 2.4,
       "stock": 35,
       "tags": ["hanging", "fern", "shade"],
       "brand": "GreenCanopy",
@@ -193,7 +193,7 @@
       "availabilityStatus": "In Stock",
       "reviews": [
         {
-          "rating": 5,
+          "rating": 2.3,
           "comment": "Bro, my balcony is now a jungle! Fronds are thick and healthy. I mist it every morning – living its best life.",
           "date": "2025-06-25T11:30:55.053Z",
           "reviewerName": "Rina Akter",
@@ -213,7 +213,7 @@
       "category": "Flowering Plants",
       "price": 149,
       "discountPercentage": 20.0,
-      "rating": 4.7,
+      "rating": 2.7,
       "stock": 120,
       "tags": ["flowering", "annual", "garden"],
       "brand": "SunnyBloom",
@@ -225,7 +225,7 @@
       "availabilityStatus": "In Stock",
       "reviews": [
         {
-          "rating": 5,
+          "rating": 2.3,
           "comment": "Bro, these marigolds are popping off! Planted around my veggies – no bugs, just vibes.",
           "date": "2025-06-28T08:15:44.053Z",
           "reviewerName": "Karim Hossain",
@@ -245,7 +245,7 @@
       "category": "Indoor Plants",
       "price": 649,
       "discountPercentage": 7.0,
-      "rating": 4.9,
+      "rating": 2.9,
       "stock": 55,
       "tags": ["indoor", "low-light", "durable"],
       "brand": "UrbanRoot",
@@ -257,7 +257,7 @@
       "availabilityStatus": "In Stock",
       "reviews": [
         {
-          "rating": 5,
+          "rating": 2.8,
           "comment": "Bro, I water this thing once a month and it still looks like a showroom plant. Unkillable.",
           "date": "2025-07-01T10:20:11.053Z",
           "reviewerName": "Tanjila Rahman",
@@ -277,7 +277,7 @@
       "category": "Succulents & Cacti",
       "price": 199,
       "discountPercentage": 14.0,
-      "rating": 4.6,
+      "rating": 2.6,
       "stock": 100,
       "tags": ["succulent", "medicinal", "healing"],
       "brand": "HealingGreen",
@@ -289,7 +289,7 @@
       "availabilityStatus": "In Stock",
       "reviews": [
         {
-          "rating": 5,
+          "rating": 2.1,
           "comment": "Bro, I use the gel for burns and dryness. Already growing new pups. Health + decor = win.",
           "date": "2025-07-03T13:45:22.053Z",
           "reviewerName": "Sumaiya Islam",
@@ -309,7 +309,7 @@
       "category": "Hanging Plants",
       "price": 299,
       "discountPercentage": 13.0,
-      "rating": 4.7,
+      "rating": 2.7,
       "stock": 70,
       "tags": ["hanging", "air-purifying", "pet-safe"],
       "brand": "FreshAir",
@@ -321,7 +321,7 @@
       "availabilityStatus": "In Stock",
       "reviews": [
         {
-          "rating": 5,
+          "rating": 2.1,
           "comment": "My cat stares at the baby spiders all day, bro! Grew so much in 2 months. Beginner-friendly 100%.",
           "date": "2025-07-05T15:10:33.053Z",
           "reviewerName": "Omar Faruk",
@@ -341,7 +341,7 @@
       "category": "Outdoor Plants",
       "price": 579,
       "discountPercentage": 10.0,
-      "rating": 4.5,
+      "rating": 2.5,
       "stock": 45,
       "tags": ["climbing", "colorful", "sun-loving"],
       "brand": "TropicalClimb",
@@ -353,7 +353,7 @@
       "availabilityStatus": "In Stock",
       "reviews": [
         {
-          "rating": 5,
+          "rating": 1.3,
           "comment": "Covered my fence in hot pink, bro! Blooms all summer. Worth every penny.",
           "date": "2025-07-08T11:25:44.053Z",
           "reviewerName": "Shaila Parvin",
@@ -373,7 +373,7 @@
       "category": "Flowering Plants",
       "price": 399,
       "discountPercentage": 9.0,
-      "rating": 4.7,
+      "rating": 2.7,
       "stock": 60,
       "tags": ["flowering", "indoor", "air-purifying"],
       "brand": "BlossomLeaf",
@@ -385,7 +385,7 @@
       "availabilityStatus": "In Stock",
       "reviews": [
         {
-          "rating": 5,
+          "rating": 3.6,
           "comment": "White flowers poppin’, office feels peaceful now, bro. Air feels fresher too.",
           "date": "2025-07-10T09:41:02.053Z",
           "reviewerName": "Tania Haque",
@@ -405,7 +405,7 @@
       "category": "Succulents & Cacti",
       "price": 329,
       "discountPercentage": 12.0,
-      "rating": 4.8,
+      "rating": 2.8,
       "stock": 80,
       "tags": ["succulent", "decor", "small"],
       "brand": "MiniGarden",
@@ -417,7 +417,7 @@
       "availabilityStatus": "In Stock",
       "reviews": [
         {
-          "rating": 5,
+          "rating":1.9,
           "comment": "Colors are even better IRL, bro! Looks sick next to my laptop.",
           "date": "2025-07-12T16:30:55.053Z",
           "reviewerName": "Zara Khan",
@@ -437,7 +437,7 @@
       "category": "Hanging Plants",
       "price": 249,
       "discountPercentage": 15.0,
-      "rating": 4.9,
+      "rating": 2.9,
       "stock": 95,
       "tags": ["trailing", "low-light", "easy"],
       "brand": "EverGreen",
@@ -449,7 +449,7 @@
       "availabilityStatus": "In Stock",
       "reviews": [
         {
-          "rating": 5,
+          "rating":5,
           "comment": "Grows like crazy, bro! I cut and propagate every few months. Beginner plant GOAT.",
           "date": "2025-07-15T10:15:33.053Z",
           "reviewerName": "Rasel Ahmed",
@@ -469,7 +469,7 @@
       "category": "Outdoor Plants",
       "price": 899,
       "discountPercentage": 8.0,
-      "rating": 4.6,
+      "rating": 2.6,
       "stock": 25,
       "tags": ["rose", "fragrant", "cut-flower"],
       "brand": "RoyalBloom",
@@ -481,7 +481,7 @@
       "availabilityStatus": "Low Stock",
       "reviews": [
         {
-          "rating": 5,
+          "rating": 3,
           "comment": "Fragrance is unreal, bro! First bloom was massive, lasted over a week in a vase.",
           "date": "2025-07-18T12:20:44.053Z",
           "reviewerName": "Fatema Begum",
