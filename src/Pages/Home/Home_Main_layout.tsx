@@ -6,6 +6,7 @@ import Hero_Cards from "../../components/Hero_Cards";
 import Top_selling from "./Home_Banner/Top_selling";
 import ProductList from "../Products/ProductList";
 import Customer_Review from "./Customer_Review/Customer_Review";
+import Best_Cards from "../../components/Best_Section/Best_Cards";
 
 const Home_Main_Layout: React.FC = () => {
   return (
@@ -23,6 +24,9 @@ const Home_Main_Layout: React.FC = () => {
         <Style_Common_Text className="text-[40px] my-24 text-white" text="Customer Review"></Style_Common_Text>
 
        <Customer_Review></Customer_Review>
+       <Style_Common_Text className="text-[40px] my-24 text-white" text="Our Best"></Style_Common_Text>
+
+    <Best_Cards></Best_Cards>
     </div>
 </section>
   );
