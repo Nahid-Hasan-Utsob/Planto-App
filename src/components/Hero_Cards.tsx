@@ -1,27 +1,26 @@
 import Hero_Card from "./Hero_Card";
-import product from "../assets/product.png";
+import { useProducts } from "../hooks/useProducts";
 export default function Hero_Cards() {
-  const cardList = [
-    {
-      title: "For Small Decs Ai Plat",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      image: product,
-      price: 599
-        },
-    {
-      title: "For Fresh Decs Ai Plat",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-    image: product,
-        price: 598
-    },
-  ];
+  const { data: products, isLoading, isError } = useProducts();
+
+  if (isLoading) return <p>Loading...</p>;
+  if (isError) return <p>Failed to load products.</p>;
 
   return (
     <div className="flex flex-col gap-28 items-center">
-      <Hero_Card data={cardList[0]} />
-      <Hero_Card data={cardList[1]} reverse={true} />
+      {products &&
+        products.slice(0, 2).map((product, idx) => (
+          <Hero_Card
+            key={product.id}
+            data={{
+              title: product.title,
+              description: product.description,
+              image: product.images[0] || product.thumbnail,
+              price: product.price,
+            }}
+            reverse={idx % 2 !== 0} // alternate reverse
+          />
+        ))}
     </div>
   );
 }

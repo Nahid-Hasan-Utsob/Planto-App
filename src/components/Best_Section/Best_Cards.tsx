@@ -1,6 +1,6 @@
 import React from 'react';
 import CommonButton from "../../components/Common_button";
-import { SlHandbag } from "react-icons/sl";
+
 import products from '../../assets/product.png';
 
 // Swiper imports

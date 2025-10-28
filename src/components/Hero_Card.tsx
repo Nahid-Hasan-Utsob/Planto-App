@@ -7,13 +7,13 @@ type HeroCardProps = {
     title?: string;
     description?: string;
     image?: string;
-    price?:number
+    price?: number;
   };
   reverse?: boolean;
 };
 
 const Hero_Card: React.FC<HeroCardProps> = ({ data, reverse = false }) => {
-  const { title, description, image,price } = data;
+  const { title, description, image, price } = data;
 
   return (
     <section className="relative w-full h-[400px]">
@@ -31,9 +31,9 @@ const Hero_Card: React.FC<HeroCardProps> = ({ data, reverse = false }) => {
             }`}
           >
             <img
-              className={`w-[75%] ${
-                reverse ? "mr-[-40px]" : "ml-0"
-              } object-contain transition-all duration-300`}
+              className={`w-[75%] h-full ${
+                reverse ? "mr-[-41px]" : "ml-0"
+              } object-cover transition-all duration-300`}
               src={image}
               alt={title}
             />
@@ -41,24 +41,29 @@ const Hero_Card: React.FC<HeroCardProps> = ({ data, reverse = false }) => {
 
           {/* Text Section */}
           <div
-            className={`w-1/2 pt-24 ${
+            className={`w-1/2 pt-[200px] ${
               reverse ? "text-right pr-6" : "text-left pl-6"
             }`}
           >
             <p className="font-semibold text-white text-[35px] ">{title}</p>
             <p className="text-sm mt-2 text-white text-[18px]">{description}</p>
-            <p className="mt-2 font-semibold text-white text-[35px]">Rs. {price}/-</p>
-            <div className={`flex items-center mt-3 gap-5 ${reverse ? 'justify-end' : ''}`} >
-             <CommonButton
-            text="Explore"
-            className="primary-text-color text-xl py-2 px-10 rounded-md  border-2"
-          ></CommonButton>
-         <div>
-           <p className="primary-text-color text-3xl py-[7px] px-5 rounded-md  border-2 w-fit">
+            <p className="mt-2 font-semibold text-white text-[35px]">
+              Rs. {price}/-
+            </p>
+            <div
+              className={`flex items-center mt-3 gap-5 ${
+                reverse ? "justify-end" : ""
+              }`}
+            >
+              <CommonButton
+                text="Explore"
+                className="primary-text-color text-xl py-2 px-10 rounded-md  border-2"
+              ></CommonButton>
+              <div>
+                <p className="primary-text-color text-3xl py-[7px] px-5 rounded-md  border-2 w-fit">
                   <SlHandbag></SlHandbag>
-          </p>
-         </div>
-       
+                </p>
+              </div>
             </div>
           </div>
         </div>

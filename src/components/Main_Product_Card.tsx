@@ -10,39 +10,29 @@ const StarRating: React.FC<{ rating: number }> = ({ rating }) => {
   const stars = [];
   for (let i = 0; i < fullStars; i++) stars.push(<FaStar key={`full-${i}`} />);
   if (hasHalfStar) stars.push(<FaStarHalfAlt key="half" />);
-  for (let i = 0; i < emptyStars; i++) stars.push(<FaRegStar key={`empty-${i}`} />);
+  for (let i = 0; i < emptyStars; i++)
+    stars.push(<FaRegStar key={`empty-${i}`} />);
 
-  return <div className="flex text-yellow-400 gap-[2px] text-base">{stars}</div>;
+  return (
+    <div className="flex text-yellow-400 gap-[2px] text-base">{stars}</div>
+  );
 };
 
-
-
-interface ProductType  {
+interface ProductType {
   id: number;
   title: string;
   rating: number;
   price: number;
   description: string;
   img: string;
-};
+}
 
-interface MainProductCardProps  {
+interface MainProductCardProps {
   product: ProductType;
-};
+}
 
-
-
-
-
-
-
-
-
-const Main_Product_Card: React.FC <MainProductCardProps> = ({products}) => {
-
-
-      const {rating,title,price,description,img} =products;
-
+const Main_Product_Card: React.FC<MainProductCardProps> = ({ products }) => {
+  const { rating, title, price, description, img } = products;
 
   return (
     <div className="relative w-[400px] h-[550px] bg-transparent rounded-3xl shadow-lg m-3 p-1">
@@ -54,15 +44,33 @@ const Main_Product_Card: React.FC <MainProductCardProps> = ({products}) => {
         xmlns="http://www.w3.org/2000/svg"
       >
         <defs>
-          <linearGradient id="glassGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <linearGradient
+            id="glassGradient"
+            x1="0%"
+            y1="0%"
+            x2="100%"
+            y2="100%"
+          >
             <stop offset="0%" style={{ stopColor: "rgba(255,255,255,0.2)" }} />
-            <stop offset="100%" style={{ stopColor: "rgba(255,255,255,0.05)" }} />
+            <stop
+              offset="100%"
+              style={{ stopColor: "rgba(255,255,255,0.05)" }}
+            />
           </linearGradient>
           <filter id="glassBlur">
             <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
             <feOffset dx="0" dy="0" result="offsetblur" />
-            <feFlood floodColor="rgba(0,0,0,0.15)" floodOpacity="1" result="flood" />
-            <feComposite in="flood" in2="offsetblur" operator="in" result="shadow" />
+            <feFlood
+              floodColor="rgba(0,0,0,0.15)"
+              floodOpacity="1"
+              result="flood"
+            />
+            <feComposite
+              in="flood"
+              in2="offsetblur"
+              operator="in"
+              result="shadow"
+            />
             <feMerge>
               <feMergeNode in="shadow" />
               <feMergeNode in="SourceGraphic" />
@@ -95,9 +103,7 @@ const Main_Product_Card: React.FC <MainProductCardProps> = ({products}) => {
           <StarRating rating={rating} />
         </div>
 
-        <p className="text-gray-200 text-sm">
-            {description}
-        </p>
+        <p className="text-gray-200 text-sm">{description}</p>
 
         <div className="flex gap-5 justify-between mt-3">
           <p className="text-[35px] text-white">Rs. {price}/-</p>
