@@ -98,12 +98,12 @@ const Main_Product_Card: React.FC<MainProductCardProps> = ({ products }) => {
           alt="Product"
           className="object-contain drop-shadow-lg -mt-[120px] w-[350px] h-[410px]"
         />
-        <div className="flex items-center justify-between  -mt-[50px]">
+        <div className="flex items-center justify-between  -mt-[38px]">
           <p className="text-2xl font-semibold h-[60px] flex items-center">{title}</p>
           <StarRating rating={rating} />
         </div>
 
-        <p className="text-gray-200 text-sm">{description}</p>
+        <p className="text-gray-200 text-sm h-[50px]">{description}</p>
 
         <div className="flex gap-5 justify-between mt-3">
           <p className="text-[35px] text-white">Rs. {price}/-</p>

@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Areca Palm",
-      "description": "Yo, this Areca Palm is straight-up tropical vibes – feathery fronds that clean the air and look fire in any bright corner. Low-key needs indirect light and you’re golden.",
+      "description": "Tropical Areca Palm — air-purifying, feathery fronds. Bright indirect light, easy care, perfect for any corner.",
       "category": "Indoor Plants",
       "price": 599,
       "discountPercentage": 8.25,
@@ -42,7 +42,7 @@
     {
       "id": 2,
       "title": "Snake Plant",
-      "description": "Snake Plant aka Mother-in-law’s Tongue – the ultimate low-maintenance king. Survives in low light, barely needs water, perfect for lazy plant parents.",
+      "description": "Snake Plant — low-light survivor, minimal water. Upright, modern, perfect for lazy plant parents.",
       "category": "Indoor Plants",
       "price": 279,
       "discountPercentage": 12.5,
@@ -74,7 +74,7 @@
     {
       "id": 3,
       "title": "Money Plant in Ceramic Pot",
-      "description": "Money Plant = instant good luck + positivity. Comes in a dope handcrafted ceramic pot. Perfect for desk, shelf, or window sill flex.",
+      "description": "Money Plant — brings luck & positivity. In handcrafted ceramic pot, ideal for desk or window.",
       "category": "Indoor Plants",
       "price": 349,
       "discountPercentage": 10.5,
@@ -106,7 +106,7 @@
     {
       "id": 4,
       "title": "Hibiscus Rosa-Sinensis",
-      "description": "Hibiscus drops fire red blooms all year. Full sun + regular water = garden glow-up. Perfect for balcony or yard drip.",
+      "description": "Hibiscus — fiery red blooms all year. Full sun, regular water, perfect for balcony or yard.",
       "category": "Outdoor Plants",
       "price": 449,
       "discountPercentage": 15.0,
@@ -138,7 +138,7 @@
     {
       "id": 5,
       "title": "Jade Plant (Crassula Ovata)",
-      "description": "Jade Plant = money magnet vibes. Thick glossy leaves, barely needs water. Perfect desk flex or gift for the squad.",
+      "description": "Jade Plant — money magnet, thick glossy leaves. Low water, perfect for desk or gifting.",
       "category": "Succulents & Cacti",
       "price": 229,
       "discountPercentage": 11.0,
@@ -177,7 +177,7 @@
     {
       "id": 6,
       "title": "Boston Fern",
-      "description": "Boston Fern = lush, feathery drip. Hang it up, mist it, watch it cascade. Shade + humidity = happy fern.",
+      "description": "Boston Fern — lush, feathery, cascading. Loves shade & humidity, ideal for hanging.",
       "category": "Hanging Plants",
       "price": 529,
       "discountPercentage": 9.5,
@@ -209,7 +209,7 @@
     {
       "id": 7,
       "title": "Marigold (Tagetes)",
-      "description": "Marigolds = bright orange & yellow vibes. Pest-repellent, border game strong. Full sun and they bloom non-stop.",
+      "description": "Marigold — bright orange & yellow blooms. Pest-repellent, full sun, non-stop flowering.",
       "category": "Flowering Plants",
       "price": 149,
       "discountPercentage": 20.0,
@@ -241,7 +241,7 @@
     {
       "id": 8,
       "title": "ZZ Plant (Zamioculcas)",
-      "description": "ZZ Plant = indestructible legend. Glossy dark leaves, low light, water once a month. Perfect for forgetful bros.",
+      "description": "ZZ Plant — unkillable, glossy dark leaves. Low light, water monthly, perfect for forgetful bros.",
       "category": "Indoor Plants",
       "price": 649,
       "discountPercentage": 7.0,
@@ -266,14 +266,14 @@
       ],
       "returnPolicy": "Return within 14 days if unhealthy.",
       "minimumOrderQuantity": 1,
-      "meta": { "createdAt": "2025-05-22T11:11:02.053Z", "updatedAt": "2025-06-18T09:41:02.053Z", "barcode": "PLANT-00115678901", "qrCode": "" },
+      "meta": { "createdAt": "2025-05-22T11:11:02.053Z", "updatedAt": "2025-06- стены18T09:41:02.053Z", "barcode": "PLANT-00115678901", "qrCode": "" },
       "images": ["https://i.ibb.co.com/YTdLV2rv/zz-plant.jpg"],
       "thumbnail": "https://i.ibb.co.com/YTdLV2rv/zz-plant.jpg"
     },
     {
       "id": 9,
       "title": "Aloe Vera",
-      "description": "Aloe Vera = skincare + air purifier in one. Thick gel-filled leaves. Cut, use, heal. Low maintenance king.",
+      "description": "Aloe Vera — gel for skin, air-purifying. Thick leaves, low care, healing + decor.",
       "category": "Succulents & Cacti",
       "price": 199,
       "discountPercentage": 14.0,
@@ -305,7 +305,7 @@
     {
       "id": 10,
       "title": "Spider Plant",
-      "description": "Spider Plant = fast-growing, air-cleaning, pet-safe legend. Baby spiders everywhere. Hang it, flex it, propagate it.",
+      "description": "Spider Plant — fast-growing, air-cleaning, pet-safe. Baby plants everywhere, great for hanging.",
       "category": "Hanging Plants",
       "price": 299,
       "discountPercentage": 13.0,
@@ -337,7 +337,7 @@
     {
       "id": 11,
       "title": "Bougainvillea",
-      "description": "Bougainvillea = colorful bracts on fleek. Pink, purple, white – climbs walls and fences. Full sun = non-stop bloom.",
+      "description": "Bougainvillea — colorful bracts, climbs walls. Full sun, non-stop blooms in pink, purple, white.",
       "category": "Outdoor Plants",
       "price": 579,
       "discountPercentage": 10.0,
@@ -369,7 +369,7 @@
     {
       "id": 12,
       "title": "Peace Lily",
-      "description": "Peace Lily = white blooms all year, air-cleaning, low-drama. Perfect for office or bedroom chill zone.",
+      "description": "Peace Lily — white blooms, air-cleaning. Low light, low drama, perfect for office or bedroom.",
       "category": "Flowering Plants",
       "price": 399,
       "discountPercentage": 9.0,
@@ -401,7 +401,7 @@
     {
       "id": 13,
       "title": "Echeveria 'Lola'",
-      "description": "Echeveria Lola = pastel lavender-pink rosette. Tiny but mighty. Desk flex, shelf drip, small space king.",
+      "description": "Echeveria Lola — pastel rosette, tiny but stunning. Perfect for desk, shelf, or small spaces.",
       "category": "Succulents & Cacti",
       "price": 329,
       "discountPercentage": 12.0,
@@ -433,7 +433,7 @@
     {
       "id": 14,
       "title": "Pothos (Devil's Ivy)",
-      "description": "Pothos = trailing vine, heart-shaped leaves, nearly unkillable. Low light? No problem. Shelf or hanging pot = flex.",
+      "description": "Pothos — trailing vine, heart-shaped leaves. Low light, unkillable, perfect for shelf or hanging.",
       "category": "Hanging Plants",
       "price": 249,
       "discountPercentage": 15.0,
@@ -465,7 +465,7 @@
     {
       "id": 15,
       "title": "Rose Bush (Hybrid Tea)",
-      "description": "Hybrid Tea Rose = deep red, fragrant, cut-flower royalty. Full sun, weekly care = bouquet-level blooms.",
+      "description": "Hybrid Tea Rose — deep red, fragrant blooms. Full sun, weekly care, perfect for cut flowers.",
       "category": "Outdoor Plants",
       "price": 899,
       "discountPercentage": 8.0,
