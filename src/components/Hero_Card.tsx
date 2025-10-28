@@ -18,7 +18,7 @@ const Hero_Card: React.FC<HeroCardProps> = ({ data, reverse = false }) => {
   const { title, description, image, price, rating } = data;
 
   return (
-    <section className="relative w-full lg:h-[400px] h-[340px]">
+    <section className="relative w-full lg:h-[400px] h-[340px] md:h-360px">
       {/* Glass Background */}
       <div className="absolute inset-0 bg-white/5 border border-white/20 shadow-lg lg:rounded-[100px] rounded-xl px-2">
         <div
@@ -47,17 +47,24 @@ const Hero_Card: React.FC<HeroCardProps> = ({ data, reverse = false }) => {
               reverse ? "lg:text-right lg:pr-6" : "lg:text-left lg:pl-6"
             }`}
           >
-            <p className="font-semibold text-white text-[18px] text-center  lg:text-[35px] ">
+            <p
+              className={`font-semibold text-white text-[18px] text-center  ${
+                reverse ? "lg:text-right" : "lg:text-left"
+              }  lg:text-[35px] `}
+            >
               {title}
             </p>
-            <p className="text-xs text-center  mt-2 text-white  lg:text-[18px] h-[79px] lg:h-auto">
+            <p
+              className={`text-xs text-center  mt-2 text-white  lg:text-[18px] h-[79px] lg:h-auto ${
+                reverse ? "lg:text-right" : "lg:text-left"
+              }`}
+            >
               {description}
             </p>
-            <div className="flex items-center justify-between h-[47px]">
-              <p className="lg;mt-2 font-semibold text-white text-[15px] my-1 lg:text-[35px]">
+            <div className="flex items-center justify-between h-[47px] lg:block">
+              <p className="lg:mt-2 font-semibold text-white text-[15px] my-1 lg:text-[35px]">
                 <span className="text-red-500">Rs.</span> {price}/-
               </p>
-
               {/* Rating Section */}
               <div className="flex mt-1 md:hidden">
                 {Array.from({ length: 5 }, (_, i) => (
@@ -74,7 +81,7 @@ const Hero_Card: React.FC<HeroCardProps> = ({ data, reverse = false }) => {
             >
               <CommonButton
                 text="Explore"
-                className="primary-text-color lg:text-xl text-xs lg:py-2 lg:px-10 px-4 py-1 rounded-md  border-2 hidden"
+                className="primary-text-color lg:text-xl text-xs lg:py-2 lg:px-10 px-4 py-1 rounded-md  border-2 hidden lg:block"
               ></CommonButton>
               <div className="lg:w-fit w-full">
                 <div className="primary-text-color lg:text-3xl lg:py-[7px]  py-1 lg:px-5 rounded-md  lg:border-2 lg:w-fit  flex justify-center ">
