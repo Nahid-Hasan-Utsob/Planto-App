@@ -3,13 +3,13 @@ import styles from "./AddToCartButton.module.css";
 
 interface AddToCartButtonProps {
   
+  // console.log('added in cart');
   onAddToCart?: () => void;
-
 }
 
 type Timer = ReturnType<typeof setTimeout> | undefined;
 
-const AddToCartButton: React.FC<AddToCartButtonProps> = ({ onAddToCart }) => {
+const AddToCartButton: React.FC<AddToCartButtonProps> = () => {
   const [isTapisRoulant, setIsTapisRoulant] = useState(false);
   const [isAdded, setIsAdded] = useState(false);
   const [isCanceled, setIsCanceled] = useState(false);
