@@ -7,7 +7,7 @@ export default function Hero_Cards() {
   if (isError) return <p>Failed to load products.</p>;
 
   return (
-    <div className="flex flex-col gap-28 items-center">
+    <div className="flex lg:flex-col lg:gap-28 gap-2 items-center">
       {products &&
         products.slice(0, 2).map((product, idx) => (
           <Hero_Card
