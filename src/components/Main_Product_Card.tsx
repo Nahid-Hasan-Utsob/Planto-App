@@ -95,7 +95,7 @@ const Main_Product_Card: React.FC<MainProductCardProps> = ({ products }) => {
       <div className="relative flex flex-col justify-start text-white p-6 space-y-4">
         <img
           src={thumbnail}
-          alt="Product"
+          alt={title}
           className="object-contain drop-shadow-lg -mt-[120px] w-[350px] h-[410px]"
         />
         <div className="flex items-center justify-between  -mt-[38px]">
