@@ -12,17 +12,8 @@ export default function Navbar_Top() {
   const navlink = (
     <>
       <NavLink to="/"><li>Home</li></NavLink>
-      <li>
-        <div className="dropdown dropdown-hover p-0">
-          <div tabIndex={0} role="button">Hover</div>
-          <ul className="dropdown-content menu bg-green-950 p-5">
-            <NavLink to="/"><li>More</li></NavLink>
-            <NavLink to="/"><li>More</li></NavLink>
-            <NavLink to="/"><li>More</li></NavLink>
-            <NavLink to="/"><li>More</li></NavLink>
-          </ul>
-        </div>
-      </li>
+      <NavLink to="/shops"><li>Shops</li></NavLink>
+    
       <NavLink to="/"><li>More</li></NavLink>
       <NavLink to="/"><li>Contact</li></NavLink>
     </>
