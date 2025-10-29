@@ -1,23 +1,25 @@
 import React, { useState, useEffect, useCallback, useRef } from "react";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../redux/cartSlice";
 import styles from "./AddToCartButton.module.css";
+import type { Product } from "../../hooks/types";
 
 interface AddToCartButtonProps {
-  
-  // console.log('added in cart');
-  onAddToCart?: () => void;
+  product: Product;
 }
 
 type Timer = ReturnType<typeof setTimeout> | undefined;
 
-const AddToCartButton: React.FC<AddToCartButtonProps> = () => {
+const AddToCartButton: React.FC<AddToCartButtonProps> = ({ product }) => {
+  // ১. প্রথমে সব Hook কল করো (কন্ডিশন ছাড়া)
+  const dispatch = useDispatch();
   const [isTapisRoulant, setIsTapisRoulant] = useState(false);
   const [isAdded, setIsAdded] = useState(false);
   const [isCanceled, setIsCanceled] = useState(false);
-  const buttonRef = useRef<HTMLButtonElement>(null);
 
+  const buttonRef = useRef<HTMLButtonElement>(null);
   const objectAnimationRef = useRef<HTMLDivElement>(null);
   const tapisAnimationRef = useRef<HTMLDivElement>(null);
-
   const timer = useRef<Timer>(undefined);
   const timer2 = useRef<Timer>(undefined);
 
@@ -29,15 +31,24 @@ const AddToCartButton: React.FC<AddToCartButtonProps> = () => {
   }, []);
 
   useEffect(() => {
-    return () => {
-      clearTimers();
-    };
+    return () => clearTimers();
   }, [clearTimers]);
 
+  // ২. এখন চেক করো product আছে কিনা
+  if (!product) {
+    return (
+      <div className={styles.container}>
+        <button className={styles.btn} disabled>
+          Add to cart
+        </button>
+      </div>
+    );
+  }
+
+  // ৩. বাকি লজিক (এখানে product নিশ্চিতভাবে আছে)
   const handleButtonClick = () => {
     clearTimers();
 
-    // Cancel logic
     if (isTapisRoulant && !isAdded) {
       if (objectAnimationRef.current)
         objectAnimationRef.current.style.animationPlayState = "paused";
@@ -53,7 +64,6 @@ const AddToCartButton: React.FC<AddToCartButtonProps> = () => {
         setIsCanceled(false);
       }, 1000);
     } else if (!isTapisRoulant) {
-      // Add to Cart logic
       setIsTapisRoulant(true);
       if (objectAnimationRef.current)
         objectAnimationRef.current.style.animationPlayState = "running";
@@ -62,7 +72,7 @@ const AddToCartButton: React.FC<AddToCartButtonProps> = () => {
 
       timer.current = setTimeout(() => {
         setIsAdded(true);
-        // onAddToCart && onAddToCart();
+        dispatch(addToCart(product));
 
         if (buttonRef.current) buttonRef.current.style.pointerEvents = "none";
 
@@ -98,7 +108,6 @@ const AddToCartButton: React.FC<AddToCartButtonProps> = () => {
           </div>
           Add to cart
         </span>
-
         <div>
           <div ref={tapisAnimationRef}>
             {Array.from({ length: 24 }).map((_, i) => (
@@ -106,23 +115,19 @@ const AddToCartButton: React.FC<AddToCartButtonProps> = () => {
             ))}
           </div>
         </div>
-
         <div>
           <div></div>
           <div></div>
         </div>
-
         <div>
           <div ref={objectAnimationRef}>
             <div></div>
             <div></div>
           </div>
         </div>
-
         <div>
-          <div>$9.99</div>
+          <div>${product.price}</div>
         </div>
-
         <div>
           <div>Canceled</div>
         </div>

@@ -1,5 +1,4 @@
 import type React from "react";
-import Navbar_Top from "../../components/Navbar_Top";
 import Home_Banner from "./Home_Banner/Home_Banner";
 import Style_Common_Text from "../../components/Style_Common_Text";
 import Hero_Cards from "../../components/Hero_Cards";
@@ -14,7 +13,6 @@ const Home_Main_Layout: React.FC = () => {
       <div className="max-w-[1500px] mx-auto"> 
   <div className=" "
 >
-        <Navbar_Top></Navbar_Top>
       <Home_Banner></Home_Banner>
       <Style_Common_Text className="md:text-[40px] text-[24px] md:my-21 py-10 text-white" text="Our Trendy plants"></Style_Common_Text>
       <Hero_Cards></Hero_Cards>

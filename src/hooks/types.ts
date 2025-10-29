@@ -1,3 +1,4 @@
+// src/hooks/types.ts
 export interface Review {
   rating: number;
   comment: string;
@@ -12,7 +13,7 @@ export interface Product {
   description: string;
   price: number;
   rating: number;
-  reviews?: Review[]; // optional, safety জন্য ?
+  reviews?: Review[];
   images: string[];
   thumbnail: string;
 }
