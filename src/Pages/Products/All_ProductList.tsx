@@ -14,19 +14,19 @@ const All_ProductList: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>(initialCategory);
   const [sortOption, setSortOption] = useState<string>(initialSort);
 
-  // Dropdown state: null | "category" | "sort"
   const [openDropdown, setOpenDropdown] = useState<"category" | "sort" | null>(null);
 
-  // Refs for dropdowns
   const categoryRef = useRef<HTMLDivElement>(null);
   const sortRef = useRef<HTMLDivElement>(null);
+  const mobileCategoryRef = useRef<HTMLDivElement>(null);
+  const mobileSortRef = useRef<HTMLDivElement>(null);
 
-  // Fixed: Always string, never undefined
+  // Sync state with URL
   useEffect(() => {
     const cat = searchParams.get("category") ?? "All";
     const sort = searchParams.get("sort") ?? "none";
-    setSelectedCategory(cat); // cat is always string
-    setSortOption(sort);     // sort is always string
+    setSelectedCategory(cat);
+    setSortOption(sort);
   }, [searchParams]);
 
   // Close dropdown when clicking outside
@@ -35,19 +35,22 @@ const All_ProductList: React.FC = () => {
       if (
         openDropdown === "category" &&
         categoryRef.current &&
-        !categoryRef.current.contains(e.target as Node)
+        !categoryRef.current.contains(e.target as Node) &&
+        mobileCategoryRef.current &&
+        !mobileCategoryRef.current.contains(e.target as Node)
       ) {
         setOpenDropdown(null);
       }
       if (
         openDropdown === "sort" &&
         sortRef.current &&
-        !sortRef.current.contains(e.target as Node)
+        !sortRef.current.contains(e.target as Node) &&
+        mobileSortRef.current &&
+        !mobileSortRef.current.contains(e.target as Node)
       ) {
         setOpenDropdown(null);
       }
     };
-
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [openDropdown]);
@@ -103,10 +106,9 @@ const All_ProductList: React.FC = () => {
 
   return (
     <div className="relative min-h-screen">
-      {/* Blur Overlay */}
       {openDropdown && (
         <div
-          className="fixed inset-0 bg-black/10 backdrop-blur-sm z-10 transition-all duration-300"
+          className="fixed inset-0 bg-black/10 backdrop-blur-sm z-10 transition-all duration-200"
           onClick={() => setOpenDropdown(null)}
         />
       )}
@@ -117,7 +119,7 @@ const All_ProductList: React.FC = () => {
           <h2 className="text-xl font-semibold mb-3 border-b border-gray-600 pb-2">
             Categories
           </h2>
-          <ul className="space-y-2 text-base">
+          <ul className="space-y-2 md:text-base text-xs">
             {categories.map((cat) => (
               <li
                 key={cat}
@@ -125,10 +127,10 @@ const All_ProductList: React.FC = () => {
                   setSelectedCategory(cat);
                   updateSearchParams(cat, sortOption);
                 }}
-                className={`cursor-pointer px-3 py-1 rounded-md transition-all ${
+                className={`cursor-pointer md:px-3 md:py-1 rounded-md transition-all ${
                   selectedCategory === cat
-                    ? "bg-yellow-400 rounded-2xl text-red-400 "
-                    : "hover:bg-white/10 "
+                    ? "bg-yellow-400 rounded-2xl text-black"
+                    : "hover:bg-white/10"
                 }`}
               >
                 {cat}
@@ -140,9 +142,9 @@ const All_ProductList: React.FC = () => {
         {/* Right Section */}
         <section className="flex-1">
           {/* Mobile Filters */}
-          <div className="lg:hidden flex gap-3 mb-6">
+          <div className="lg:hidden flex gap-3 mb-10">
             {/* Category Dropdown */}
-            <div ref={categoryRef} className="relative flex-1">
+            <div ref={mobileCategoryRef} className="relative flex-1">
               <button
                 onClick={() =>
                   setOpenDropdown(openDropdown === "category" ? null : "category")
@@ -151,7 +153,7 @@ const All_ProductList: React.FC = () => {
                            px-3 md:py-2 py-1 rounded-md text-center flex justify-between items-center
                            focus:outline-none focus:ring-2 transition"
               >
-                <span>{selectedCategory}</span>
+                <span className="text-[13px] md:text-[13px]">{selectedCategory}</span>
                 <svg
                   className={`md:w-4 h-4 transition-transform ${
                     openDropdown === "category" ? "rotate-180" : ""
@@ -165,7 +167,7 @@ const All_ProductList: React.FC = () => {
               </button>
 
               {openDropdown === "category" && (
-                <ul className="absolute top-full mt-1 w-full bg-green-800/50 backdrop-blur-md border p-1 border-white/20 rounded-md scroll-auto shadow-lg z-50  overflow-y-auto">
+                 <ul className="absolute top-full mt-1 w-full bg-green-800/50 backdrop-blur-md border p-1 border-white/20 rounded-md text-[13px] md:text-[15px]  scroll-auto shadow-lg z-50  overflow-y-auto">
                   {categories.map((cat) => (
                     <li
                       key={cat}
@@ -176,7 +178,7 @@ const All_ProductList: React.FC = () => {
                       }}
                       className={`px-3 py-2 cursor-pointer transition-all ${
                         selectedCategory === cat
-                          ? "bg-yellow-400 text-black font-bold"
+                          ? "bg-yellow-400 text-black"
                           : "hover:bg-white/20"
                       }`}
                     >
@@ -188,14 +190,14 @@ const All_ProductList: React.FC = () => {
             </div>
 
             {/* Sort Dropdown */}
-            <div ref={sortRef} className="relative flex-1">
+            <div ref={mobileSortRef} className="relative flex-1">
               <button
                 onClick={() => setOpenDropdown(openDropdown === "sort" ? null : "sort")}
                 className="w-full bg-white/10 backdrop-blur-md border border-white/20 text-white 
-                           px-3 py-2 rounded-md text-left flex justify-between items-center
-                           focus:outline-none focus:ring-2 focus:ring-yellow-400/30 transition"
+                           px-3 md:py-2 py-1 rounded-md text-center flex justify-between items-center
+                           focus:outline-none focus:ring-2 transition"
               >
-                <span>
+                <span className="text-[13px] md:text-[13px]">
                   {sortOption === "none"
                     ? "Sort by"
                     : sortOption === "price-low-high"
@@ -219,7 +221,7 @@ const All_ProductList: React.FC = () => {
               </button>
 
               {openDropdown === "sort" && (
-                <ul className="absolute top-full mt-1 w-full bg-[#1f2d1c]/95 backdrop-blur-md border border-white/20 rounded-md shadow-lg z-50">
+                 <ul className="absolute top-full mt-1 w-full bg-green-800/50 backdrop-blur-md border p-1 border-white/20 rounded-md text-[13px] md:text-[15px]  scroll-auto shadow-lg z-50  overflow-y-auto">
                   {[
                     { value: "none", label: "Sort by" },
                     { value: "price-low-high", label: "Price: Low to High" },
@@ -259,7 +261,7 @@ const All_ProductList: React.FC = () => {
                          px-3 py-1 rounded-md flex items-center gap-2
                          focus:outline-none focus:ring-2 focus:ring-yellow-400/30 transition"
               >
-                <span>
+                <span className="text-[13px] md:text-[13px]">
                   {sortOption === "none"
                     ? "Sort by"
                     : sortOption === "price-low-high"
@@ -281,7 +283,7 @@ const All_ProductList: React.FC = () => {
               </button>
 
               {openDropdown === "sort" && (
-                <ul className="absolute right-0 top-full mt-1 w-48 bg-[#1f2d1c]/95 backdrop-blur-md border border-white/20 rounded-md shadow-lg z-50">
+                <ul className="absolute right-0 top-full mt-1 w-48 bg-[#1f2d1c]/95 backdrop-blur-md border border-white/20 rounded-md shadow-lg z-50 overflow-y-auto max-h-60 text-[13px] md:text-[13px]">
                   {[
                     { value: "none", label: "Sort by" },
                     { value: "price-low-high", label: "Price: Low to High" },
