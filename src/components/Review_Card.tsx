@@ -1,6 +1,6 @@
 import React from "react";
 import type { Review } from "../hooks/types";
-import profile from '../assets/profile.png';
+import profile from "../assets/profile.png";
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 
 interface ReviewCardProps {
@@ -11,7 +11,7 @@ interface ReviewCardProps {
 const ReviewCard: React.FC<ReviewCardProps> = ({ review }) => {
   if (!review) return null; // safety check
 
-  // Star rendering function
+  // ⭐ Star rendering function
   const renderStars = (rating: number) => {
     const stars = [];
     const fullStars = Math.floor(rating);
@@ -20,7 +20,6 @@ const ReviewCard: React.FC<ReviewCardProps> = ({ review }) => {
     for (let i = 0; i < fullStars; i++) {
       stars.push(<FaStar key={`full-${i}`} className="text-yellow-400" />);
     }
-
     if (hasHalf) {
       stars.push(<FaStarHalfAlt key="half" className="text-yellow-400" />);
     }
@@ -29,13 +28,21 @@ const ReviewCard: React.FC<ReviewCardProps> = ({ review }) => {
     for (let i = 0; i < emptyStars; i++) {
       stars.push(<FaRegStar key={`empty-${i}`} className="text-yellow-400" />);
     }
-
     return stars;
   };
 
   return (
-    <div className="relative w-[400px] h-[300px] m-3 rounded-3xl shadow-lg overflow-hidden">
-      {/* SVG Glass Background */}
+    <div
+      className="
+        relative
+        w-[250px] h-[200px]         /* mobile */
+        sm:w-[300px] sm:h-[220px]   /* small tablets */
+        md:w-[350px] md:h-[250px]   /* tablets */
+        lg:w-[400px] lg:h-[300px]   /* desktop */
+        lg:m-3 rounded-3xl overflow-hidden
+      "
+    >
+      {/* Glass Background SVG */}
       <svg
         viewBox="0 0 450 300"
         className="absolute inset-0 w-full h-full"
@@ -43,13 +50,7 @@ const ReviewCard: React.FC<ReviewCardProps> = ({ review }) => {
         xmlns="http://www.w3.org/2000/svg"
       >
         <defs>
-          <linearGradient
-            id="glassGradient"
-            x1="0%"
-            y1="0%"
-            x2="100%"
-            y2="100%"
-          >
+          <linearGradient id="glassGradient" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" style={{ stopColor: "rgba(255,255,255,0.2)" }} />
             <stop offset="100%" style={{ stopColor: "rgba(255,255,255,0.05)" }} />
           </linearGradient>
@@ -79,17 +80,37 @@ const ReviewCard: React.FC<ReviewCardProps> = ({ review }) => {
         />
       </svg>
 
-      {/* Content Centered */}
-      <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-4 space-y-4">
-        <div className="flex gap-4 items-center">
-          <img className="w-18 h-18 shadow-2xl rounded-full overflow-hidden" src={profile} alt="" />
+      {/* Content */}
+      <div
+        className="
+          absolute inset-0 flex flex-col justify-center items-center
+          text-center text-white p-3 sm:p-4 space-y-2 sm:space-y-4
+        "
+      >
+        <div className="flex gap-2 sm:gap-4 items-center">
+          <img
+            className="w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-18 lg:h-18 shadow-2xl rounded-full overflow-hidden"
+            src={profile}
+            alt="Reviewer"
+          />
           <div>
-            <p className="text-xl font-semibold">{review.reviewerName}</p>
-            <div className="flex gap-1 mt-1">{renderStars(review.rating)}</div>
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold">
+              {review.reviewerName}
+            </p>
+            <div className="flex gap-[2px] sm:gap-1 mt-1 text-xs sm:text-sm">
+              {renderStars(review.rating)}
+            </div>
           </div>
         </div>
 
-        <p className="text-base mt-2 px-2 h-24">{review.comment}</p>
+        <p
+          className="
+            text-[10px] sm:text-sm md:text-base mt-2
+            px-1 sm:px-2 h-auto leading-snug sm:leading-normal
+          "
+        >
+          {review.comment}
+        </p>
       </div>
     </div>
   );

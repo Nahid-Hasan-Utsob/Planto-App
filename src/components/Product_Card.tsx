@@ -3,7 +3,7 @@ import product from "../assets/product.png";
 
 const Product_Card: React.FC = () => {
   return (
-    <div className="relative md:w-[400px] md:h-[550px] bg-transparent rounded-3xl shadow-lg md:m-3 p-1">
+    <div className="relative md:w-[400px] md:h-[550px] bg-transparent rounded-3xl  md:m-3 p-1">
       {/* Glass Background SVG */}
       <svg
         viewBox="0 0 450 550"
