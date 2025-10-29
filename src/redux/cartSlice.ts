@@ -1,3 +1,5 @@
+// src/redux/cartSlice.ts
+
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 import type { Product } from "../hooks/types";
 
@@ -9,7 +11,6 @@ interface CartState {
   items: CartItem[];
 }
 
-// ✅ localStorage থেকে শুরু
 const savedCart = localStorage.getItem("cart");
 const initialState: CartState = {
   items: savedCart ? JSON.parse(savedCart) : [],
@@ -19,22 +20,27 @@ const cartSlice = createSlice({
   name: "cart",
   initialState,
   reducers: {
-    addToCart: (state, action: PayloadAction<Product>) => {
-      const existing = state.items.find((item) => item.id === action.payload.id);
+    // Updated: quantity সাপোর্ট করে
+    addToCart: (state, action: PayloadAction<Product & { quantity?: number }>) => {
+      const { quantity = 1, ...product } = action.payload;
+      const existing = state.items.find((item) => item.id === product.id);
+
       if (existing) {
-        existing.quantity += 1;
+        existing.quantity += quantity;
       } else {
-        state.items.push({ ...action.payload, quantity: 1 });
+        state.items.push({ ...product, quantity });
       }
-      localStorage.setItem("cart", JSON.stringify(state.items)); // ✅ save to localStorage
+      localStorage.setItem("cart", JSON.stringify(state.items));
     },
+
     removeFromCart: (state, action: PayloadAction<number>) => {
       state.items = state.items.filter((item) => item.id !== action.payload);
-      localStorage.setItem("cart", JSON.stringify(state.items)); // ✅ save after remove
+      localStorage.setItem("cart", JSON.stringify(state.items));
     },
+
     clearCart: (state) => {
       state.items = [];
-      localStorage.removeItem("cart"); // ✅ remove from storage
+      localStorage.removeItem("cart");
     },
   },
 });
