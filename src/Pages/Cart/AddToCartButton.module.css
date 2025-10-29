@@ -6,7 +6,14 @@
   position: relative;
   /* Tailwind এর body স্টাইলগুলিকে ওভাররাইড এড়াতে শুধুমাত্র আবশ্যক স্টাইল */
   margin: auto;
-
+}
+/* 🔻 disabled অবস্থায় styling */
+.disabled {
+  background-color: #bfbfbf !important; /* gray background */
+  color: black !important; /* red text */
+  cursor: not-allowed !important;
+  opacity: 0.9;
+  transition: all 0.3s ease;
 }
 
 /* বাটন স্টাইল: button ট্যাগ সিলেক্টরকে লোকাল করার জন্য .btn ক্লাস ব্যবহার করা হলো */

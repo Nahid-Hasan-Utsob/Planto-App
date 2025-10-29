@@ -1,18 +1,24 @@
 import React, { useState, useEffect, useCallback, useRef } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../../redux/cartSlice";
 import styles from "./AddToCartButton.module.css";
 import type { Product } from "../../hooks/types";
+import type { RootState } from "../../redux/store";
 
 interface AddToCartButtonProps {
-  product: Product;
+  product?: Product;
 }
 
 type Timer = ReturnType<typeof setTimeout> | undefined;
 
 const AddToCartButton: React.FC<AddToCartButtonProps> = ({ product }) => {
-  // ১. প্রথমে সব Hook কল করো (কন্ডিশন ছাড়া)
   const dispatch = useDispatch();
+
+  const cartItems = useSelector((state: RootState) => state.cart.items);
+  const isAlreadyAdded = product
+    ? cartItems.some((item) => item.id === product.id)
+    : false;
+
   const [isTapisRoulant, setIsTapisRoulant] = useState(false);
   const [isAdded, setIsAdded] = useState(false);
   const [isCanceled, setIsCanceled] = useState(false);
@@ -34,7 +40,7 @@ const AddToCartButton: React.FC<AddToCartButtonProps> = ({ product }) => {
     return () => clearTimers();
   }, [clearTimers]);
 
-  // ২. এখন চেক করো product আছে কিনা
+  // 🔹 যদি product না থাকে
   if (!product) {
     return (
       <div className={styles.container}>
@@ -45,10 +51,10 @@ const AddToCartButton: React.FC<AddToCartButtonProps> = ({ product }) => {
     );
   }
 
-  // ৩. বাকি লজিক (এখানে product নিশ্চিতভাবে আছে)
   const handleButtonClick = () => {
-    clearTimers();
+    if (isAlreadyAdded) return; // ✅ stop multiple add
 
+    clearTimers();
     if (isTapisRoulant && !isAdded) {
       if (objectAnimationRef.current)
         objectAnimationRef.current.style.animationPlayState = "paused";
@@ -73,7 +79,6 @@ const AddToCartButton: React.FC<AddToCartButtonProps> = ({ product }) => {
       timer.current = setTimeout(() => {
         setIsAdded(true);
         dispatch(addToCart(product));
-
         if (buttonRef.current) buttonRef.current.style.pointerEvents = "none";
 
         timer2.current = setTimeout(() => {
@@ -97,7 +102,12 @@ const AddToCartButton: React.FC<AddToCartButtonProps> = ({ product }) => {
 
   return (
     <div className={styles.container}>
-      <button ref={buttonRef} className={buttonClasses} onClick={handleButtonClick}>
+      <button
+        ref={buttonRef}
+        className={`${buttonClasses} ${isAlreadyAdded ? styles.disabled : ""}`}
+        onClick={handleButtonClick}
+        disabled={isAlreadyAdded} // ✅ disable button if already added
+      >
         <span>
           <div className={styles.caddie}>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -106,8 +116,9 @@ const AddToCartButton: React.FC<AddToCartButtonProps> = ({ product }) => {
               <path d="M16 10a4 4 0 0 1-8 0" />
             </svg>
           </div>
-          Add to cart
+          {isAlreadyAdded ? "Added Product" : "Add to cart"}
         </span>
+
         <div>
           <div ref={tapisAnimationRef}>
             {Array.from({ length: 24 }).map((_, i) => (
