@@ -89,7 +89,7 @@ const ReviewCard: React.FC<ReviewCardProps> = ({ review }) => {
           </div>
         </div>
 
-        <p className="text-base mt-2 px-2 h-25">{review.comment}</p>
+        <p className="text-base mt-2 px-2 h-24">{review.comment}</p>
       </div>
     </div>
   );

@@ -48,7 +48,7 @@ const Hero_Card: React.FC<HeroCardProps> = ({ data, reverse = false }) => {
             }`}
           >
             <p
-              className={`font-semibold text-white text-[18px] text-center  ${
+              className={`font-semibold text-white text-[18px] h-[60px] text-center  ${
                 reverse ? "lg:text-right" : "lg:text-left"
               }  lg:text-[35px] `}
             >

@@ -15,7 +15,8 @@ export default function Customer_Review() {
 
   products.forEach((product) => {
     if (!product.reviews) return; // safety
-    const filtered = product.reviews.filter((rev) => rev.rating === 5);
+    const filtered = product.reviews.filter((rev) => rev.rating >= 3);
+
     filtered.slice(0, 3).forEach((rev) => {
       topReviews.push({ review: rev, productTitle: product.title });
     });
@@ -24,14 +25,15 @@ export default function Customer_Review() {
   if (topReviews.length === 0) return <p>No top reviews found</p>;
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-      {topReviews.slice(0,3).map((item, idx) => (
-        <ReviewCard
-          key={`${item.productTitle}-${idx}`}
-          review={item.review}
-          productTitle={item.productTitle}
-        />
-      ))}
-    </div>
-  );
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+    {topReviews.slice(0,3).map((item, idx) => (
+      <ReviewCard
+        key={`${item.productTitle}-${idx}`}
+        review={item.review}
+        productTitle={item.productTitle}
+      />
+    ))}
+  </div>
+);
+
 }

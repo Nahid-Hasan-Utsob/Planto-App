@@ -39,40 +39,9 @@
       "images": ["https://i.ibb.co.com/5XDRY0mg/areca-palm.jpg"],
       "thumbnail": "https://i.ibb.co.com/5XDRY0mg/areca-palm.jpg"
     },
+
     {
       "id": 2,
-      "title": "Snake Plant",
-      "description": "Snake Plant — low-light survivor, minimal water. Upright, modern, perfect for lazy plant parents.",
-      "category": "Indoor Plants",
-      "price": 279,
-      "discountPercentage": 12.5,
-      "rating": 2.6,
-      "stock": 75,
-      "tags": ["plant", "low-maintenance", "bedroom"],
-      "brand": "NatureNest",
-      "sku": "PLT-SNK-002",
-      "weight": 1.8,
-      "dimensions": { "width": 22.5, "height": 60.2, "depth": 22.5 },
-      "warrantyInformation": "1 month leaf replacement guarantee",
-      "shippingInformation": "Ships in 2-4 business days",
-      "availabilityStatus": "In Stock",
-      "reviews": [
-        {
-          "rating": 2,
-          "comment": "Bro, if you forget to water plants, this is your guy. Those upright leaves give mad modern vibes on my side table.",
-          "date": "2025-06-02T12:41:02.053Z",
-          "reviewerName": "Anika Rahman",
-          "reviewerEmail": "anika.rahman@example.com"
-        }
-      ],
-      "returnPolicy": "Return available within 10 days with proper condition.",
-      "minimumOrderQuantity": 1,
-      "meta": { "createdAt": "2025-05-01T12:11:02.053Z", "updatedAt": "2025-05-28T09:41:02.053Z", "barcode": "PLANT-00059383837", "qrCode": "" },
-      "images": ["https://i.ibb.co.com/F4gXtf1V/snake-plant.jpg"],
-      "thumbnail": "https://i.ibb.co.com/F4gXtf1V/snake-plant.jpg"
-    },
-    {
-      "id": 3,
       "title": "Money Plant in Ceramic Pot",
       "description": "Money Plant — brings luck & positivity. In handcrafted ceramic pot, ideal for desk or window.",
       "category": "Indoor Plants",
@@ -104,7 +73,7 @@
       "thumbnail": "https://i.ibb.co.com/Nggy36Df/money-plant-ceramic.jpg"
     },
     {
-      "id": 4,
+      "id": 3,
       "title": "Hibiscus Rosa-Sinensis",
       "description": "Hibiscus — fiery red blooms all year. Full sun, regular water, perfect for balcony or yard.",
       "category": "Outdoor Plants",
@@ -136,7 +105,7 @@
       "thumbnail": "https://i.ibb.co.com/4ggGnmtS/hibiscus.jpg"
     },
     {
-      "id": 2,
+      "id": 4,
       "title": "Jade Plant (Crassula Ovata)",
       "description": "Jade Plant — money magnet, thick glossy leaves. Low water, perfect for desk or gifting.",
       "category": "Succulents & Cacti",
@@ -161,7 +130,7 @@
           "reviewerEmail": "nabila.hossain@example.com"
         },
         {
-          "rating": 2,
+          "rating": 5,
           "comment": "Came with a couple bent leaves but bounced back fast. Super chill plant for busy bros.",
           "date": "2025-06-22T16:45:12.053Z",
           "reviewerName": "Arif Siddique",

@@ -135,7 +135,7 @@ const Main_Product_Card: React.FC<MainProductCardProps> = ({ products }) => {
         </div>
 
         <div className="flex items-center justify-between md:h-[47px] mt-1 md:mt-0   lg:hidden">
-          <p className="lg:mt-2 font-semibold text-white text-[15px] my-1 lg:text-[35px] md:text-xl" >
+          <p className="lg:mt-2 font-semibold text-white text-[15px] my-1 lg:text-[35px] md:text-xl">
             <span className="text-red-500">Rs.</span> {price}/-
           </p>
           {/* Rating Section */}
@@ -147,10 +147,10 @@ const Main_Product_Card: React.FC<MainProductCardProps> = ({ products }) => {
             ))}
           </div>
         </div>
-        
-                  <div className="w-full lg:hidden h-[30px] mt-1">
-                    <AddToCartButton></AddToCartButton>
-                  </div>
+
+        <div className="w-full lg:hidden h-[30px] mt-1">
+          <AddToCartButton></AddToCartButton>
+        </div>
       </div>
     </div>
   );
