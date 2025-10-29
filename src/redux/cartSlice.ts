@@ -1,4 +1,4 @@
-import { createSlice, type PayloadAction, } from "@reduxjs/toolkit";
+import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 import type { Product } from "../hooks/types";
 
 interface CartItem extends Product {
@@ -9,8 +9,10 @@ interface CartState {
   items: CartItem[];
 }
 
+// ✅ localStorage থেকে শুরু
+const savedCart = localStorage.getItem("cart");
 const initialState: CartState = {
-  items: [],
+  items: savedCart ? JSON.parse(savedCart) : [],
 };
 
 const cartSlice = createSlice({
@@ -24,12 +26,15 @@ const cartSlice = createSlice({
       } else {
         state.items.push({ ...action.payload, quantity: 1 });
       }
+      localStorage.setItem("cart", JSON.stringify(state.items)); // ✅ save to localStorage
     },
     removeFromCart: (state, action: PayloadAction<number>) => {
       state.items = state.items.filter((item) => item.id !== action.payload);
+      localStorage.setItem("cart", JSON.stringify(state.items)); // ✅ save after remove
     },
     clearCart: (state) => {
       state.items = [];
+      localStorage.removeItem("cart"); // ✅ remove from storage
     },
   },
 });
