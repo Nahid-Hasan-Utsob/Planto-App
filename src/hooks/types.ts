@@ -16,4 +16,5 @@ export interface Product {
   reviews?: Review[];
   images: string[];
   thumbnail: string;
+    category?: string;
 }

@@ -1,4 +1,3 @@
-// hooks/useProducts.ts
 import { useQuery } from "@tanstack/react-query";
 import type { Product } from "./types";
 
