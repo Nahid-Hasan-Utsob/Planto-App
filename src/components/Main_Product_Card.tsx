@@ -1,8 +1,12 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { SlHandbag } from "react-icons/sl";
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 import AddToCartButton from "../Pages/Cart/AddToCartButton";
-import type { Product } from "../hooks/types"; 
+import { addToCart } from "../redux/cartSlice";
+import type { Product } from "../hooks/types";
+import type { RootState } from "../redux/store";
+
 const StarRating: React.FC<{ rating: number }> = ({ rating }) => {
   const fullStars = Math.floor(rating);
   const hasHalfStar = rating - fullStars >= 0.5;
@@ -21,11 +25,22 @@ const StarRating: React.FC<{ rating: number }> = ({ rating }) => {
 };
 
 interface MainProductCardProps {
-  products: Product; // <-- ProductType না, Product
+  products: Product;
 }
 
 const Main_Product_Card: React.FC<MainProductCardProps> = ({ products }) => {
-  const { rating, title, price, description, thumbnail } = products;
+  const { rating, title, price, description, thumbnail, id } = products;
+
+  const dispatch = useDispatch();
+  const cartItems = useSelector((state: RootState) => state.cart.items);
+  const isAlreadyAdded = cartItems.some((item) => item.id === id);
+
+  // ✅ Large screen এ bag icon এ ক্লিক করলে addToCart
+  const handleAddToCart = () => {
+    if (!isAlreadyAdded) {
+      dispatch(addToCart(products));
+    }
+  };
 
   return (
     <div className="relative w-[153px] h-auto md:w-[240px] md:h-auto md:min-h-[350px] lg:w-[400px] lg:h-auto lg:min-h-[550px] mx-auto lg:m-3 lg:p-1">
@@ -92,16 +107,26 @@ const Main_Product_Card: React.FC<MainProductCardProps> = ({ products }) => {
           {description}
         </p>
 
-{/* //lg add to cart start*/}
+        {/* ✅ lg version add to cart */}
         <div className="lg:flex hidden justify-between items-center mt-auto">
           <p className="text-white text-sm md:text-base lg:text-[35px] font-bold">
             Rs. {price}/-
           </p>
-          <div className="primary-text-color lg:flex items-center text-sm md:text-lg lg:text-2xl py-1 px-2 md:py-1.5 md:px-3 lg:py-[5px] lg:px-4 rounded-md border-2 hidden">
-            <SlHandbag />
-          </div>
+          <button
+            onClick={handleAddToCart}
+            disabled={isAlreadyAdded}
+            className={` flex items-center text-sm md:text-lg lg:text-2xl py-1 px-2 md:py-1.5 md:px-3 lg:py-[5px] lg:px-4 rounded-md border-2 ${
+              isAlreadyAdded
+                ? "opacity-50 cursor-not-allowed border-yellow-300 text-gray-200"
+                : "hover:bg-yellow-400 hover:text-black  transition-all hover:border-2 hover:border-yellow-400"
+            }`}
+          >
+            <SlHandbag className="mx-2" />
+            {isAlreadyAdded ? "Added" : ""}
+          </button>
         </div>
-{/* lg add to cart */}
+
+        {/* ✅ sm version add to cart */}
         <div className="flex items-center justify-between md:h-[47px] mt-1 md:mt-0 lg:hidden">
           <p className="lg:mt-2 font-semibold text-white text-[15px] my-1 lg:text-[35px] md:text-xl">
             <span className="text-red-500">Rs.</span> {price}/-
