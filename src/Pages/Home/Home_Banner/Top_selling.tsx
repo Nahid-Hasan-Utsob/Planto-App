@@ -23,7 +23,7 @@ const product = products || [];
 
 
   return (
-    <div className='grid grid-cols-3 gap-4 gap-y-15 justify-center items-center'>
+    <div className='grid lg:grid-cols-3 grid-cols-2 md:grid-cols-3 gap-4 lg:gap-y-15 gap-y-9 lg:justify-center items-center '>
                {
                   product.slice(0,6).map((products, idx) => <Main_Product_Card key={idx} products={products}></Main_Product_Card>)
                }
