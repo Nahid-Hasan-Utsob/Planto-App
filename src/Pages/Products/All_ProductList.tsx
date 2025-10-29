@@ -1,5 +1,5 @@
 // src/Pages/Products/All_ProductList.tsx
-import React, { useMemo, useState, useEffect } from "react";
+import React, { useMemo, useState, useEffect, useRef } from "react";
 import { useProducts } from "../../hooks/useProducts";
 import Main_Product_Card from "../../components/Main_Product_Card";
 import { useSearchParams } from "react-router-dom";
@@ -14,16 +14,50 @@ const All_ProductList: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>(initialCategory);
   const [sortOption, setSortOption] = useState<string>(initialSort);
 
+  // Dropdown state: null | "category" | "sort"
+  const [openDropdown, setOpenDropdown] = useState<"category" | "sort" | null>(null);
+
+  // Refs for dropdowns
+  const categoryRef = useRef<HTMLDivElement>(null);
+  const sortRef = useRef<HTMLDivElement>(null);
+
+  // Fixed: Always string, never undefined
   useEffect(() => {
     const cat = searchParams.get("category") ?? "All";
     const sort = searchParams.get("sort") ?? "none";
-    setSelectedCategory(cat);
-    setSortOption(sort);
+    setSelectedCategory(cat); // cat is always string
+    setSortOption(sort);     // sort is always string
   }, [searchParams]);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (
+        openDropdown === "category" &&
+        categoryRef.current &&
+        !categoryRef.current.contains(e.target as Node)
+      ) {
+        setOpenDropdown(null);
+      }
+      if (
+        openDropdown === "sort" &&
+        sortRef.current &&
+        !sortRef.current.contains(e.target as Node)
+      ) {
+        setOpenDropdown(null);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [openDropdown]);
 
   const categories = useMemo(() => {
     if (!products) return ["All"];
-    return ["All", ...new Set(products.map((p) => p.category))];
+    const cats = products
+      .map((p) => p.category)
+      .filter((c): c is string => typeof c === "string");
+    return ["All", ...Array.from(new Set(cats))];
   }, [products]);
 
   const filteredProducts = useMemo(() => {
@@ -53,6 +87,13 @@ const All_ProductList: React.FC = () => {
     return sorted;
   }, [filteredProducts, sortOption]);
 
+  const updateSearchParams = (cat: string, sort: string) => {
+    const params: Record<string, string> = {};
+    if (cat && cat !== "All") params.category = cat;
+    if (sort && sort !== "none") params.sort = sort;
+    setSearchParams(params);
+  };
+
   if (isLoading)
     return <p className="text-center text-white mt-10">Loading products...</p>;
   if (error)
@@ -61,68 +102,226 @@ const All_ProductList: React.FC = () => {
     return <p className="text-center text-white mt-10">No products found.</p>;
 
   return (
-    <div className="text-white flex flex-col lg:flex-row gap-6 px-5 md:px-10 py-10 max-w-7xl mx-auto">
-      {/* 🧭 Left Sidebar (Categories) */}
-      <aside className="lg:w-1/4 bg-[#1f2d1c]/30 backdrop-blur-md rounded-2xl p-5 h-fit">
-        <h2 className="text-xl font-semibold mb-3 border-b border-gray-600 pb-2">
-          Categories
-        </h2>
-        <ul className="space-y-2 text-base">
-          {categories.map((cat) => (
-            <li
-              key={cat}
-              onClick={() => {
-                setSelectedCategory(cat ?? "All");
-                const params: Record<string, string> = {};
-                if (cat && cat !== "All") params.category = cat;
-                if (sortOption && sortOption !== "none") params.sort = sortOption;
-                setSearchParams(params);
-              }}
-              className={`cursor-pointer px-3 py-1 rounded-md transition-all ${
-                selectedCategory === cat
-                  ? "bg-yellow-400 text-black font-bold"
-                  : "hover:bg-white/10"
-              }`}
-            >
-              {cat}
-            </li>
-          ))}
-        </ul>
-      </aside>
+    <div className="relative min-h-screen">
+      {/* Blur Overlay */}
+      {openDropdown && (
+        <div
+          className="fixed inset-0 bg-black/10 backdrop-blur-sm z-10 transition-all duration-300"
+          onClick={() => setOpenDropdown(null)}
+        />
+      )}
 
-      {/* 🏷️ Right Side (Products + Sorting) */}
-      <section className="flex-1">
-        <div className="flex justify-between items-center mb-6">
-          <h2 className="text-2xl font-semibold">
-            {selectedCategory === "All" ? "All Products" : selectedCategory}
+      <div className="relative z-20 text-white flex flex-col lg:flex-row gap-6 md:px-10 pt-10 max-w-7xl mx-auto">
+        {/* Left Sidebar */}
+        <aside className="hidden lg:block lg:w-1/4 bg-white/30 backdrop-blur-md rounded-2xl p-5 h-fit shadow-lg">
+          <h2 className="text-xl font-semibold mb-3 border-b border-gray-600 pb-2">
+            Categories
           </h2>
+          <ul className="space-y-2 text-base">
+            {categories.map((cat) => (
+              <li
+                key={cat}
+                onClick={() => {
+                  setSelectedCategory(cat);
+                  updateSearchParams(cat, sortOption);
+                }}
+                className={`cursor-pointer px-3 py-1 rounded-md transition-all ${
+                  selectedCategory === cat
+                    ? "bg-yellow-400 rounded-2xl text-red-400 "
+                    : "hover:bg-white/10 "
+                }`}
+              >
+                {cat}
+              </li>
+            ))}
+          </ul>
+        </aside>
 
-          <select
-            onChange={(e) => {
-              setSortOption(e.target.value);
-              const params: Record<string, string> = {};
-              if (selectedCategory && selectedCategory !== "All")
-                params.category = selectedCategory;
-              if (e.target.value && e.target.value !== "none") params.sort = e.target.value;
-              setSearchParams(params);
-            }}
-            value={sortOption}
-            className="bg-transparent border border-gray-500 text-white px-3 py-1 rounded-md focus:outline-none"
+        {/* Right Section */}
+        <section className="flex-1">
+          {/* Mobile Filters */}
+          <div className="lg:hidden flex gap-3 mb-6">
+            {/* Category Dropdown */}
+            <div ref={categoryRef} className="relative flex-1">
+              <button
+                onClick={() =>
+                  setOpenDropdown(openDropdown === "category" ? null : "category")
+                }
+                className="w-full bg-white/10 backdrop-blur-md border border-white/20 text-white 
+                           px-3 md:py-2 py-1 rounded-md text-center flex justify-between items-center
+                           focus:outline-none focus:ring-2 transition"
+              >
+                <span>{selectedCategory}</span>
+                <svg
+                  className={`md:w-4 h-4 transition-transform ${
+                    openDropdown === "category" ? "rotate-180" : ""
+                  }`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              {openDropdown === "category" && (
+                <ul className="absolute top-full mt-1 w-full bg-green-800/50 backdrop-blur-md border p-1 border-white/20 rounded-md scroll-auto shadow-lg z-50  overflow-y-auto">
+                  {categories.map((cat) => (
+                    <li
+                      key={cat}
+                      onClick={() => {
+                        setSelectedCategory(cat);
+                        updateSearchParams(cat, sortOption);
+                        setOpenDropdown(null);
+                      }}
+                      className={`px-3 py-2 cursor-pointer transition-all ${
+                        selectedCategory === cat
+                          ? "bg-yellow-400 text-black font-bold"
+                          : "hover:bg-white/20"
+                      }`}
+                    >
+                      {cat}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+
+            {/* Sort Dropdown */}
+            <div ref={sortRef} className="relative flex-1">
+              <button
+                onClick={() => setOpenDropdown(openDropdown === "sort" ? null : "sort")}
+                className="w-full bg-white/10 backdrop-blur-md border border-white/20 text-white 
+                           px-3 py-2 rounded-md text-left flex justify-between items-center
+                           focus:outline-none focus:ring-2 focus:ring-yellow-400/30 transition"
+              >
+                <span>
+                  {sortOption === "none"
+                    ? "Sort by"
+                    : sortOption === "price-low-high"
+                    ? "Price: Low to High"
+                    : sortOption === "price-high-low"
+                    ? "Price: High to Low"
+                    : sortOption === "rating"
+                    ? "Top Rated"
+                    : "Name (A-Z)"}
+                </span>
+                <svg
+                  className={`w-4 h-4 transition-transform ${
+                    openDropdown === "sort" ? "rotate-180" : ""
+                  }`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              {openDropdown === "sort" && (
+                <ul className="absolute top-full mt-1 w-full bg-[#1f2d1c]/95 backdrop-blur-md border border-white/20 rounded-md shadow-lg z-50">
+                  {[
+                    { value: "none", label: "Sort by" },
+                    { value: "price-low-high", label: "Price: Low to High" },
+                    { value: "price-high-low", label: "Price: High to Low" },
+                    { value: "rating", label: "Top Rated" },
+                    { value: "az", label: "Name (A-Z)" },
+                  ].map((opt) => (
+                    <li
+                      key={opt.value}
+                      onClick={() => {
+                        setSortOption(opt.value);
+                        updateSearchParams(selectedCategory, opt.value);
+                        setOpenDropdown(null);
+                      }}
+                      className={`px-3 py-2 cursor-pointer transition-all ${
+                        sortOption === opt.value ? "bg-yellow-400 text-black font-bold" : "hover:bg-white/20"
+                      }`}
+                    >
+                      {opt.label}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          </div>
+
+          {/* Desktop Header */}
+          <div className="hidden lg:flex justify-between items-center mb-6">
+            <h2 className="text-2xl font-semibold">
+              {selectedCategory === "All" ? "All Products" : selectedCategory}
+            </h2>
+
+            <div ref={sortRef} className="relative">
+              <button
+                onClick={() => setOpenDropdown(openDropdown === "sort" ? null : "sort")}
+                className="bg-white/10 backdrop-blur-md border border-white/20 text-white 
+                         px-3 py-1 rounded-md flex items-center gap-2
+                         focus:outline-none focus:ring-2 focus:ring-yellow-400/30 transition"
+              >
+                <span>
+                  {sortOption === "none"
+                    ? "Sort by"
+                    : sortOption === "price-low-high"
+                    ? "Price: Low to High"
+                    : sortOption === "price-high-low"
+                    ? "Price: High to Low"
+                    : sortOption === "rating"
+                    ? "Top Rated"
+                    : "Name (A-Z)"}
+                </span>
+                <svg
+                  className={`w-4 h-4 transition-transform ${openDropdown === "sort" ? "rotate-180" : ""}`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              {openDropdown === "sort" && (
+                <ul className="absolute right-0 top-full mt-1 w-48 bg-[#1f2d1c]/95 backdrop-blur-md border border-white/20 rounded-md shadow-lg z-50">
+                  {[
+                    { value: "none", label: "Sort by" },
+                    { value: "price-low-high", label: "Price: Low to High" },
+                    { value: "price-high-low", label: "Price: High to Low" },
+                    { value: "rating", label: "Top Rated" },
+                    { value: "az", label: "Name (A-Z)" },
+                  ].map((opt) => (
+                    <li
+                      key={opt.value}
+                      onClick={() => {
+                        setSortOption(opt.value);
+                        updateSearchParams(selectedCategory, opt.value);
+                        setOpenDropdown(null);
+                      }}
+                      className={`px-3 py-2 cursor-pointer transition-all ${
+                        sortOption === opt.value ? "bg-yellow-400 text-black font-bold" : "hover:bg-white/20"
+                      }`}
+                    >
+                      {opt.label}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          </div>
+
+          {/* Product Grid */}
+          <div
+            className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 transition-all duration-200 ${
+              openDropdown ? "blur-sm" : ""
+            }`}
           >
-            <option value="none">Sort by</option>
-            <option value="price-low-high">Price: Low → High</option>
-            <option value="price-high-low">Price: High → Low</option>
-            <option value="rating">Top Rated</option>
-            <option value="az">Name (A-Z)</option>
-          </select>
-        </div>
-
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
-          {sortedProducts.map((p) => (
-            <Main_Product_Card key={p.id} products={p} />
-          ))}
-        </div>
-      </section>
+            {sortedProducts.map((p) => (
+              <div key={p.id} className={openDropdown ? "pointer-events-none" : ""}>
+                <Main_Product_Card products={p} />
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
     </div>
   );
 };
