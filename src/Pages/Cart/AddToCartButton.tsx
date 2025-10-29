@@ -116,7 +116,7 @@ const AddToCartButton: React.FC<AddToCartButtonProps> = ({ product }) => {
               <path d="M16 10a4 4 0 0 1-8 0" />
             </svg>
           </div>
-          {isAlreadyAdded ? "Added Product" : "Add to cart"}
+          {isAlreadyAdded ? "Added" : "Add to cart"}
         </span>
 
         <div>

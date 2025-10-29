@@ -2,8 +2,7 @@ import React from "react";
 import { SlHandbag } from "react-icons/sl";
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 import AddToCartButton from "../Pages/Cart/AddToCartButton";
-import type { Product } from "../hooks/types"; // <-- এই টাইপ ব্যবহার করো
-
+import type { Product } from "../hooks/types"; 
 const StarRating: React.FC<{ rating: number }> = ({ rating }) => {
   const fullStars = Math.floor(rating);
   const hasHalfStar = rating - fullStars >= 0.5;
@@ -29,7 +28,7 @@ const Main_Product_Card: React.FC<MainProductCardProps> = ({ products }) => {
   const { rating, title, price, description, thumbnail } = products;
 
   return (
-    <div className="relative w-[170px] h-auto min-h-[280px] md:w-[240px] md:h-auto md:min-h-[350px] lg:w-[400px] lg:h-auto lg:min-h-[550px] mx-auto lg:m-3 lg:p-1">
+    <div className="relative w-[153px] h-auto md:w-[240px] md:h-auto md:min-h-[350px] lg:w-[400px] lg:h-auto lg:min-h-[550px] mx-auto lg:m-3 lg:p-1">
       <div className="absolute inset-0 w-full h-full">
         <svg
           viewBox="0 0 450 550"
@@ -93,6 +92,7 @@ const Main_Product_Card: React.FC<MainProductCardProps> = ({ products }) => {
           {description}
         </p>
 
+{/* //lg add to cart start*/}
         <div className="lg:flex hidden justify-between items-center mt-auto">
           <p className="text-white text-sm md:text-base lg:text-[35px] font-bold">
             Rs. {price}/-
@@ -101,7 +101,7 @@ const Main_Product_Card: React.FC<MainProductCardProps> = ({ products }) => {
             <SlHandbag />
           </div>
         </div>
-
+{/* lg add to cart */}
         <div className="flex items-center justify-between md:h-[47px] mt-1 md:mt-0 lg:hidden">
           <p className="lg:mt-2 font-semibold text-white text-[15px] my-1 lg:text-[35px] md:text-xl">
             <span className="text-red-500">Rs.</span> {price}/-
