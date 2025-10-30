@@ -78,19 +78,19 @@ export default function Navbar_Top() {
           <div className="absolute inset-0 bg-black/50 backdrop-blur-md" onClick={() => setSearchModalOpen(false)}></div>
           <div className="relative flex justify-center items-center h-full">
             <div
-              className="bg-green-800/50 backdrop-blur-md p-6 rounded-xl w-11/12 max-w-md relative z-50"
+              className="bg-green-800/50 backdrop-blur-md p-6 rounded-xl md:w-11/12 w-[80%] max-w-md relative z-50"
               onClick={(e) => e.stopPropagation()}
             >
               <button
-                className="absolute top-2 right-3 text-white text-xl font-bold"
+                className="absolute md:top-2 right-3 text-white text-xl font-bold"
                 onClick={() => setSearchModalOpen(false)}
               >
                 &times;
               </button>
-              <h2 className="text-white text-xl mb-4">Search Products</h2>
+              <h2 className="text-white md:text-base text-[14px] md:mb-4 mb-2">Search Products</h2>
               <input
-                type="text"
-                className="w-full p-2 rounded-md text-white placeholder-white outline-none"
+                type="text" required
+                className="w-full md:p-2 p-1 rounded-md text-white placeholder-white outline-none placeholder:text-xs text-xs md:text-base" 
                 placeholder="Type product name..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
