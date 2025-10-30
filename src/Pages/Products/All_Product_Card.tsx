@@ -20,7 +20,7 @@ const StarRating: React.FC<{ rating: number }> = ({ rating }) => {
     stars.push(<FaRegStar key={`empty-${i}`} />);
 
   return (
-    <div className="flex text-yellow-400 gap-1 text-sm lg:text-base">
+    <div className="flex text-yellow-400 md:gap-1  md:text-sm lg:text-base  text-[10px]" >
       {stars}
     </div>
   );
@@ -48,26 +48,26 @@ const All_Product_Card: React.FC<ProductCardProps> = ({ products }) => {
         </div>
 
         {/* Title + Rating */}
-        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center text-center lg:text-left h-[60px]">
-          <p className="text-lg md:text-xl lg:text-2xl font-semibold mb-1">
+        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center text-center lg:text-left md:h-[60px] h-[50px]">
+          <p className="text-[14px] md:text-xl lg:text-2xl font-semibold mb-1 flex  justify-center items-center h-full">
             {title}
           </p>
        
         </div>
-          <div className="hidden lg:block my-2" >
+          <div className="hidden lg:block my-2 " >
              <StarRating rating={rating} />
          </div>
 
         {/* Description */}
-        <p className="text-white/80 text-sm md:text-base mb-4 line-clamp-3 h-20 md:h-[90px] lg:h-[100px]">
+        <p className="text-white/80 md:text-sm text-[10px]  mb-4 line-clamp-3 h-20 md:h-[90px] lg:h-[100px]">
           {description}
         </p>
       </Link>
 
       {/* 🛒 Add to Cart + Price */}
       <div className="flex justify-between items-center mt-auto">
-        <p className="font-bold text-lg md:text-xl lg:text-2xl">
-          <span className="text-red-400">Rs.</span> {price}/-
+        <p className="font-bold text-[13px] md:text-xl lg:text-2xl">
+          <span className="text-red-400">Tk</span> {price}/-
         </p>
       
           <div className="lg:hidden">
@@ -76,7 +76,7 @@ const All_Product_Card: React.FC<ProductCardProps> = ({ products }) => {
       </div>
 
       {/* 📱 Mobile Add Button */}
-      <div className="w-full mt-3 ">
+      <div className="w-full mt-3  ">
         <AddToCartButton product={products} />
       </div>
     </div>
