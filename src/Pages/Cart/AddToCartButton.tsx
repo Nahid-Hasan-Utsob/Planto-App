@@ -4,6 +4,7 @@ import { addToCart } from "../../redux/cartSlice";
 import styles from "./AddToCartButton.module.css";
 import type { Product } from "../../hooks/types";
 import type { RootState } from "../../redux/store";
+import { useClerk } from '@clerk/clerk-react';
 
 interface AddToCartButtonProps {
   product?: Product;
@@ -13,11 +14,10 @@ type Timer = ReturnType<typeof setTimeout> | undefined;
 
 const AddToCartButton: React.FC<AddToCartButtonProps> = ({ product }) => {
   const dispatch = useDispatch();
+  const { openSignIn, user } = useClerk();
 
   const cartItems = useSelector((state: RootState) => state.cart.items);
-  const isAlreadyAdded = product
-    ? cartItems.some((item) => item.id === product.id)
-    : false;
+  const isAlreadyAdded = product ? cartItems.some((item) => item.id === product.id) : false;
 
   const [isTapisRoulant, setIsTapisRoulant] = useState(false);
   const [isAdded, setIsAdded] = useState(false);
@@ -40,7 +40,6 @@ const AddToCartButton: React.FC<AddToCartButtonProps> = ({ product }) => {
     return () => clearTimers();
   }, [clearTimers]);
 
-  // 🔹 যদি product না থাকে
   if (!product) {
     return (
       <div className={styles.container}>
@@ -52,15 +51,18 @@ const AddToCartButton: React.FC<AddToCartButtonProps> = ({ product }) => {
   }
 
   const handleButtonClick = () => {
-    if (isAlreadyAdded) return; // ✅ stop multiple add
+    if (isAlreadyAdded) return;
+
+    // লগইন না থাকলে → লগইন মোডাল
+    if (!user) {
+      openSignIn();
+      return;
+    }
 
     clearTimers();
     if (isTapisRoulant && !isAdded) {
-      if (objectAnimationRef.current)
-        objectAnimationRef.current.style.animationPlayState = "paused";
-      if (tapisAnimationRef.current)
-        tapisAnimationRef.current.style.animationPlayState = "paused";
-
+      if (objectAnimationRef.current) objectAnimationRef.current.style.animationPlayState = "paused";
+      if (tapisAnimationRef.current) tapisAnimationRef.current.style.animationPlayState = "paused";
       setIsCanceled(true);
       if (buttonRef.current) buttonRef.current.style.pointerEvents = "none";
 
@@ -71,10 +73,8 @@ const AddToCartButton: React.FC<AddToCartButtonProps> = ({ product }) => {
       }, 1000);
     } else if (!isTapisRoulant) {
       setIsTapisRoulant(true);
-      if (objectAnimationRef.current)
-        objectAnimationRef.current.style.animationPlayState = "running";
-      if (tapisAnimationRef.current)
-        tapisAnimationRef.current.style.animationPlayState = "running";
+      if (objectAnimationRef.current) objectAnimationRef.current.style.animationPlayState = "running";
+      if (tapisAnimationRef.current) tapisAnimationRef.current.style.animationPlayState = "running";
 
       timer.current = setTimeout(() => {
         setIsAdded(true);
@@ -84,8 +84,7 @@ const AddToCartButton: React.FC<AddToCartButtonProps> = ({ product }) => {
         timer2.current = setTimeout(() => {
           setIsAdded(false);
           setIsTapisRoulant(false);
-          if (buttonRef.current)
-            buttonRef.current.style.pointerEvents = "initial";
+          if (buttonRef.current) buttonRef.current.style.pointerEvents = "initial";
         }, 1600);
       }, 1400);
     }
@@ -96,9 +95,7 @@ const AddToCartButton: React.FC<AddToCartButtonProps> = ({ product }) => {
     isTapisRoulant ? styles["tapis-roulant"] : "",
     isAdded ? styles.added : "",
     isCanceled ? styles.canceled : "",
-  ]
-    .filter(Boolean)
-    .join(" ");
+  ].filter(Boolean).join(" ");
 
   return (
     <div className={styles.container}>
@@ -106,7 +103,7 @@ const AddToCartButton: React.FC<AddToCartButtonProps> = ({ product }) => {
         ref={buttonRef}
         className={`${buttonClasses} ${isAlreadyAdded ? styles.disabled : ""}`}
         onClick={handleButtonClick}
-        disabled={isAlreadyAdded} // ✅ disable button if already added
+        disabled={isAlreadyAdded}
       >
         <span>
           <div className={styles.caddie}>
@@ -119,29 +116,16 @@ const AddToCartButton: React.FC<AddToCartButtonProps> = ({ product }) => {
           {isAlreadyAdded ? "Added" : "Add to cart"}
         </span>
 
-        <div>
-          <div ref={tapisAnimationRef}>
-            {Array.from({ length: 24 }).map((_, i) => (
-              <i key={i}></i>
-            ))}
-          </div>
-        </div>
-        <div>
-          <div></div>
-          <div></div>
-        </div>
+        <div><div ref={tapisAnimationRef}>{Array.from({ length: 24 }).map((_, i) => (<i key={i}></i>))}</div></div>
+        <div><div></div><div></div></div>
         <div>
           <div ref={objectAnimationRef}>
             <div></div>
             <div></div>
           </div>
         </div>
-        <div>
-          <div>${product.price}</div>
-        </div>
-        <div>
-          <div>Canceled</div>
-        </div>
+        <div><div>${product.price}</div></div>
+        <div><div>Canceled</div></div>
       </button>
     </div>
   );

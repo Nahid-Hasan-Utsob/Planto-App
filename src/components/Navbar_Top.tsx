@@ -7,14 +7,18 @@ import { useState } from "react";
 import type { RootState } from "../redux/store";
 import SearchButton from "./SearchButton";
 import { FaHome, FaShopify, FaSignInAlt, FaEnvelope } from "react-icons/fa"
+import { MdOutlineAccountCircle } from "react-icons/md";
+import { SignedIn, SignedOut, UserButton, useUser } from '@clerk/clerk-react';
+
 export default function Navbar_Top() {
   const cartItems = useSelector((state: RootState) => state.cart.items);
   const totalCount = cartItems.reduce((sum, item) => sum + item.quantity, 0);
   const navigate = useNavigate();
+  const { user } = useUser();
 
   const [searchModalOpen, setSearchModalOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
-  const [sidebarOpen, setSidebarOpen] = useState(false); // <-- sidebar state
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const handleSearch = () => {
     if (searchTerm.trim() !== "") {
@@ -55,16 +59,37 @@ export default function Navbar_Top() {
               <IoIosSearch />
             </div>
 
-            <NavLink to="cart" className="relative lg:mr-4">
-              <SlHandbag className="text-2xl" />
-              {totalCount > 0 && (
-                <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full px-2">
-                  {totalCount}
-                </span>
-              )}
-            </NavLink>
+            {/* কার্ট আইকন — শুধু লগইন থাকলে */}
+            <SignedIn>
+              <NavLink to="cart" className="relative lg:mr-4">
+                <SlHandbag className="text-2xl" />
+                {totalCount > 0 && (
+                  <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full px-2">
+                    {totalCount}
+                  </span>
+                )}
+              </NavLink>
+            </SignedIn>
 
-            {/* Mobile Menu Icon */}
+            {/* প্রোফাইল আইকন */}
+            <SignedIn>
+              <div className="dropdown dropdown-end">
+                <UserButton afterSignOutUrl="/" />
+                {user && (
+                  <div className="dropdown-content bg-white text-black p-2 rounded mt-2 shadow">
+                    {user.primaryEmailAddress?.emailAddress}
+                  </div>
+                )}
+              </div>
+            </SignedIn>
+
+            <SignedOut>
+              <NavLink to="/login" className="text-white">
+                <MdOutlineAccountCircle className="text-3xl" />
+              </NavLink>
+            </SignedOut>
+
+            {/* Mobile Menu */}
             <div className="lg:hidden cursor-pointer" onClick={() => setSidebarOpen(true)}>
               <TbMenuDeep />
             </div>
@@ -72,7 +97,7 @@ export default function Navbar_Top() {
         </div>
       </div>
 
-      {/* 🔍 Search Modal */}
+      {/* Search Modal */}
       {searchModalOpen && (
         <div className="fixed inset-0 z-50">
           <div className="absolute inset-0 bg-black/50 backdrop-blur-md" onClick={() => setSearchModalOpen(false)}></div>
@@ -85,7 +110,7 @@ export default function Navbar_Top() {
                 className="absolute md:top-2 right-3 text-white text-xl font-bold"
                 onClick={() => setSearchModalOpen(false)}
               >
-                &times;
+                ×
               </button>
               <h2 className="text-white md:text-base text-[14px] md:mb-4 mb-2">Search Products</h2>
               <input
@@ -102,105 +127,32 @@ export default function Navbar_Top() {
         </div>
       )}
 
-      {/* 🔹 Sidebar for Mobile Menu */}
-{sidebarOpen && (
-  <div className="fixed inset-0 z-50 flex">
-    {/* Overlay with fade */}
-    <div
-      className="absolute inset-0  backdrop-blur-sm transition-opacity duration-300"
-      onClick={() => setSidebarOpen(false)}
-    ></div>
-
-    {/* Sidebar */}
-    <div
-      className={`relative bg-gradient-to-b from-green-900/90 to-green-900/90 w-64 p-6 h-full z-50 transform transition-transform duration-300 ${
-        sidebarOpen ? "translate-x-0" : "-translate-x-full"
-      } shadow-xl`}
-    >
-      <button
-        className="absolute top-3 right-3 text-white text-2xl font-bold hover:text-yellow-400 transition-colors duration-200"
-        onClick={() => setSidebarOpen(false)}
-      >
-        &times;
-      </button>
-
-      <h2 className="text-white md:text-2xl text-xl font-bold mb-6 border-b border-white/20 pb-2 ">
-        Menu
-      </h2>
-
-      <ul className="flex flex-col gap-4 mt-4 text-white text-lg">
-        <NavLink
-          to="/"
-          className={({ isActive }) =>
-            `flex items-center gap-3 px-3 py-2 rounded-md transition-all duration-200 md:text-base text-[15px] hover:bg-green-700/50 ${
-              isActive ? "bg-yellow-400 text-black font-semibold" : ""
-            }`
-          }
-          onClick={() => setSidebarOpen(false)}
-        >
-          <FaHome /> Home
-        </NavLink>
-        <NavLink
-          to="/shops"
-          className={({ isActive }) =>
-            `flex items-center gap-3 px-3 py-2 rounded-md transition-all duration-200 md:text-base text-[15px] hover:bg-green-700/50 ${
-              isActive ? "bg-yellow-400 text-black font-semibold" : ""
-            }`
-          }
-          onClick={() => setSidebarOpen(false)}
-        >
-          <FaShopify /> Shops
-        </NavLink>
-        <NavLink
-          to="/login"
-          className={({ isActive }) =>
-            `flex items-center gap-3 px-3 py-2 rounded-md transition-all duration-200 md:text-base text-[15px] hover:bg-green-800/50 ${
-              isActive ? "bg-yellow-400 text-black font-semibold" : ""
-            }`
-          }
-          onClick={() => setSidebarOpen(false)}
-        >
-          <FaSignInAlt /> Login
-        </NavLink>
-        <NavLink
-          to="/contact"
-          className={({ isActive }) =>
-            `flex items-center gap-3 px-3 py-2 rounded-md transition-all duration-200 md:text-base text-[15px] hover:bg-green-800/50 ${
-              isActive ? "bg-yellow-400 text-black font-semibold" : ""
-            }`
-          }
-          onClick={() => setSidebarOpen(false)}
-        >
-          <FaEnvelope /> Contact
-        </NavLink>
-      </ul>
-
-      {/* Optional: Social Icons */}
-      <div className="mt-auto pt-6 border-t border-white/20 flex gap-4">
-        <a
-          href="#"
-          className="text-white hover:text-yellow-400 transition-colors duration-200"
-        >
-          FB
-        </a>
-        <a
-          href="#"
-          className="text-white hover:text-yellow-400 transition-colors duration-200"
-        >
-          IG
-        </a>
-        <a
-          href="#"
-          className="text-white hover:text-yellow-400 transition-colors duration-200"
-        >
-          TW
-        </a>
-      </div>
-    </div>
-  </div>
-)}
-
-
+      {/* Sidebar */}
+      {sidebarOpen && (
+        <div className="fixed inset-0 z-50 flex">
+          <div className="absolute inset-0 backdrop-blur-sm" onClick={() => setSidebarOpen(false)}></div>
+          <div className={`relative bg-gradient-to-b from-green-900/90 to-green-900/90 w-64 p-6 h-full z-50 transform transition-transform duration-300 ${sidebarOpen ? "translate-x-0" : "-translate-x-full"} shadow-xl`}>
+            <button className="absolute top-3 right-3 text-white text-2xl font-bold" onClick={() => setSidebarOpen(false)}>×</button>
+            <h2 className="text-white md:text-2xl text-xl font-bold mb-6 border-b border-white/20 pb-2">Menu</h2>
+            <ul className="flex flex-col gap-4 mt-4 text-white text-lg">
+              <NavLink to="/" className={({ isActive }) => `flex items-center gap-3 px-3 py-2 rounded-md hover:bg-green-700/50 ${isActive ? "bg-yellow-400 text-black font-semibold" : ""}`} onClick={() => setSidebarOpen(false)}>
+                <FaHome /> Home
+              </NavLink>
+              <NavLink to="/shops" className={({ isActive }) => `flex items-center gap-3 px-3 py-2 rounded-md hover:bg-green-700/50 ${isActive ? "bg-yellow-400 text-black font-semibold" : ""}`} onClick={() => setSidebarOpen(false)}>
+                <FaShopify /> Shops
+              </NavLink>
+              <SignedOut>
+                <NavLink to="/login" className="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-green-700/50" onClick={() => setSidebarOpen(false)}>
+                  <FaSignInAlt /> Login
+                </NavLink>
+              </SignedOut>
+              <NavLink to="/contact" className="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-green-700/50" onClick={() => setSidebarOpen(false)}>
+                <FaEnvelope /> Contact
+              </NavLink>
+            </ul>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
