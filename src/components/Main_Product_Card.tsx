@@ -7,6 +7,7 @@ import { addToCart } from "../redux/cartSlice";
 import type { Product } from "../hooks/types";
 import type { RootState } from "../redux/store";
 import { Link } from "react-router-dom";
+import { useClerk } from "@clerk/clerk-react"; // ✅ Clerk import
 
 const StarRating: React.FC<{ rating: number }> = ({ rating }) => {
   const fullStars = Math.floor(rating);
@@ -31,22 +32,31 @@ interface MainProductCardProps {
 
 const Main_Product_Card: React.FC<MainProductCardProps> = ({ products }) => {
   const { rating, title, price, description, thumbnail, id } = products;
-
   const dispatch = useDispatch();
   const cartItems = useSelector((state: RootState) => state.cart.items);
   const isAlreadyAdded = cartItems.some((item) => item.id === id);
 
+  const { user, openSignIn } = useClerk(); // ✅ Clerk hook
+
+  // ✅ Add to cart logic with login check
   const handleAddToCart = (e: React.MouseEvent) => {
     e.stopPropagation();
-    e.preventDefault(); // ✅ এখন আর ডিটেইল পেজে যাবে না
-    if (!isAlreadyAdded) {
-      dispatch(addToCart(products));
+    e.preventDefault();
+
+    if (isAlreadyAdded) return;
+
+    // 🔒 লগইন না থাকলে Clerk এর SignIn modal খুলবে
+    if (!user) {
+      openSignIn();
+      return;
     }
+
+    // 🛒 লগইন থাকলে কার্টে যোগ হবে
+    dispatch(addToCart(products));
   };
 
   return (
     <div className="relative w-[153px] h-auto md:w-[240px] md:h-auto md:min-h-[350px] lg:w-[400px] lg:h-auto lg:min-h-[550px] mx-auto lg:m-3 lg:p-1">
-
       {/* Glass Background */}
       <div className="absolute inset-0 w-full h-full">
         <svg
@@ -94,7 +104,6 @@ const Main_Product_Card: React.FC<MainProductCardProps> = ({ products }) => {
       {/* Main Content */}
       <div className="relative flex flex-col justify-start text-white p-3 md:p-4 lg:p-6 h-full min-h-[300px] md:min-h-[340px] lg:min-h-[550px]">
         
-        {/* ✅ Clickable portion only for details */}
         <Link to={`/product/${id}`} state={products} className="block">
           <div className="flex justify-center lg:justify-start mb-2">
             <img
@@ -116,13 +125,13 @@ const Main_Product_Card: React.FC<MainProductCardProps> = ({ products }) => {
           </p>
         </Link>
 
-        {/* 🛒 Add to Cart buttons */}
+        {/* 🛒 Desktop Add to Cart button */}
         <div className="lg:flex hidden justify-between items-center mt-auto">
           <p className="text-white text-sm md:text-base lg:text-[35px] font-bold">
             Rs. {price}/-
           </p>
           <button
-            onClick={handleAddToCart}
+            onClick={handleAddToCart} // ✅ login check এখানে কাজ করবে
             disabled={isAlreadyAdded}
             className={`flex items-center text-sm md:text-lg lg:text-2xl py-1 px-2 md:py-1.5 md:px-3 lg:py-[5px] lg:px-4 rounded-md border-2 ${
               isAlreadyAdded
@@ -135,7 +144,7 @@ const Main_Product_Card: React.FC<MainProductCardProps> = ({ products }) => {
           </button>
         </div>
 
-        {/* Mobile Add to Cart */}
+        {/* 📱 Mobile Add to Cart */}
         <div className="flex items-center justify-between md:h-[47px] mt-1 md:mt-0 lg:hidden">
           <p className="lg:mt-2 font-semibold text-white text-[15px] my-1 lg:text-[35px] md:text-xl">
             <span className="text-red-500">Rs.</span> {price}/-

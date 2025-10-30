@@ -6,7 +6,6 @@ import Home from "../Pages/Home/Home_Main_layout";
 import CartPage from "../Pages/Cart/CartPage";
 import ProductDetailsPage from "../Pages/Cart/ProductDetailsPage";
 import All_ProductList from "../Pages/Products/All_ProductList";
-import LoginPage from "../Pages/Login/LoginPage"; // নতুন
 
 const router = createBrowserRouter([
   {
@@ -17,7 +16,6 @@ const router = createBrowserRouter([
       { path: "cart", element: <CartPage /> },
       { path: "product/:id", element: <ProductDetailsPage /> },
       { path: "/shops", element: <All_ProductList /> },
-      { path: "/login", element: <LoginPage /> }, // লগইন পেজ
     ],
   },
 ]);
