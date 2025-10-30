@@ -1,8 +1,8 @@
 // src/Pages/Products/All_ProductList.tsx
 import React, { useMemo, useState, useEffect, useRef } from "react";
 import { useProducts } from "../../hooks/useProducts";
-import Main_Product_Card from "../../components/Main_Product_Card";
 import { useSearchParams } from "react-router-dom";
+import All_Product_Card from "./All_Product_Card";
 
 const All_ProductList: React.FC = () => {
   const { data: products, isLoading, error } = useProducts();
@@ -113,7 +113,7 @@ const All_ProductList: React.FC = () => {
         />
       )}
 
-      <div className="relative z-20 text-white flex flex-col lg:flex-row gap-6 md:px-10 pt-10 max-w-7xl mx-auto">
+      <div className="relative z-20 text-white flex flex-col lg:flex-row gap-6 md:px-10 pt-10">
         {/* Left Sidebar */}
         <aside className="hidden lg:block lg:w-1/4 bg-white/30 backdrop-blur-md rounded-2xl p-5 h-fit shadow-lg">
           <h2 className="text-xl font-semibold mb-3 border-b border-gray-600 pb-2">
@@ -312,13 +312,13 @@ const All_ProductList: React.FC = () => {
 
           {/* Product Grid */}
           <div
-            className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 transition-all duration-200 ${
+            className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 transition-all duration-200 gap-y-1 ${
               openDropdown ? "blur-sm" : ""
             }`}
           >
             {sortedProducts.map((p) => (
               <div key={p.id} className={openDropdown ? "pointer-events-none" : ""}>
-                <Main_Product_Card products={p} />
+                <All_Product_Card products={p} />
               </div>
             ))}
           </div>
