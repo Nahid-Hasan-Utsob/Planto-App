@@ -36,7 +36,7 @@ const All_Product_Card: React.FC<ProductCardProps> = ({ products }) => {
 
 
   return (
-    <div className="relative w-full max-w-[400px] bg-white/10 backdrop-blur-md border border-white/20 rounded-[30px] shadow-[inset_0_0_20px_rgba(255,255,255,0.1)]  text-white flex flex-col justify-between p-4 my-10">
+    <div className="relative w-full max-w-[400px] bg-white/10 backdrop-blur-md border border-white/20 rounded-[20px] shadow-[inset_0_0_20px_rgba(255,255,255,0.1)]  text-white flex flex-col justify-between p-4 my-10">
       {/* 🖼️ Image */}
       <Link to={`/product/${id}`} state={products} className="block">
         <div className="flex justify-center mb-4">
