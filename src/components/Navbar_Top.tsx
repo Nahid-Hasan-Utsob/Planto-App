@@ -124,7 +124,7 @@ export default function Navbar_Top() {
         &times;
       </button>
 
-      <h2 className="text-white text-2xl font-bold mb-6 border-b border-white/20 pb-2">
+      <h2 className="text-white md:text-2xl text-xl font-bold mb-6 border-b border-white/20 pb-2 ">
         Menu
       </h2>
 
@@ -132,7 +132,7 @@ export default function Navbar_Top() {
         <NavLink
           to="/"
           className={({ isActive }) =>
-            `flex items-center gap-3 px-3 py-2 rounded-md transition-all duration-200 hover:bg-green-700/50 ${
+            `flex items-center gap-3 px-3 py-2 rounded-md transition-all duration-200 md:text-base text-[15px] hover:bg-green-700/50 ${
               isActive ? "bg-yellow-400 text-black font-semibold" : ""
             }`
           }
@@ -143,7 +143,7 @@ export default function Navbar_Top() {
         <NavLink
           to="/shops"
           className={({ isActive }) =>
-            `flex items-center gap-3 px-3 py-2 rounded-md transition-all duration-200 hover:bg-green-700/50 ${
+            `flex items-center gap-3 px-3 py-2 rounded-md transition-all duration-200 md:text-base text-[15px] hover:bg-green-700/50 ${
               isActive ? "bg-yellow-400 text-black font-semibold" : ""
             }`
           }
@@ -154,7 +154,7 @@ export default function Navbar_Top() {
         <NavLink
           to="/login"
           className={({ isActive }) =>
-            `flex items-center gap-3 px-3 py-2 rounded-md transition-all duration-200 hover:bg-green-800/50 ${
+            `flex items-center gap-3 px-3 py-2 rounded-md transition-all duration-200 md:text-base text-[15px] hover:bg-green-800/50 ${
               isActive ? "bg-yellow-400 text-black font-semibold" : ""
             }`
           }
@@ -165,7 +165,7 @@ export default function Navbar_Top() {
         <NavLink
           to="/contact"
           className={({ isActive }) =>
-            `flex items-center gap-3 px-3 py-2 rounded-md transition-all duration-200 hover:bg-green-800/50 ${
+            `flex items-center gap-3 px-3 py-2 rounded-md transition-all duration-200 md:text-base text-[15px] hover:bg-green-800/50 ${
               isActive ? "bg-yellow-400 text-black font-semibold" : ""
             }`
           }
