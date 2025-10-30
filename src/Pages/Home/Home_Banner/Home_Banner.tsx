@@ -20,7 +20,7 @@ export default function Home_Banner() {
             className="lg:text-xl md:text-base text-xs  secondary-text-color lg:w-3/8 w-[90%]"
           ></CommonText>
 
-          <div className="flex md:flex-row flex-col md:gap-10 items-center md:justify-center">
+          <div className="flex md:flex-row flex-col md:gap-10 items-center md:justify-center lg:justify-start">
             <CommonButton
               text="Explore"
               className="md:primary-text-color font-bold lg:text-xl  md:px-10 text-[14px] w-full md:w-fit py-2 rounded-md  lg:border-2 bg-yellow-500 md:bg-none text-black "
