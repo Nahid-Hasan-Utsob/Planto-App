@@ -10,7 +10,7 @@ import Best_Cards from "../../components/Best_Section/Best_Cards";
 const Home_Main_Layout: React.FC = () => {
   return (
 <section className="">
-      <div className="max-w-[1500px] mx-auto"> 
+      <div className="max-w-[1400px] mx-auto"> 
   <div className=" "
 >
       <Home_Banner></Home_Banner>

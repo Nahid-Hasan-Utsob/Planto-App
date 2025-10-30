@@ -34,7 +34,7 @@ export default function Cart() {
 
   if (cart.length === 0) {
     return (
-      <div className="flex flex-col items-center justify-center text-center py-16 px-4">
+      <div className="flex flex-col items-center justify-center text-center text-white py-16 px-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
@@ -58,7 +58,7 @@ export default function Cart() {
         </p>
         <button
           onClick={() => (window.location.href = "/shops")}
-          className="primary-bg-color hover:bg-green-600 text-white px-5 py-2 rounded-md text-sm md:text-base transition"
+          className="primary-bg-color bg-green-600 text-white px-5 py-2 rounded-md text-sm md:text-base transition"
         >
           Go Shopping
         </button>
@@ -68,7 +68,7 @@ export default function Cart() {
 
   return (
     <div className="max-w-6xl mx-auto lg:mt-10 lg:p-4">
-      <h2 className="lg:text-2xl text-[16px] md:text-[17px] font-semibold lg:mb-4 mb-2">
+      <h2 className="lg:text-2xl text-[16px] md:text-[17px] font-semibold lg:mb-4 mb-2 text-white">
         Your Cart
       </h2>
 
@@ -76,17 +76,17 @@ export default function Cart() {
         <table className="w-full text-left">
           <thead>
             <tr>
-              <th className="md:p-3 p-4 text-[10px] lg:text-[18px]">Product</th>
-              <th className="md:p-3 text-[10px] lg:text-[18px] text-center">
+              <th className="md:p-3 p-4 text-[10px] lg:text-[18px] text-white ">Product</th>
+              <th className="md:p-3 text-[10px] lg:text-[18px] text-center text-white">
                 Price
               </th>
-              <th className="md:p-3 text-[10px] lg:text-[18px] text-center">
+              <th className="md:p-3 text-[10px] lg:text-[18px] text-center text-white">
                 Quantity
               </th>
-              <th className="md:p-3 text-[10px] lg:text-[18px] text-center">
+              <th className="md:p-3 text-[10px] lg:text-[18px] text-center text-white">
                 Total
               </th>
-              <th className="md:p-3 text-[10px] lg:text-[18px] text-center">
+              <th className="md:p-3 text-[10px] lg:text-[18px] text-center text-white">
                 Action
               </th>
             </tr>
@@ -98,7 +98,7 @@ export default function Cart() {
                 key={item.id}
                 className="bg-white/10 backdrop-blur-md rounded-2xl"
               >
-                <td className="lg:p-3 flex items-center lg:gap-3 gap-1">
+                <td className="lg:p-3 flex items-center lg:gap-3 gap-1 text-white">
                   <img
                     src={item.thumbnail}
                     alt={item.title}
@@ -108,10 +108,10 @@ export default function Cart() {
                     {item.title}
                   </span>
                 </td>
-                <td className="lg:p-3 text-center text-[10px] lg:text-base">
+                <td className="lg:p-3 text-center text-white text-[10px] lg:text-base">
                   ${item.price}
                 </td>
-                <td className="lg:p-3 text-center text-xs lg:text-base">
+                <td className="lg:p-3 text-center text-white text-xs lg:text-base">
                   <div className="flex items-center justify-center lg:gap-2 gap-1">
                     <button
                       onClick={() => decreaseQty(item)}
@@ -131,12 +131,12 @@ export default function Cart() {
                     </button>
                   </div>
                 </td>
-                <td className="lg:p-3 text-center text-[10px] md:text-[12px] lg:text-base">
+                <td className="lg:p-3 text-center text-white text-[10px] md:text-[12px] lg:text-base">
                   <span className="primary-text-color">
                     ${(item.price * item.quantity).toFixed(2)}
                   </span>
                 </td>
-                <td className="lg:p-3 text-center text-[12px] lg:text-base">
+                <td className="lg:p-3 text-center text-white text-[12px] lg:text-base">
                   <button
                     onClick={() => dispatch(removeFromCart(item.id))}
                     className="text-red-500"
@@ -153,11 +153,11 @@ export default function Cart() {
       {/* ✅ Total Price */}
       <div className="flex justify-end mt-6">
         <div className="text-right menu-text-color">
-          <p className="lg:text-lg text-[15px] font-semibold">
+          <p className="lg:text-lg text-[15px] font-semibold text-white">
             Total:{" "}
             <span className="text-green-600">${totalPrice.toFixed(2)}</span>
           </p>
-          <button className="primary-bg-color text-white lg:px-5 px-3 lg:py-2 py-1 my-3 text-[13px] rounded mt-3">
+          <button className="primary-bg-color bg-red-500 text-white lg:px-5 px-3 lg:py-2 py-1 my-3 text-[13px] rounded mt-3">
             Proceed to Checkout
           </button>
         </div>

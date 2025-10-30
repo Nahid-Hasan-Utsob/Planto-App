@@ -6,8 +6,8 @@ import All_Product_Card from "./All_Product_Card";
 
 const All_ProductList: React.FC = () => {
   const { data: products, isLoading, error } = useProducts();
-
   const [searchParams, setSearchParams] = useSearchParams();
+
   const initialCategory = searchParams.get("category") ?? "All";
   const initialSort = searchParams.get("sort") ?? "none";
 
@@ -21,7 +21,7 @@ const All_ProductList: React.FC = () => {
   const mobileCategoryRef = useRef<HTMLDivElement>(null);
   const mobileSortRef = useRef<HTMLDivElement>(null);
 
-  // Sync state with URL
+  // Sync state with URL params
   useEffect(() => {
     const cat = searchParams.get("category") ?? "All";
     const sort = searchParams.get("sort") ?? "none";
@@ -29,7 +29,7 @@ const All_ProductList: React.FC = () => {
     setSortOption(sort);
   }, [searchParams]);
 
-  // Close dropdown when clicking outside
+  // Close dropdown on outside click
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       if (
@@ -55,6 +55,7 @@ const All_ProductList: React.FC = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [openDropdown]);
 
+  // Categories
   const categories = useMemo(() => {
     if (!products) return ["All"];
     const cats = products
@@ -63,12 +64,28 @@ const All_ProductList: React.FC = () => {
     return ["All", ...Array.from(new Set(cats))];
   }, [products]);
 
+  // Search param
+  const searchQuery = searchParams.get("search")?.toLowerCase() ?? "";
+
+  // Filtered products
   const filteredProducts = useMemo(() => {
     if (!products) return [];
-    if (selectedCategory === "All") return products;
-    return products.filter((p) => p.category === selectedCategory);
-  }, [products, selectedCategory]);
+    let result = products;
 
+    if (selectedCategory !== "All") {
+      result = result.filter((p) => p.category === selectedCategory);
+    }
+
+    if (searchQuery) {
+      result = result.filter((p) =>
+        p.title.toLowerCase().includes(searchQuery)
+      );
+    }
+
+    return result;
+  }, [products, selectedCategory, searchQuery]);
+
+  // Sorted products
   const sortedProducts = useMemo(() => {
     const sorted = [...filteredProducts];
     switch (sortOption) {
@@ -90,10 +107,11 @@ const All_ProductList: React.FC = () => {
     return sorted;
   }, [filteredProducts, sortOption]);
 
-  const updateSearchParams = (cat: string, sort: string) => {
+  const updateSearchParams = (cat: string, sort: string, resetSearch = false) => {
     const params: Record<string, string> = {};
     if (cat && cat !== "All") params.category = cat;
     if (sort && sort !== "none") params.sort = sort;
+    if (!resetSearch && searchQuery) params.search = searchQuery; // only keep search if resetSearch=false
     setSearchParams(params);
   };
 
@@ -115,7 +133,7 @@ const All_ProductList: React.FC = () => {
 
       <div className="relative z-20 text-white flex flex-col lg:flex-row gap-6 md:px-10 pt-10">
         {/* Left Sidebar */}
-        <aside className="hidden lg:block lg:w-1/4 bg-white/30 backdrop-blur-md rounded-2xl p-5 h-fit shadow-lg">
+        <aside className="hidden lg:block lg:w-1/4 bg-white/10 backdrop-blur-md rounded-2xl p-5 h-fit shadow-lg">
           <h2 className="text-xl font-semibold mb-3 border-b border-gray-600 pb-2">
             Categories
           </h2>
@@ -125,7 +143,7 @@ const All_ProductList: React.FC = () => {
                 key={cat}
                 onClick={() => {
                   setSelectedCategory(cat);
-                  updateSearchParams(cat, sortOption);
+                  updateSearchParams(cat, sortOption, true); // reset search on category click
                 }}
                 className={`cursor-pointer md:px-3 md:py-1 rounded-md transition-all ${
                   selectedCategory === cat
@@ -143,7 +161,6 @@ const All_ProductList: React.FC = () => {
         <section className="flex-1">
           {/* Mobile Filters */}
           <div className="lg:hidden flex gap-3 mb-10">
-            {/* Category Dropdown */}
             <div ref={mobileCategoryRef} className="relative flex-1">
               <button
                 onClick={() =>
@@ -167,13 +184,13 @@ const All_ProductList: React.FC = () => {
               </button>
 
               {openDropdown === "category" && (
-                 <ul className="absolute top-full mt-1 w-full bg-green-800/50 backdrop-blur-md border p-1 border-white/20 rounded-md text-[13px] md:text-[15px]  scroll-auto shadow-lg z-50  overflow-y-auto">
+                <ul className="absolute top-full mt-1 w-full bg-green-800/50 backdrop-blur-md border p-1 border-white/20 rounded-md text-[13px] md:text-[15px]  scroll-auto shadow-lg z-50  overflow-y-auto">
                   {categories.map((cat) => (
                     <li
                       key={cat}
                       onClick={() => {
                         setSelectedCategory(cat);
-                        updateSearchParams(cat, sortOption);
+                        updateSearchParams(cat, sortOption, true); // reset search
                         setOpenDropdown(null);
                       }}
                       className={`px-3 py-2 cursor-pointer transition-all ${
@@ -221,7 +238,7 @@ const All_ProductList: React.FC = () => {
               </button>
 
               {openDropdown === "sort" && (
-                 <ul className="absolute top-full mt-1 w-full bg-green-800/50 backdrop-blur-md border p-1 border-white/20 rounded-md text-[13px] md:text-[15px]  scroll-auto shadow-lg z-50  overflow-y-auto">
+                <ul className="absolute top-full mt-1 w-full bg-green-800/50 backdrop-blur-md border p-1 border-white/20 rounded-md text-[13px] md:text-[15px]  scroll-auto shadow-lg z-50  overflow-y-auto">
                   {[
                     { value: "none", label: "Sort by" },
                     { value: "price-low-high", label: "Price: Low to High" },
@@ -258,8 +275,8 @@ const All_ProductList: React.FC = () => {
               <button
                 onClick={() => setOpenDropdown(openDropdown === "sort" ? null : "sort")}
                 className="bg-white/10 backdrop-blur-md border border-white/20 text-white 
-                         px-3 py-1 rounded-md flex items-center gap-2
-                         focus:outline-none focus:ring-2 focus:ring-yellow-400/30 transition"
+                           px-3 py-1 rounded-md flex items-center gap-2
+                           focus:outline-none focus:ring-2 focus:ring-yellow-400/30 transition"
               >
                 <span className="text-[13px] md:text-[13px]">
                   {sortOption === "none"
@@ -283,7 +300,7 @@ const All_ProductList: React.FC = () => {
               </button>
 
               {openDropdown === "sort" && (
-                <ul className="absolute right-0 top-full mt-1 w-48 bg-[#1f2d1c]/95 backdrop-blur-md border border-white/20 rounded-md shadow-lg z-50 overflow-y-auto max-h-60 text-[13px] md:text-[13px]">
+                <ul className="absolute right-0 top-full mt-1 w-48 bg-white/10 backdrop-blur-md border border-white/20 rounded-md shadow-lg z-50 overflow-y-auto max-h-60 text-[13px] md:text-[13px]">
                   {[
                     { value: "none", label: "Sort by" },
                     { value: "price-low-high", label: "Price: Low to High" },
@@ -311,17 +328,23 @@ const All_ProductList: React.FC = () => {
           </div>
 
           {/* Product Grid */}
-          <div
-            className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 transition-all duration-200 gap-y-1 ${
-              openDropdown ? "blur-sm" : ""
-            }`}
-          >
-            {sortedProducts.map((p) => (
-              <div key={p.id} className={openDropdown ? "pointer-events-none" : ""}>
-                <All_Product_Card products={p} />
-              </div>
-            ))}
-          </div>
+          {sortedProducts.length === 0 ? (
+            <p className="text-center text-white mt-10 text-lg">
+              No products found for "{searchQuery}"
+            </p>
+          ) : (
+            <div
+              className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:gap-6 gap-3  transition-all duration-200 gap-y-1 ${
+                openDropdown ? "blur-sm" : ""
+              }`}
+            >
+              {sortedProducts.map((p) => (
+                <div key={p.id} className={openDropdown ? "pointer-events-none" : ""}>
+                  <All_Product_Card products={p} />
+                </div>
+              ))}
+            </div>
+          )}
         </section>
       </div>
     </div>
