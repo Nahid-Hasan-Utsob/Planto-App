@@ -9,7 +9,7 @@ interface SearchButtonProps {
 const SearchButton: React.FC<SearchButtonProps> = ({
   onClick,
   label = "Search",
-  className = "mt-3 w-full bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-2 rounded-md transition"
+  className = "mt-3 w-full bg-yellow-400 hover:bg-yellow-500 text-black font-semibold md:py-2 py-1 text-[13px] md:text-base rounded-md transition"
 }) => {
   return (
     <button onClick={onClick} className={className}>
