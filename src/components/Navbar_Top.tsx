@@ -14,6 +14,7 @@ export default function Navbar_Top() {
 
   const [searchModalOpen, setSearchModalOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
+  const [sidebarOpen, setSidebarOpen] = useState(false); // <-- sidebar state
 
   const handleSearch = () => {
     if (searchTerm.trim() !== "") {
@@ -22,23 +23,6 @@ export default function Navbar_Top() {
       setSearchTerm("");
     }
   };
-
-  const navlink = (
-    <>
-      <NavLink to="/">
-        <li>Home</li>
-      </NavLink>
-      <NavLink to="/shops">
-        <li>Shops</li>
-      </NavLink>
-      <NavLink to="/">
-        <li>More</li>
-      </NavLink>
-      <NavLink to="/">
-        <li>Contact</li>
-      </NavLink>
-    </>
-  );
 
   return (
     <div>
@@ -58,16 +42,16 @@ export default function Navbar_Top() {
 
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal gap-14 text-white text-xl">
-            {navlink}
+            <NavLink to="/"><li>Home</li></NavLink>
+            <NavLink to="/shops"><li>Shops</li></NavLink>
+            <NavLink to="/"><li>More</li></NavLink>
+            <NavLink to="/"><li>Contact</li></NavLink>
           </ul>
         </div>
 
         <div className="navbar-end relative">
           <div className="flex items-center lg:gap-14 gap-8 md:text-2xl text-xl primary-text-color">
-            <div
-              className=" cursor-pointer"
-              onClick={() => setSearchModalOpen(true)}
-            >
+            <div className="cursor-pointer" onClick={() => setSearchModalOpen(true)}>
               <IoIosSearch />
             </div>
 
@@ -80,9 +64,10 @@ export default function Navbar_Top() {
               )}
             </NavLink>
 
-   <div className="lg:hidden">
-             <TbMenuDeep />
-   </div>
+            {/* Mobile Menu Icon */}
+            <div className="lg:hidden cursor-pointer" onClick={() => setSidebarOpen(true)}>
+              <TbMenuDeep />
+            </div>
           </div>
         </div>
       </div>
@@ -90,24 +75,11 @@ export default function Navbar_Top() {
       {/* 🔍 Search Modal */}
       {searchModalOpen && (
         <div className="fixed inset-0 z-50">
-          {/* Background blur */}
-          <div
-            className="absolute inset-0 bg-white/15 "
-            onClick={() => setSearchModalOpen(false)}
-          ></div>
-
-          {/* Search Box */}
+          <div className="absolute inset-0 bg-black/50 backdrop-blur-md" onClick={() => setSearchModalOpen(false)}></div>
           <div className="relative flex justify-center items-center h-full">
-            {/* Outer overlay - যা background blur করবে এবং ক্লিক করলে modal বন্ধ করবে */}
-            <div
-              className="absolute inset-0 bg-black/50 backdrop-blur-md"
-              onClick={() => setSearchModalOpen(false)}
-            ></div>
-
-            {/* Inner modal box - ভেতরে ক্লিক করলে overlay এ click propagate হবে না */}
             <div
               className="bg-green-800/50 backdrop-blur-md p-6 rounded-xl w-11/12 max-w-md relative z-50"
-              onClick={(e) => e.stopPropagation()} // important: এই লাইনটা যোগ করতে হবে
+              onClick={(e) => e.stopPropagation()}
             >
               <button
                 className="absolute top-2 right-3 text-white text-xl font-bold"
@@ -124,9 +96,35 @@ export default function Navbar_Top() {
                 onChange={(e) => setSearchTerm(e.target.value)}
                 onKeyDown={(e) => e.key === "Enter" && handleSearch()}
               />
-
               <SearchButton onClick={handleSearch} />
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* 🔹 Sidebar for Mobile Menu */}
+      {sidebarOpen && (
+        <div className="fixed inset-0 z-50 flex">
+          {/* Overlay */}
+          <div
+            className="absolute inset-0 bg-black/50"
+            onClick={() => setSidebarOpen(false)}
+          ></div>
+
+          {/* Sidebar */}
+          <div className="relative bg-green-900 w-64 p-6 h-full z-50">
+            <button
+              className="absolute top-3 right-3 text-white text-xl font-bold"
+              onClick={() => setSidebarOpen(false)}
+            >
+              &times;
+            </button>
+            <ul className="flex flex-col gap-4 mt-10 text-white text-lg">
+              <NavLink to="/" onClick={() => setSidebarOpen(false)}><li>Home</li></NavLink>
+              <NavLink to="/shops" onClick={() => setSidebarOpen(false)}><li>Shops</li></NavLink>
+              <NavLink to="/login" onClick={() => setSidebarOpen(false)}><li>Login</li></NavLink>
+              <NavLink to="/contact" onClick={() => setSidebarOpen(false)}><li>Contact</li></NavLink>
+            </ul>
           </div>
         </div>
       )}
