@@ -54,7 +54,7 @@ export default function Navbar_Top() {
         </div>
 
         <div className="navbar-end relative">
-          <div className="flex items-center lg:gap-14 gap-8 md:text-2xl text-xl primary-text-color">
+          <div className="flex items-center lg:gap-8 gap-5 md:text-2xl text-xl primary-text-color">
             <div className="cursor-pointer" onClick={() => setSearchModalOpen(true)}>
               <IoIosSearch />
             </div>
@@ -75,11 +75,7 @@ export default function Navbar_Top() {
             <SignedIn>
               <div className="dropdown dropdown-end">
                 <UserButton afterSignOutUrl="/" />
-                {user && (
-                  <div className="dropdown-content bg-white text-black p-2 rounded mt-2 shadow">
-                    {user.primaryEmailAddress?.emailAddress}
-                  </div>
-                )}
+
               </div>
             </SignedIn>
 
