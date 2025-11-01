@@ -115,7 +115,7 @@ export default function Cart() {
                   <div className="flex items-center justify-center lg:gap-2 gap-1">
                     <button
                       onClick={() => decreaseQty(item)}
-                      className="md:px-2 px-1.5 py- md:py-1 lg:px-3 bg-red-500 rounded text-white lg:text-lg text-[15px]"
+                      className="md:px-2 px-1.5 py- md:py-1 lg:px-3 bg-red-500 rounded text-white lg:text-lg text-[15px] cursor-pointer"
                       disabled={item.quantity <= 1} // ✅ button disable if 1
                     >
                       -
@@ -125,7 +125,7 @@ export default function Cart() {
                     </span>
                     <button
                       onClick={() => increaseQty(item)}
-                      className="md:px-2 px-1.5 py- md:py-1 lg:px-3 bg-green-600 rounded text-white lg:text-lg text-[15px]"
+                      className="md:px-2 px-1.5 py- md:py-1 lg:px-3 bg-green-600 rounded text-white lg:text-lg text-[15px] cursor-pointer"
                     >
                       +
                     </button>
@@ -139,7 +139,7 @@ export default function Cart() {
                 <td className="lg:p-3 text-center text-white text-[12px] lg:text-base">
                   <button
                     onClick={() => dispatch(removeFromCart(item.id))}
-                    className="text-red-500"
+                    className="text-red-500 cursor-pointer"
                   >
                     <MdDelete className="md:text-[24px] text-xl lg:text-3xl" />
                   </button>
