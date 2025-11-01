@@ -201,7 +201,7 @@ export default function Navbar_Top() {
               </SignedOut>
 
               <NavLink
-                to="/contact"
+                to="/"
                 className="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-green-700/50"
                 onClick={() => setSidebarOpen(false)}
               >
