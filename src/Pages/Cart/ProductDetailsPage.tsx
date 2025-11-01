@@ -1,11 +1,21 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import AddToCartButton from "./AddToCartButton";
 import type { Product } from "../../hooks/types";
+import { useProducts } from "../../hooks/useProducts";
+import Loader from "../../components/Loader";
 
 export default function ProductDetailsPage() {
   const { state } = useLocation();
   const navigate = useNavigate();
   const product = state as Product | undefined;
+  const {data:products, isLoading,error} = useProducts();
+
+
+  if (isLoading) {
+    return <Loader></Loader>
+  }
+if (error) return <p className="text-center text-red-500 mt-10">Error loading products!</p>;
+  if (!products || products.length === 0) return <p className="text-center text-white mt-10">No products found.</p>;
 
   if (!product) {
     return (
