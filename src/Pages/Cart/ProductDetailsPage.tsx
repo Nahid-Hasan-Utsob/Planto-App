@@ -3,8 +3,13 @@ import Loader from "../../components/Loader";
 import { useProducts } from "../../hooks/useProducts";
 import ProductRightSection from "./ProductRightSection";
 import ProductTabs from "./ProductTabs";
+import ScrollToTop from "../../components/ScrollToTop";
 
 export default function ProductDetailsPage() {
+
+  <ScrollToTop></ScrollToTop>
+
+
   const { state } = useLocation();
   const navigate = useNavigate();
   const selectedProductId = (state as { id: number } | undefined)?.id;
