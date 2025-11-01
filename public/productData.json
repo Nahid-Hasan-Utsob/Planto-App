@@ -31,6 +31,20 @@
           "date": "2025-05-13T11:11:22.053Z",
           "reviewerName": "Imran Khan",
           "reviewerEmail": "imran.khan@example.com"
+        },
+        {
+          "rating": 2,
+          "comment": "Came in a solid box, plant was safe. After two days it got even greener, bro. That light tropical scent? Chef’s kiss.",
+          "date": "2025-05-13T11:11:22.053Z",
+          "reviewerName": "Imran Khan",
+          "reviewerEmail": "imran.khan@example.com"
+        },
+        {
+          "rating": 2,
+          "comment": "Came in a solid box, plant was safe. After two days it got even greener, bro. That light tropical scent? Chef’s kiss.",
+          "date": "2025-05-13T11:11:22.053Z",
+          "reviewerName": "Imran Khan",
+          "reviewerEmail": "imran.khan@example.com"
         }
       ],
       "returnPolicy": "No return policy after 7 days of delivery.",

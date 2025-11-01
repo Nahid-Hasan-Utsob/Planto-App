@@ -1,26 +1,26 @@
 import { useLocation, useNavigate } from "react-router-dom";
-import AddToCartButton from "./AddToCartButton";
-import type { Product } from "../../hooks/types";
-import { useProducts } from "../../hooks/useProducts";
 import Loader from "../../components/Loader";
+import { useProducts } from "../../hooks/useProducts";
+import ProductRightSection from "./ProductRightSection";
+import ProductTabs from "./ProductTabs";
 
 export default function ProductDetailsPage() {
   const { state } = useLocation();
   const navigate = useNavigate();
-  const product = state as Product | undefined;
-  const {data:products, isLoading,error} = useProducts();
+  const selectedProductId = (state as { id: number } | undefined)?.id;
 
+  const { data: products, isLoading, error } = useProducts();
 
-  if (isLoading) {
-    return <Loader></Loader>
-  }
-if (error) return <p className="text-center text-red-500 mt-10">Error loading products!</p>;
+  if (isLoading) return <Loader />;
+  if (error) return <p className="text-center text-red-500 mt-10">Error loading products!</p>;
   if (!products || products.length === 0) return <p className="text-center text-white mt-10">No products found.</p>;
+
+  const product = products.find((p) => p.id === selectedProductId);
 
   if (!product) {
     return (
       <div className="text-center text-white mt-20">
-        <p>⚠️ Product data not found!</p>
+        <p>⚠️ Product not found!</p>
         <button
           onClick={() => navigate(-1)}
           className="mt-4 px-4 py-2 bg-yellow-400 text-black rounded-md"
@@ -32,24 +32,26 @@ if (error) return <p className="text-center text-red-500 mt-10">Error loading pr
   }
 
   return (
-    <div className="max-w-4xl mx-auto py-10 px-5 text-white">
-      <div className="flex flex-col md:flex-row gap-10">
-        <img
-          src={product.thumbnail}
-          alt={product.title}
-          className="w-full md:w-[400px] rounded-xl shadow-lg object-contain"
-        />
-
-        <div className="flex flex-col justify-center">
-          <h2 className="text-3xl font-bold mb-3">{product.title}</h2>
-          <p className="text-yellow-400 mb-2">⭐ {product.rating}</p>
-          <p className="text-lg mb-5">{product.description}</p>
-          <p className="text-2xl font-bold mb-5 text-red-400">Rs. {product.price}/-</p>
-
-          <div className="w-[200px]">
-            <AddToCartButton product={product} />
-          </div>
+    <div className="min-h-screen flex flex-col  text-white">
+      <div className="flex flex-col lg:flex-row max-w-7xl mx-auto flex-1 p-5 gap-10">
+        {/* Left Image */}
+        <div className="lg:w-1/2 flex justify-center items-start">
+          <img
+            src={product.thumbnail}
+            alt={product.title}
+            className="w-full max-w-lg object-contain rounded-xl "
+          />
         </div>
+
+        {/* Right Details */}
+        <div className="lg:w-1/2 flex flex-col gap-4">
+          <ProductRightSection product={product} />
+        </div>
+      </div>
+
+      {/* Bottom Tabs */}
+      <div className=" text-black mt-5 w-full">
+        <ProductTabs product={product} />
       </div>
     </div>
   );
