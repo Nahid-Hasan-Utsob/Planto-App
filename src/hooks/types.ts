@@ -25,5 +25,6 @@ export interface Product {
     shippingInformation?:string;
     availabilityStatus?:string;
     returnPolicy?:string;
+    discountPercentage?:number;
 
 }

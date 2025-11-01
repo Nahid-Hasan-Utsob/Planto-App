@@ -14,10 +14,10 @@ const StarRating: React.FC<{ rating: number }> = ({ rating }) => {
   const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
 
   const stars = [];
-  for (let i = 0; i < fullStars; i++) staTk.push(<FaStar key={`full-${i}`} />);
-  if (hasHalfStar) staTk.push(<FaStarHalfAlt key="half" />);
+  for (let i = 0; i < fullStars; i++) stars.push(<FaStar key={`full-${i}`} />);
+  if (hasHalfStar) stars.push(<FaStarHalfAlt key="half" />);
   for (let i = 0; i < emptyStars; i++)
-    staTk.push(<FaRegStar key={`empty-${i}`} />);
+    stars.push(<FaRegStar key={`empty-${i}`} />);
 
   return (
     <div className="flex text-yellow-400 md:gap-1  md:text-sm lg:text-base  text-[10px]" >

@@ -25,12 +25,13 @@ export default function ProductRightSection({ product }: Props) {
           </p>
         </div>
 
-        <p className="text-xl font-bold  mb-3">
+        <p className="text-2xl font-bold  my-3 flex gap-2">
           <span className="text-red-400"> Tk.</span> {product.price}/-
+       <p className="text-base text-red-400 flex gap-1 items-end">   {product.discountPercentage}% <span className="text-xs text-white"> Discount</span></p>
         </p>
 
         <div>
-          <p className="text-xs">Additional Details</p>
+          <p className="text-xs underline underline-offset-5">Additional Details</p>
 
           <div className="flex my-4 gap-10">
             <div className="flex flex-col gap-1 ">
@@ -80,7 +81,7 @@ export default function ProductRightSection({ product }: Props) {
         </div>
 
         {/* AddToCartButton */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 mt-6 h-[70px]" >
           <div className="w-[200px]">
             <AddToCartButton product={product} />
           </div>
