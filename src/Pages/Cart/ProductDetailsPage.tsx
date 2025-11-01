@@ -32,7 +32,7 @@ export default function ProductDetailsPage() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col  text-white">
+    <div className="min-h-screen flex flex-col  text-white lg:my-10">
       <div className="flex flex-col justify-around  lg:flex-row    p-5 gap-10"> 
         {/* Left Image */}
         <div className="w-[25%]  mx-auto  flex justify-center items-start ">
