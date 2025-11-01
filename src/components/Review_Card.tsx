@@ -18,15 +18,15 @@ const ReviewCard: React.FC<ReviewCardProps> = ({ review }) => {
     const hasHalf = rating - fullStars >= 0.5;
 
     for (let i = 0; i < fullStars; i++) {
-      staTk.push(<FaStar key={`full-${i}`} className="text-yellow-400" />);
+      stars.push(<FaStar key={`full-${i}`} className="text-yellow-400" />);
     }
     if (hasHalf) {
-      staTk.push(<FaStarHalfAlt key="half" className="text-yellow-400" />);
+      stars.push(<FaStarHalfAlt key="half" className="text-yellow-400" />);
     }
 
-    const emptyStars = 5 - staTk.length;
+    const emptyStars = 5 - stars.length;
     for (let i = 0; i < emptyStars; i++) {
-      staTk.push(<FaRegStar key={`empty-${i}`} className="text-yellow-400" />);
+      stars.push(<FaRegStar key={`empty-${i}`} className="text-yellow-400" />);
     }
     return stars;
   };
