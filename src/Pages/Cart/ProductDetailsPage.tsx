@@ -23,7 +23,7 @@ export default function ProductDetailsPage() {
         <p>⚠️ Product not found!</p>
         <button
           onClick={() => navigate(-1)}
-          className="mt-4 px-4 py-2 bg-yellow-400 text-black rounded-md"
+          className="mt-4 px-4 py-2 bg-yellow-500 text-black rounded-md"
         >
           Go Back
         </button>
@@ -33,13 +33,13 @@ export default function ProductDetailsPage() {
 
   return (
     <div className="min-h-screen flex flex-col  text-white">
-      <div className="flex flex-col lg:flex-row max-w-7xl mx-auto flex-1 p-5 gap-10">
+      <div className="flex flex-col justify-around  lg:flex-row mx-auto   p-5 gap-10"> 
         {/* Left Image */}
-        <div className="lg:w-1/2 flex justify-center items-start">
+        <div className=" w-11/12 flex justify-center items-start ">
           <img
             src={product.thumbnail}
             alt={product.title}
-            className="w-full max-w-lg object-contain rounded-xl "
+            className="w-full  object-contain rounded-xl "
           />
         </div>
 

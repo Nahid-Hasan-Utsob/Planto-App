@@ -31,20 +31,6 @@
           "date": "2025-05-13T11:11:22.053Z",
           "reviewerName": "Imran Khan",
           "reviewerEmail": "imran.khan@example.com"
-        },
-        {
-          "rating": 2,
-          "comment": "Came in a solid box, plant was safe. After two days it got even greener, bro. That light tropical scent? Chef’s kiss.",
-          "date": "2025-05-13T11:11:22.053Z",
-          "reviewerName": "Imran Khan",
-          "reviewerEmail": "imran.khan@example.com"
-        },
-        {
-          "rating": 2,
-          "comment": "Came in a solid box, plant was safe. After two days it got even greener, bro. That light tropical scent? Chef’s kiss.",
-          "date": "2025-05-13T11:11:22.053Z",
-          "reviewerName": "Imran Khan",
-          "reviewerEmail": "imran.khan@example.com"
         }
       ],
       "returnPolicy": "No return policy after 7 days of delivery.",
@@ -53,7 +39,6 @@
       "images": ["https://i.ibb.co.com/5XDRY0mg/areca-palm.jpg"],
       "thumbnail": "https://i.ibb.co.com/5XDRY0mg/areca-palm.jpg"
     },
-
     {
       "id": 2,
       "title": "Money Plant in Ceramic Pot",
@@ -158,7 +143,7 @@
       "thumbnail": "https://i.ibb.co.com/99y3GrTK/jade-plant.jpg"
     },
     {
-      "id": 6,
+      "id": 5,
       "title": "Boston Fern",
       "description": "Boston Fern — lush, feathery, cascading. Loves shade & humidity, ideal for hanging.",
       "category": "Hanging Plants",
@@ -190,7 +175,7 @@
       "thumbnail": "https://i.ibb.co.com/hFxMF0LM/boston-fern.jpg"
     },
     {
-      "id": 7,
+      "id": 6,
       "title": "Marigold (Tagetes)",
       "description": "Marigold — bright orange & yellow blooms. Pest-repellent, full sun, non-stop flowering.",
       "category": "Flowering Plants",
@@ -222,7 +207,7 @@
       "thumbnail": "https://i.ibb.co.com/1Jf23nLH/marigold.jpg"
     },
     {
-      "id": 8,
+      "id": 7,
       "title": "ZZ Plant (Zamioculcas)",
       "description": "ZZ Plant — unkillable, glossy dark leaves. Low light, water monthly, perfect for forgetful bros.",
       "category": "Indoor Plants",
@@ -249,12 +234,12 @@
       ],
       "returnPolicy": "Return within 14 days if unhealthy.",
       "minimumOrderQuantity": 1,
-      "meta": { "createdAt": "2025-05-22T11:11:02.053Z", "updatedAt": "2025-06- стены18T09:41:02.053Z", "barcode": "PLANT-00115678901", "qrCode": "" },
+      "meta": { "createdAt": "2025-05-22T11:11:02.053Z", "updatedAt": "2025-06-18T09:41:02.053Z", "barcode": "PLANT-00115678901", "qrCode": "" },
       "images": ["https://i.ibb.co.com/YTdLV2rv/zz-plant.jpg"],
       "thumbnail": "https://i.ibb.co.com/YTdLV2rv/zz-plant.jpg"
     },
     {
-      "id": 9,
+      "id": 8,
       "title": "Aloe Vera",
       "description": "Aloe Vera — gel for skin, air-purifying. Thick leaves, low care, healing + decor.",
       "category": "Succulents & Cacti",
@@ -286,7 +271,7 @@
       "thumbnail": "https://i.ibb.co.com/PzTykMv8/aloe-vera.jpg"
     },
     {
-      "id": 10,
+      "id": 9,
       "title": "Spider Plant",
       "description": "Spider Plant — fast-growing, air-cleaning, pet-safe. Baby plants everywhere, great for hanging.",
       "category": "Hanging Plants",
@@ -318,7 +303,7 @@
       "thumbnail": "https://i.ibb.co.com/MxHV2VXG/spider-plant.jpg"
     },
     {
-      "id": 11,
+      "id": 10,
       "title": "Bougainvillea",
       "description": "Bougainvillea — colorful bracts, climbs walls. Full sun, non-stop blooms in pink, purple, white.",
       "category": "Outdoor Plants",
@@ -350,7 +335,7 @@
       "thumbnail": "https://i.ibb.co.com/k2VQJff7/bougainvillea.jpg"
     },
     {
-      "id": 12,
+      "id": 11,
       "title": "Peace Lily",
       "description": "Peace Lily — white blooms, air-cleaning. Low light, low drama, perfect for office or bedroom.",
       "category": "Flowering Plants",
@@ -382,7 +367,7 @@
       "thumbnail": "https://i.ibb.co.com/mrsTZSWW/peace-lily.jpg"
     },
     {
-      "id": 13,
+      "id": 12,
       "title": "Echeveria 'Lola'",
       "description": "Echeveria Lola — pastel rosette, tiny but stunning. Perfect for desk, shelf, or small spaces.",
       "category": "Succulents & Cacti",
@@ -400,7 +385,7 @@
       "availabilityStatus": "In Stock",
       "reviews": [
         {
-          "rating":1.9,
+          "rating": 1.9,
           "comment": "Colors are even better IRL, bro! Looks sick next to my laptop.",
           "date": "2025-07-12T16:30:55.053Z",
           "reviewerName": "Zara Khan",
@@ -414,7 +399,7 @@
       "thumbnail": "https://i.ibb.co.com/spnYTLMy/echeveria-lola.jpg"
     },
     {
-      "id": 14,
+      "id": 13,
       "title": "Pothos (Devil's Ivy)",
       "description": "Pothos — trailing vine, heart-shaped leaves. Low light, unkillable, perfect for shelf or hanging.",
       "category": "Hanging Plants",
@@ -432,7 +417,7 @@
       "availabilityStatus": "In Stock",
       "reviews": [
         {
-          "rating":5,
+          "rating": 5,
           "comment": "Grows like crazy, bro! I cut and propagate every few months. Beginner plant GOAT.",
           "date": "2025-07-15T10:15:33.053Z",
           "reviewerName": "Rasel Ahmed",
@@ -446,7 +431,7 @@
       "thumbnail": "https://i.ibb.co.com/ynBqrtbb/pothos.jpg"
     },
     {
-      "id": 15,
+      "id": 14,
       "title": "Rose Bush (Hybrid Tea)",
       "description": "Hybrid Tea Rose — deep red, fragrant blooms. Full sun, weekly care, perfect for cut flowers.",
       "category": "Outdoor Plants",
@@ -476,6 +461,1993 @@
       "meta": { "createdAt": "2025-06-12T15:30:02.053Z", "updatedAt": "2025-07-10T09:41:02.053Z", "barcode": "PLANT-00182345678", "qrCode": "" },
       "images": ["https://i.ibb.co.com/twMDzP9N/rose-bush.jpg"],
       "thumbnail": "https://i.ibb.co.com/twMDzP9N/rose-bush.jpg"
+    },
+    {
+      "id": 15,
+      "title": "Snake Plant (Sansevieria)",
+      "description": "Snake Plant — tall, sword-like leaves. Extremely low-maintenance, air-purifying, great for bedrooms.",
+      "category": "Low-Maintenance Plants",
+      "price": 479,
+      "discountPercentage": 12.5,
+      "rating": 3.1,
+      "stock": 65,
+      "tags": ["indoor", "air-purifying", "low-light"],
+      "brand": "ToughLeaf",
+      "sku": "PLT-SNK-016",
+      "weight": 3.0,
+      "dimensions": { "width": 25.0, "height": 85.0, "depth": 25.0 },
+      "warrantyInformation": "20 days replacement",
+      "shippingInformation": "Ships in 2-4 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.2,
+          "comment": "Bro, forgot to water for 3 weeks and it’s still standing strong! Bedroom vibes upgraded.",
+          "date": "2025-07-20T14:11:22.053Z",
+          "reviewerName": "Rahim Uddin",
+          "reviewerEmail": "rahim.uddin@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 10 days if damaged.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-06-15T10:30:02.053Z", "updatedAt": "2025-07-12T09:41:02.053Z", "barcode": "PLANT-00193456789", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/5XDRY0mg/areca-palm.jpg"],
+      "thumbnail": "https://i.ibb.co.com/5XDRY0mg/areca-palm.jpg"
+    },
+    {
+      "id": 16,
+      "title": "Fiddle Leaf Fig",
+      "description": "Fiddle Leaf Fig — iconic large, violin-shaped leaves. Bright light, statement piece for living rooms.",
+      "category": "Statement Plants",
+      "price": 1299,
+      "discountPercentage": 5.0,
+      "rating": 2.9,
+      "stock": 30,
+      "tags": ["indoor", "large", "decor"],
+      "brand": "LuxeGreen",
+      "sku": "PLT-FLF-017",
+      "weight": 6.5,
+      "dimensions": { "width": 60.0, "height": 150.0, "depth": 60.0 },
+      "warrantyInformation": "30 days replacement if leaves drop",
+      "shippingInformation": "Ships in 5-7 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.5,
+          "comment": "Bro, this thing is a total flex! Living room looks like a magazine now.",
+          "date": "2025-07-22T09:25:33.053Z",
+          "reviewerName": "Ayesha Siddika",
+          "reviewerEmail": "ayesha.siddika@example.com"
+        }
+      ],
+      "returnPolicy": "No returns after 15 days.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-06-18T12:45:02.053Z", "updatedAt": "2025-07-15T09:41:02.053Z", "barcode": "PLANT-00204567890", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/Nggy36Df/money-plant-ceramic.jpg"],
+      "thumbnail": "https://i.ibb.co.com/Nggy36Df/money-plant-ceramic.jpg"
+    },
+    {
+      "id": 17,
+      "title": "Bird of Paradise",
+      "description": "Bird of Paradise — exotic, crane-like flowers. Bright light, tropical vibe, perfect for patios.",
+      "category": "Tropical Plants",
+      "price": 1599,
+      "discountPercentage": 7.5,
+      "rating": 3.0,
+      "stock": 20,
+      "tags": ["exotic", "flowering", "large"],
+      "brand": "ExoticBloom",
+      "sku": "PLT-BOP-018",
+      "weight": 8.0,
+      "dimensions": { "width": 70.0, "height": 180.0, "depth": 70.0 },
+      "warrantyInformation": "15 days replacement if no growth",
+      "shippingInformation": "Ships in 6-8 business days",
+      "availabilityStatus": "Low Stock",
+      "reviews": [
+        {
+          "rating": 4.1,
+          "comment": "Bro, first flower opened and I lost it! Looks like a real bird. Patio king.",
+          "date": "2025-07-25T11:30:44.053Z",
+          "reviewerName": "Jamil Hossain",
+          "reviewerEmail": "jamil.hossain@example.com"
+        }
+      ],
+      "returnPolicy": "No returns after planting.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-06-20T14:20:02.053Z", "updatedAt": "2025-07-18T09:41:02.053Z", "barcode": "PLANT-00215678901", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/4ggGnmtS/hibiscus.jpg"],
+      "thumbnail": "https://i.ibb.co.com/4ggGnmtS/hibiscus.jpg"
+    },
+    {
+      "id": 18,
+      "title": "Calathea Orbifolia",
+      "description": "Calathea Orbifolia — round, silver-striped leaves. Loves humidity, perfect for bathrooms.",
+      "category": "Foliage Plants",
+      "price": 699,
+      "discountPercentage": 10.0,
+      "rating": 2.7,
+      "stock": 40,
+      "tags": ["indoor", "humidity", "patterned"],
+      "brand": "PatternLeaf",
+      "sku": "PLT-CAL-019",
+      "weight": 2.2,
+      "dimensions": { "width": 40.0, "height": 60.0, "depth": 40.0 },
+      "warrantyInformation": "10 days replacement if leaves curl",
+      "shippingInformation": "Ships in 3-5 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 2.9,
+          "comment": "Bro, bathroom turned into a spa with this beauty! Leaves are huge and shiny.",
+          "date": "2025-07-28T13:15:55.053Z",
+          "reviewerName": "Farhana Yasmin",
+          "reviewerEmail": "farhana.yasmin@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 7 days if damaged.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-06-22T10:11:02.053Z", "updatedAt": "2025-07-20T09:41:02.053Z", "barcode": "PLANT-00226789012", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/99y3GrTK/jade-plant.jpg"],
+      "thumbnail": "https://i.ibb.co.com/99y3GrTK/jade-plant.jpg"
+    },
+    {
+      "id": 19,
+      "title": "Lavender (Lavandula)",
+      "description": "Lavender — fragrant purple spikes. Full sun, drought-tolerant, perfect for borders or pots.",
+      "category": "Herbs & Aromatics",
+      "price": 279,
+      "discountPercentage": 18.0,
+      "rating": 3.2,
+      "stock": 85,
+      "tags": ["aromatic", "outdoor", "relaxing"],
+      "brand": "ScentedGarden",
+      "sku": "PLT-LAV-020",
+      "weight": 1.0,
+      "dimensions": { "width": 25.0, "height": 40.0, "depth": 25.0 },
+      "warrantyInformation": "7 days replacement if no scent",
+      "shippingInformation": "Ships in 2-3 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.8,
+          "comment": "Bro, the smell hits different at night! Planted near my window – sleep like a baby.",
+          "date": "2025-07-30T15:40:22.053Z",
+          "reviewerName": "Salman Khan",
+          "reviewerEmail": "salman.khan@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 5 days if seeds fail.",
+      "minimumOrderQuantity": 2,
+      "meta": { "createdAt": "2025-06-25T11:30:02.053Z", "updatedAt": "2025-07-22T09:41:02.053Z", "barcode": "PLANT-00237890123", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/hFxMF0LM/boston-fern.jpg"],
+      "thumbnail": "https://i.ibb.co.com/hFxMF0LM/boston-fern.jpg"
+    },
+    {
+      "id": 20,
+      "title": "Monstera Deliciosa",
+      "description": "Monstera — split-leaf, jungle vibe. Indirect light, climbs or trails, Instagram favorite.",
+      "category": "Climbing & Trailing",
+      "price": 899,
+      "discountPercentage": 9.0,
+      "rating": 3.3,
+      "stock": 50,
+      "tags": ["indoor", "large-leaf", "trending"],
+      "brand": "JungleVibe",
+      "sku": "PLT-MON-021",
+      "weight": 4.5,
+      "dimensions": { "width": 50.0, "height": 100.0, "depth": 50.0 },
+      "warrantyInformation": "20 days replacement if leaves tear",
+      "shippingInformation": "Ships in 4-6 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 4.2,
+          "comment": "Bro, my feed is blowing up with this plant! Leaves are massive and holey.",
+          "date": "2025-08-01T10:20:33.053Z",
+          "reviewerName": "Nusrat Jahan",
+          "reviewerEmail": "nusrat.jahan@example.com"
+        }
+      ],
+      "returnPolicy": "No returns after 10 days.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-06-28T13:45:02.053Z", "updatedAt": "2025-07-25T09:41:02.053Z", "barcode": "PLANT-00248901234", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/1Jf23nLH/marigold.jpg"],
+      "thumbnail": "https://i.ibb.co.com/1Jf23nLH/marigold.jpg"
+    },
+    {
+      "id": 21,
+      "title": "Bonsai Ficus",
+      "description": "Bonsai Ficus — miniature tree, artistic shaping. Bright light, perfect for zen corners.",
+      "category": "Bonsai & Miniatures",
+      "price": 1199,
+      "discountPercentage": 6.0,
+      "rating": 3.5,
+      "stock": 15,
+      "tags": ["bonsai", "mini", "zen"],
+      "brand": "ZenGarden",
+      "sku": "PLT-BON-022",
+      "weight": 3.8,
+      "dimensions": { "width": 30.0, "height": 45.0, "depth": 30.0 },
+      "warrantyInformation": "30 days replacement if unhealthy",
+      "shippingInformation": "Ships in 5-7 business days",
+      "availabilityStatus": "Low Stock",
+      "reviews": [
+        {
+          "rating": 4.5,
+          "comment": "Bro, this bonsai is pure art! Meditate next to it every morning.",
+          "date": "2025-08-03T12:30:44.053Z",
+          "reviewerName": "Tarek Rahman",
+          "reviewerEmail": "tarek.rahman@example.com"
+        }
+      ],
+      "returnPolicy": "No returns after pruning.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-07-01T10:15:02.053Z", "updatedAt": "2025-07-28T09:41:02.053Z", "barcode": "PLANT-00259012345", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/YTdLV2rv/zz-plant.jpg"],
+      "thumbnail": "https://i.ibb.co.com/YTdLV2rv/zz-plant.jpg"
+    },
+    {
+      "id": 22,
+      "title": "Petunia (Wave Series)",
+      "description": "Petunia Wave — cascading blooms in vibrant colors. Full sun, perfect for hanging baskets.",
+      "category": "Balcony & Patio",
+      "price": 189,
+      "discountPercentage": 22.0,
+      "rating": 2.9,
+      "stock": 110,
+      "tags": ["flowering", "cascading", "colorful"],
+      "brand": "ColorWave",
+      "sku": "PLT-PET-023",
+      "weight": 0.7,
+      "dimensions": { "width": 30.0, "height": 40.0, "depth": 30.0 },
+      "warrantyInformation": "7 days replacement if no blooms",
+      "shippingInformation": "Ships in 2-3 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.1,
+          "comment": "Bro, my balcony is a rainbow now! Blooms non-stop, zero effort.",
+          "date": "2025-08-05T14:11:55.053Z",
+          "reviewerName": "Sanjida Akter",
+          "reviewerEmail": "sanjida.akter@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 5 days if wilted.",
+      "minimumOrderQuantity": 3,
+      "meta": { "createdAt": "2025-07-03T11:30:02.053Z", "updatedAt": "2025-07-30T09:41:02.053Z", "barcode": "PLANT-00260123456", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/PzTykMv8/aloe-vera.jpg"],
+      "thumbnail": "https://i.ibb.co.com/PzTykMv8/aloe-vera.jpg"
+    },
+    {
+      "id": 23,
+      "title": "Rubber Plant (Ficus Elastica)",
+      "description": "Rubber Plant — glossy, dark green leaves. Low light tolerant, great for offices.",
+      "category": "Office Plants",
+      "price": 549,
+      "discountPercentage": 11.0,
+      "rating": 2.8,
+      "stock": 55,
+      "tags": ["indoor", "large-leaf", "low-light"],
+      "brand": "WorkGreen",
+      "sku": "PLT-RUB-024",
+      "weight": 3.2,
+      "dimensions": { "width": 40.0, "height": 90.0, "depth": 40.0 },
+      "warrantyInformation": "15 days replacement",
+      "shippingInformation": "Ships in 3-5 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.0,
+          "comment": "Bro, office corner looks premium now! Wipes dust off leaves weekly – shiny AF.",
+          "date": "2025-08-07T16:20:22.053Z",
+          "reviewerName": "Imtiaz Ahmed",
+          "reviewerEmail": "imtiaz.ahmed@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 10 days if damaged.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-07-05T13:45:02.053Z", "updatedAt": "2025-08-01T09:41:02.053Z", "barcode": "PLANT-00271234567", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/MxHV2VXG/spider-plant.jpg"],
+      "thumbnail": "https://i.ibb.co.com/MxHV2VXG/spider-plant.jpg"
+    },
+    {
+      "id": 24,
+      "title": "Orchid (Phalaenopsis)",
+      "description": "Phalaenopsis Orchid — elegant, long-lasting blooms. Indirect light, perfect for gifting.",
+      "category": "Gift Plants",
+      "price": 799,
+      "discountPercentage": 8.5,
+      "rating": 3.4,
+      "stock": 45,
+      "tags": ["flowering", "elegant", "gift"],
+      "brand": "ElegantBloom",
+      "sku": "PLT-ORC-025",
+      "weight": 1.8,
+      "dimensions": { "width": 25.0, "height": 60.0, "depth": 25.0 },
+      "warrantyInformation": "10 days replacement if buds drop",
+      "shippingInformation": "Ships in 3-5 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 4.0,
+          "comment": "Bro, gifted to mom and she cried! Blooms lasted 3 months.",
+          "date": "2025-08-09T10:30:33.053Z",
+          "reviewerName": "Rafi Islam",
+          "reviewerEmail": "rafi.islam@example.com"
+        }
+      ],
+      "returnPolicy": "No returns after blooming.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-07-08T10:20:02.053Z", "updatedAt": "2025-08-03T09:41:02.053Z", "barcode": "PLANT-00282345678", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/k2VQJff7/bougainvillea.jpg"],
+      "thumbnail": "https://i.ibb.co.com/k2VQJff7/bougainvillea.jpg"
+    },
+    {
+      "id": 25,
+      "title": "Sunflower (Helianthus)",
+      "description": "Sunflower — giant happy faces. Full sun, tall stems, perfect for backyard joy.",
+      "category": "Seasonal Annuals",
+      "price": 169,
+      "discountPercentage": 25.0,
+      "rating": 3.1,
+      "stock": 150,
+      "tags": ["sun-loving", "tall", "cheerful"],
+      "brand": "HappyBloom",
+      "sku": "PLT-SUN-026",
+      "weight": 0.6,
+      "dimensions": { "width": 20.0, "height": 200.0, "depth": 20.0 },
+      "warrantyInformation": "7 days replacement if seeds fail",
+      "shippingInformation": "Ships in 1-2 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.5,
+          "comment": "Bro, kids go crazy watching them grow! 8 feet tall in 2 months.",
+          "date": "2025-08-11T12:15:44.053Z",
+          "reviewerName": "Mahmuda Akter",
+          "reviewerEmail": "mahmuda.akter@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 5 days if seeds bad.",
+      "minimumOrderQuantity": 5,
+      "meta": { "createdAt": "2025-07-10T11:30:02.053Z", "updatedAt": "2025-08-05T09:41:02.053Z", "barcode": "PLANT-00293456789", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/mrsTZSWW/peace-lily.jpg"],
+      "thumbnail": "https://i.ibb.co.com/mrsTZSWW/peace-lily.jpg"
+    },
+    {
+      "id": 26,
+      "title": "Philodendron Birkin",
+      "description": "Philodendron Birkin — white pinstripes on dark leaves. Compact, rare, collector's item.",
+      "category": "Rare & Collectibles",
+      "price": 949,
+      "discountPercentage": 7.0,
+      "rating": 3.6,
+      "stock": 25,
+      "tags": ["rare", "variegated", "compact"],
+      "brand": "RareFind",
+      "sku": "PLT-PHB-027",
+      "weight": 2.1,
+      "dimensions": { "width": 30.0, "height": 50.0, "depth": 30.0 },
+      "warrantyInformation": "15 days replacement if variegation fades",
+      "shippingInformation": "Ships in 4-6 business days",
+      "availabilityStatus": "Low Stock",
+      "reviews": [
+        {
+          "rating": 4.3,
+          "comment": "Bro, this variegation is unreal! My collection is complete now.",
+          "date": "2025-08-13T14:20:55.053Z",
+          "reviewerName": "Arnob Roy",
+          "reviewerEmail": "arnob.roy@example.com"
+        }
+      ],
+      "returnPolicy": "No returns after 10 days.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-07-12T13:45:02.053Z", "updatedAt": "2025-08-07T09:41:02.053Z", "barcode": "PLANT-00304567890", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/spnYTLMy/echeveria-lola.jpg"],
+      "thumbnail": "https://i.ibb.co.com/spnYTLMy/echeveria-lola.jpg"
+    },
+    {
+      "id": 27,
+      "title": "String of Pearls",
+      "description": "String of Pearls — bead-like trailing stems. Bright light, unique, perfect for high shelves.",
+      "category": "Trailing Succulents",
+      "price": 399,
+      "discountPercentage": 14.0,
+      "rating": 3.0,
+      "stock": 70,
+      "tags": ["succulent", "trailing", "unique"],
+      "brand": "BeadGreen",
+      "sku": "PLT-SOP-028",
+      "weight": 0.8,
+      "dimensions": { "width": 20.0, "height": 60.0, "depth": 20.0 },
+      "warrantyInformation": "10 days replacement if beads drop",
+      "shippingInformation": "Ships in 2-4 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.2,
+          "comment": "Bro, looks like green pearls hanging! Shelf game strong.",
+          "date": "2025-08-15T16:30:22.053Z",
+          "reviewerName": "Sabrina Sultana",
+          "reviewerEmail": "sabrina.sultana@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 7 days if damaged.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-07-15T10:20:02.053Z", "updatedAt": "2025-08-09T09:41:02.053Z", "barcode": "PLANT-00315678901", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/ynBqrtbb/pothos.jpg"],
+      "thumbnail": "https://i.ibb.co.com/ynBqrtbb/pothos.jpg"
+    },
+    {
+      "id": 28,
+      "title": "Clematis (Climbing Vine)",
+      "description": "Clematis — star-shaped blooms, climbs trellises. Part sun, perfect for fences.",
+      "category": "Climbers & Vines",
+      "price": 629,
+      "discountPercentage": 10.0,
+      "rating": 2.9,
+      "stock": 40,
+      "tags": ["climbing", "flowering", "perennial"],
+      "brand": "ClimbHigh",
+      "sku": "PLT-CLE-029",
+      "weight": 3.5,
+      "dimensions": { "width": 40.0, "height": 300.0, "depth": 40.0 },
+      "warrantyInformation": "15 days replacement if no growth",
+      "shippingInformation": "Ships in 5-7 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.4,
+          "comment": "Bro, fence is covered in purple stars! Blooms twice a year.",
+          "date": "2025-08-17T11:15:33.053Z",
+          "reviewerName": "Kamal Hossain",
+          "reviewerEmail": "kamal.hossain@example.com"
+        }
+      ],
+      "returnPolicy": "No returns after planting.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-07-18T12:30:02.053Z", "updatedAt": "2025-08-11T09:41:02.053Z", "barcode": "PLANT-00326789012", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/twMDzP9N/rose-bush.jpg"],
+      "thumbnail": "https://i.ibb.co.com/twMDzP9N/rose-bush.jpg"
+    },
+    {
+      "id": 29,
+      "title": "Mint (Mentha)",
+      "description": "Mint — fast-growing, aromatic leaves. Partial shade, perfect for teas and cooking.",
+      "category": "Culinary Herbs",
+      "price": 99,
+      "discountPercentage": 30.0,
+      "rating": 3.3,
+      "stock": 200,
+      "tags": ["herb", "aromatic", "edible"],
+      "brand": "KitchenGreen",
+      "sku": "PLT-MIN-030",
+      "weight": 0.4,
+      "dimensions": { "width": 15.0, "height": 30.0, "depth": 15.0 },
+      "warrantyInformation": "7 days replacement if no growth",
+      "shippingInformation": "Ships in 1-2 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.7,
+          "comment": "Bro, mojitos on tap now! Grows like weed, literally.",
+          "date": "2025-08-19T13:40:44.053Z",
+          "reviewerName": "Fahad Rahman",
+          "reviewerEmail": "fahad.rahman@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 5 days if seeds fail.",
+      "minimumOrderQuantity": 3,
+      "meta": { "createdAt": "2025-07-20T14:45:02.053Z", "updatedAt": "2025-08-13T09:41:02.053Z", "barcode": "PLANT-00337890123", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/5XDRY0mg/areca-palm.jpg"],
+      "thumbnail": "https://i.ibb.co.com/5XDRY0mg/areca-palm.jpg"
+    },
+    {
+      "id": 30,
+      "title": "Aglaonema (Chinese Evergreen)",
+      "description": "Aglaonema — colorful foliage, low light. Air-purifying, perfect for beginners.",
+      "category": "Beginner-Friendly",
+      "price": 449,
+      "discountPercentage": 12.0,
+      "rating": 3.0,
+      "stock": 75,
+      "tags": ["indoor", "colorful", "easy"],
+      "brand": "EasyGrow",
+      "sku": "PLT-AGL-031",
+      "weight": 2.0,
+      "dimensions": { "width": 35.0, "height": 55.0, "depth": 35.0 },
+      "warrantyInformation": "20 days replacement",
+      "shippingInformation": "Ships in 3-5 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.1,
+          "comment": "Bro, first plant ever and it’s still alive after 6 months! Colors pop.",
+          "date": "2025-08-21T15:20:55.053Z",
+          "reviewerName": "Tanjim Ara",
+          "reviewerEmail": "tanjim.ara@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 10 days if unhealthy.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-07-22T10:30:02.053Z", "updatedAt": "2025-08-15T09:41:02.053Z", "barcode": "PLANT-00348901234", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/Nggy36Df/money-plant-ceramic.jpg"],
+      "thumbnail": "https://i.ibb.co.com/Nggy36Df/money-plant-ceramic.jpg"
+    },
+    {
+      "id": 31,
+      "title": "Hydrangea",
+      "description": "Hydrangea — massive mophead blooms. Part shade, color-changing, perfect for shrubs.",
+      "category": "Shrubs & Bushes",
+      "price": 749,
+      "discountPercentage": 9.0,
+      "rating": 3.2,
+      "stock": 35,
+      "tags": ["shrub", "flowering", "color-change"],
+      "brand": "BloomBush",
+      "sku": "PLT-HYD-032",
+      "weight": 5.5,
+      "dimensions": { "width": 80.0, "height": 120.0, "depth": 80.0 },
+      "warrantyInformation": "15 days replacement if no buds",
+      "shippingInformation": "Ships in 5-7 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.8,
+          "comment": "Bro, turned pink with vinegar! Garden looks magical.",
+          "date": "2025-08-23T11:25:22.053Z",
+          "reviewerName": "Nasir Uddin",
+          "reviewerEmail": "nasir.uddin@example.com"
+        }
+      ],
+      "returnPolicy": "No returns after planting.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-07-25T12:45:02.053Z", "updatedAt": "2025-08-17T09:41:02.053Z", "barcode": "PLANT-00359012345", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/4ggGnmtS/hibiscus.jpg"],
+      "thumbnail": "https://i.ibb.co.com/4ggGnmtS/hibiscus.jpg"
+    },
+    {
+      "id": 32,
+      "title": "Dracaena Marginata",
+      "description": "Dracaena — spiky, colorful edges. Low light, architectural, perfect for corners.",
+      "category": "Architectural Plants",
+      "price": 599,
+      "discountPercentage": 10.0,
+      "rating": 2.9,
+      "stock": 50,
+      "tags": ["indoor", "spiky", "tall"],
+      "brand": "StructureGreen",
+      "sku": "PLT-DRA-033",
+      "weight": 3.8,
+      "dimensions": { "width": 40.0, "height": 140.0, "depth": 40.0 },
+      "warrantyInformation": "20 days replacement",
+      "shippingInformation": "Ships in 4-6 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.0,
+          "comment": "Bro, fills empty corners like a boss! Red edges pop under light.",
+          "date": "2025-08-25T13:30:33.053Z",
+          "reviewerName": "Shaila Rahman",
+          "reviewerEmail": "shaila.rahman@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 10 days if damaged.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-07-28T14:20:02.053Z", "updatedAt": "2025-08-19T09:41:02.053Z", "barcode": "PLANT-00360123456", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/99y3GrTK/jade-plant.jpg"],
+      "thumbnail": "https://i.ibb.co.com/99y3GrTK/jade-plant.jpg"
+    },
+    {
+      "id": 33,
+      "title": "Geranium (Pelargonium)",
+      "description": "Geranium — clustered blooms, scented leaves. Full sun, perfect for window boxes.",
+      "category": "Window Box Plants",
+      "price": 219,
+      "discountPercentage": 20.0,
+      "rating": 3.1,
+      "stock": 95,
+      "tags": ["flowering", "scented", "compact"],
+      "brand": "WindowBloom",
+      "sku": "PLT-GER-034",
+      "weight": 0.9,
+      "dimensions": { "width": 25.0, "height": 40.0, "depth": 25.0 },
+      "warrantyInformation": "7 days replacement if no scent",
+      "shippingInformation": "Ships in 2-3 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.3,
+          "comment": "Bro, window smells like lemon all day! Blooms non-stop.",
+          "date": "2025-08-27T15:40:44.053Z",
+          "reviewerName": "Rashed Khan",
+          "reviewerEmail": "rashed.khan@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 5 days if wilted.",
+      "minimumOrderQuantity": 2,
+      "meta": { "createdAt": "2025-07-30T10:30:02.053Z", "updatedAt": "2025-08-21T09:41:02.053Z", "barcode": "PLANT-00371234567", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/hFxMF0LM/boston-fern.jpg"],
+      "thumbnail": "https://i.ibb.co.com/hFxMF0LM/boston-fern.jpg"
+    },
+    {
+      "id": 34,
+      "title": "Anthurium",
+      "description": "Anthurium — heart-shaped red spathes. Bright indirect light, long-lasting, romantic vibe.",
+      "category": "Romantic Plants",
+      "price": 699,
+      "discountPercentage": 8.0,
+      "rating": 3.4,
+      "stock": 40,
+      "tags": ["flowering", "heart", "long-bloom"],
+      "brand": "LoveBloom",
+      "sku": "PLT-ANT-035",
+      "weight": 2.3,
+      "dimensions": { "width": 35.0, "height": 60.0, "depth": 35.0 },
+      "warrantyInformation": "15 days replacement if spathe fades",
+      "shippingInformation": "Ships in 3-5 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 4.1,
+          "comment": "Bro, anniversary gift on point! Red hearts for 4 months straight.",
+          "date": "2025-08-29T11:20:55.053Z",
+          "reviewerName": "Sadia Islam",
+          "reviewerEmail": "sadia.islam@example.com"
+        }
+      ],
+      "returnPolicy": "No returns after blooming.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-08-01T12:45:02.053Z", "updatedAt": "2025-08-23T09:41:02.053Z", "barcode": "PLANT-00382345678", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/1Jf23nLH/marigold.jpg"],
+      "thumbnail": "https://i.ibb.co.com/1Jf23nLH/marigold.jpg"
+    },
+    {
+      "id": 35,
+      "title": "Bamboo Palm",
+      "description": "Bamboo Palm — graceful, arching fronds. Low light, air-purifying, perfect for shady spots.",
+      "category": "Palm Trees",
+      "price": 799,
+      "discountPercentage": 7.0,
+      "rating": 3.0,
+      "stock": 30,
+      "tags": ["palm", "indoor", "graceful"],
+      "brand": "PalmParadise",
+      "sku": "PLT-BAM-036",
+      "weight": 5.0,
+      "dimensions": { "width": 60.0, "height": 160.0, "depth": 60.0 },
+      "warrantyInformation": "20 days replacement",
+      "shippingInformation": "Ships in 5-7 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.2,
+          "comment": "Bro, shady corner transformed! Looks like a mini forest.",
+          "date": "2025-08-31T13:30:22.053Z",
+          "reviewerName": "Firoz Ahmed",
+          "reviewerEmail": "firoz.ahmed@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 10 days if damaged.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-08-03T14:20:02.053Z", "updatedAt": "2025-08-25T09:41:02.053Z", "barcode": "PLANT-00393456789", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/YTdLV2rv/zz-plant.jpg"],
+      "thumbnail": "https://i.ibb.co.com/YTdLV2rv/zz-plant.jpg"
+    },
+    {
+      "id": 36,
+      "title": "Venus Flytrap",
+      "description": "Venus Flytrap — carnivorous, snaps shut. Bright light, distilled water, perfect for kids.",
+      "category": "Carnivorous Plants",
+      "price": 499,
+      "discountPercentage": 15.0,
+      "rating": 3.5,
+      "stock": 60,
+      "tags": ["carnivorous", "unique", "educational"],
+      "brand": "TrapMaster",
+      "sku": "PLT-VFT-037",
+      "weight": 0.5,
+      "dimensions": { "width": 15.0, "height": 20.0, "depth": 15.0 },
+      "warrantyInformation": "10 days replacement if traps don't close",
+      "shippingInformation": "Ships in 2-4 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 4.0,
+          "comment": "Bro, kid fed it a fly and screamed! Science class at home.",
+          "date": "2025-09-02T15:40:33.053Z",
+          "reviewerName": "Sumon Mia",
+          "reviewerEmail": "sumon.mia@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 7 days if inactive.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-08-05T10:30:02.053Z", "updatedAt": "2025-08-27T09:41:02.053Z", "barcode": "PLANT-00404567890", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/PzTykMv8/aloe-vera.jpg"],
+      "thumbnail": "https://i.ibb.co.com/PzTykMv8/aloe-vera.jpg"
+    },
+    {
+      "id": 37,
+      "title": "Dahlia",
+      "description": "Dahlia — dinner-plate blooms in every color. Full sun, perfect for cut flowers.",
+      "category": "Cut Flower Plants",
+      "price": 329,
+      "discountPercentage": 18.0,
+      "rating": 3.3,
+      "stock": 80,
+      "tags": ["flowering", "large-bloom", "vase"],
+      "brand": "BloomCut",
+      "sku": "PLT-DAH-038",
+      "weight": 1.2,
+      "dimensions": { "width": 30.0, "height": 100.0, "depth": 30.0 },
+      "warrantyInformation": "7 days replacement if no tubers",
+      "shippingInformation": "Ships in 3-5 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.9,
+          "comment": "Bro, one bloom filled the whole vase! Dinner plate realness.",
+          "date": "2025-09-04T11:20:44.053Z",
+          "reviewerName": "Rina Parvin",
+          "reviewerEmail": "rina.parvin@example.com"
+        }
+      ],
+      "returnPolicy": "No returns after planting.",
+      "minimumOrderQuantity": 2,
+      "meta": { "createdAt": "2025-08-07T12:45:02.053Z", "updatedAt": "2025-08-29T09:41:02.053Z", "barcode": "PLANT-00415678901", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/MxHV2VXG/spider-plant.jpg"],
+      "thumbnail": "https://i.ibb.co.com/MxHV2VXG/spider-plant.jpg"
+    },
+    {
+
+      "id": 38,
+      "title": "English Ivy (Hedera)",
+      "description": "English Ivy — classic trailing, covers walls. Shade tolerant, perfect for ground cover.",
+      "category": "Ground Cover",
+      "price": 199,
+      "discountPercentage": 22.0,
+      "rating": 2.8,
+      "stock": 120,
+      "tags": ["trailing", "shade", "cover"],
+      "brand": "CoverGreen",
+      "sku": "PLT-IVY-039",
+      "weight": 0.9,
+      "dimensions": { "width": 25.0, "height": 300.0, "depth": 25.0 },
+      "warrantyInformation": "10 days replacement if no growth",
+      "shippingInformation": "Ships in 2-4 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.0,
+          "comment": "Bro, ugly wall gone in 3 months! Green carpet vibes.",
+          "date": "2025-09-06T13:30:55.053Z",
+          "reviewerName": "Jubayer Hossain",
+          "reviewerEmail": "jubayer.hossain@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 7 days if damaged.",
+      "minimumOrderQuantity": 3,
+      "meta": { "createdAt": "2025-08-09T14:20:02.053Z", "updatedAt": "2025-08-31T09:41:02.053Z", "barcode": "PLANT-00426789012", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/k2VQJff7/bougainvillea.jpg"],
+      "thumbnail": "https://i.ibb.co.com/k2VQJff7/bougainvillea.jpg"
+    },
+
+    {
+      "id": 40,
+      "title": "Lucky Bamboo (Dracaena Sanderiana)",
+      "description": "Lucky Bamboo — twisted stalks, brings fortune. Low light, water only, perfect for desk or gift.",
+      "category": "Lucky & Feng Shui",
+      "price": 299,
+      "discountPercentage": 15.0,
+      "rating": 3.4,
+      "stock": 100,
+      "tags": ["lucky", "feng-shui", "minimal"],
+      "brand": "FortuneGreen",
+      "sku": "PLT-LUC-040",
+      "weight": 0.6,
+      "dimensions": { "width": 15.0, "height": 40.0, "depth": 15.0 },
+      "warrantyInformation": "10 days replacement if stalks yellow",
+      "shippingInformation": "Ships in 2-3 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 4.0,
+          "comment": "Bro, office desk got that positive energy now! 5 stalks for wealth – manifesting.",
+          "date": "2025-09-08T10:15:22.053Z",
+          "reviewerName": "Arif Islam",
+          "reviewerEmail": "arif.islam@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 7 days if unhealthy.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-08-11T11:30:02.053Z", "updatedAt": "2025-09-01T09:41:02.053Z", "barcode": "PLANT-00437890123", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/mrsTZSWW/peace-lily.jpg"],
+      "thumbnail": "https://i.ibb.co.com/mrsTZSWW/peace-lily.jpg"
+    },
+    {
+      "id": 41,
+      "title": "Kalanchoe Blossfeldiana",
+      "description": "Kalanchoe — clusters of bright flowers. Full sun, low water, perfect for sunny windows.",
+      "category": "Flowering Succulents",
+      "price": 259,
+      "discountPercentage": 18.0,
+      "rating": 3.2,
+      "stock": 90,
+      "tags": ["succulent", "flowering", "sun-loving"],
+      "brand": "SunnySucc",
+      "sku": "PLT-KAL-041",
+      "weight": 0.8,
+      "dimensions": { "width": 20.0, "height": 30.0, "depth": 20.0 },
+      "warrantyInformation": "7 days replacement if no blooms",
+      "shippingInformation": "Ships in 2-3 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.5,
+          "comment": "Bro, red blooms for weeks! Zero effort, just sun.",
+          "date": "2025-09-10T12:20:33.053Z",
+          "reviewerName": "Sanjana Akter",
+          "reviewerEmail": "sanjana.akter@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 5 days if wilted.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-08-13T13:45:02.053Z", "updatedAt": "2025-09-03T09:41:02.053Z", "barcode": "PLANT-00448901234", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/spnYTLMy/echeveria-lola.jpg"],
+      "thumbnail": "https://i.ibb.co.com/spnYTLMy/echeveria-lola.jpg"
+    },
+    {
+      "id": 42,
+      "title": "Parlor Palm",
+      "description": "Parlor Palm — feathery, Victorian charm. Low light, slow-growing, perfect for vintage vibes.",
+      "category": "Classic Indoor",
+      "price": 649,
+      "discountPercentage": 10.0,
+      "rating": 3.1,
+      "stock": 45,
+      "tags": ["palm", "vintage", "low-light"],
+      "brand": "OldWorld",
+      "sku": "PLT-PAR-042",
+      "weight": 4.0,
+      "dimensions": { "width": 50.0, "height": 120.0, "depth": 50.0 },
+      "warrantyInformation": "15 days replacement",
+      "shippingInformation": "Ships in 4-6 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.3,
+          "comment": "Bro, living room feels like a 1900s parlor! Slow but classy growth.",
+          "date": "2025-09-12T14:30:44.053Z",
+          "reviewerName": "Tanvir Ahmed",
+          "reviewerEmail": "tanvir.ahmed@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 10 days if damaged.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-08-15T10:20:02.053Z", "updatedAt": "2025-09-05T09:41:02.053Z", "barcode": "PLANT-00459012345", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/ynBqrtbb/pothos.jpg"],
+      "thumbnail": "https://i.ibb.co.com/ynBqrtbb/pothos.jpg"
+    },
+    {
+      "id": 43,
+      "title": "Zinnia",
+      "description": "Zinnia — bold, daisy-like blooms. Full sun, fast-growing, perfect for summer color.",
+      "category": "Summer Annuals",
+      "price": 139,
+      "discountPercentage": 25.0,
+      "rating": 3.0,
+      "stock": 150,
+      "tags": ["annual", "colorful", "butterfly"],
+      "brand": "SummerPop",
+      "sku": "PLT-ZIN-043",
+      "weight": 0.5,
+      "dimensions": { "width": 20.0, "height": 60.0, "depth": 20.0 },
+      "warrantyInformation": "7 days replacement if seeds fail",
+      "shippingInformation": "Ships in 1-2 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.4,
+          "comment": "Bro, garden exploded in color in 30 days! Butterflies everywhere.",
+          "date": "2025-09-14T16:40:55.053Z",
+          "reviewerName": "Ruma Begum",
+          "reviewerEmail": "ruma.begum@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 5 days if seeds bad.",
+      "minimumOrderQuantity": 5,
+      "meta": { "createdAt": "2025-08-17T11:30:02.053Z", "updatedAt": "2025-09-07T09:41:02.053Z", "barcode": "PLANT-00460123456", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/twMDzP9N/rose-bush.jpg"],
+      "thumbnail": "https://i.ibb.co.com/twMDzP9N/rose-bush.jpg"
+    },
+    {
+      "id": 44,
+      "title": "Dieffenbachia",
+      "description": "Dieffenbachia — large, patterned leaves. Bright indirect light, air-purifying, statement plant.",
+      "category": "Foliage Statement",
+      "price": 549,
+      "discountPercentage": 12.0,
+      "rating": 3.2,
+      "stock": 55,
+      "tags": ["foliage", "patterned", "tall"],
+      "brand": "BoldLeaf",
+      "sku": "PLT-DIE-044",
+      "weight": 3.0,
+      "dimensions": { "width": 40.0, "height": 90.0, "depth": 40.0 },
+      "warrantyInformation": "15 days replacement if leaves yellow",
+      "shippingInformation": "Ships in 3-5 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.6,
+          "comment": "Bro, leaves are huge and spotted! Corner filler supreme.",
+          "date": "2025-09-16T10:25:22.053Z",
+          "reviewerName": "Shamim Reza",
+          "reviewerEmail": "shamim.reza@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 10 days if unhealthy.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-08-19T13:45:02.053Z", "updatedAt": "2025-09-09T09:41:02.053Z", "barcode": "PLANT-00471234567", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/5XDRY0mg/areca-palm.jpg"],
+      "thumbnail": "https://i.ibb.co.com/5XDRY0mg/areca-palm.jpg"
+    },
+    {
+      "id": 45,
+      "title": "Cyclamen",
+      "description": "Cyclamen — upswept petals, marbled leaves. Cool temps, perfect for winter bloom indoors.",
+      "category": "Winter Bloomers",
+      "price": 399,
+      "discountPercentage": 14.0,
+      "rating": 3.5,
+      "stock": 70,
+      "tags": ["winter", "indoor", "delicate"],
+      "brand": "FrostBloom",
+      "sku": "PLT-CYC-045",
+      "weight": 1.1,
+      "dimensions": { "width": 25.0, "height": 35.0, "depth": 25.0 },
+      "warrantyInformation": "10 days replacement if buds drop",
+      "shippingInformation": "Ships in 2-4 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 4.0,
+          "comment": "Bro, pink blooms in December! Cozy winter vibes.",
+          "date": "2025-09-18T12:30:33.053Z",
+          "reviewerName": "Nabila Siddique",
+          "reviewerEmail": "nabila.siddique@example.com"
+        }
+      ],
+      "returnPolicy": "No returns after blooming.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-08-21T10:20:02.053Z", "updatedAt": "2025-09-11T09:41:02.053Z", "barcode": "PLANT-00482345678", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/Nggy36Df/money-plant-ceramic.jpg"],
+      "thumbnail": "https://i.ibb.co.com/Nggy36Df/money-plant-ceramic.jpg"
+    },
+    {
+      "id": 46,
+      "title": "Wisteria Sinensis",
+      "description": "Wisteria — cascading purple racemes. Full sun, climbs pergolas, fragrant spring show.",
+      "category": "Climbing Perennials",
+      "price": 899,
+      "discountPercentage": 8.0,
+      "rating": 3.6,
+      "stock": 25,
+      "tags": ["climbing", "fragrant", "spring"],
+      "brand": "PurpleCascade",
+      "sku": "PLT-WIS-046",
+      "weight": 6.0,
+      "dimensions": { "width": 60.0, "height": 500.0, "depth": 60.0 },
+      "warrantyInformation": "15 days replacement if no growth",
+      "shippingInformation": "Ships in 6-8 business days",
+      "availabilityStatus": "Low Stock",
+      "reviews": [
+        {
+          "rating": 4.5,
+          "comment": "Bro, pergola is a purple waterfall every May! Worth the wait.",
+          "date": "2025-09-20T14:40:44.053Z",
+          "reviewerName": "Faruk Hossain",
+          "reviewerEmail": "faruk.hossain@example.com"
+        }
+      ],
+      "returnPolicy": "No returns after planting.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-08-23T11:30:02.053Z", "updatedAt": "2025-09-13T09:41:02.053Z", "barcode": "PLANT-00493456789", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/4ggGnmtS/hibiscus.jpg"],
+      "thumbnail": "https://i.ibb.co.com/4ggGnmtS/hibiscus.jpg"
+    },
+    {
+      "id": 47,
+      "title": "Haworthia",
+      "description": "Haworthia — tiny zebra-striped rosettes. Low light, perfect for desks or terrariums.",
+      "category": "Mini Succulents",
+      "price": 179,
+      "discountPercentage": 20.0,
+      "rating": 3.3,
+      "stock": 120,
+      "tags": ["mini", "succulent", "desk"],
+      "brand": "TinyGreen",
+      "sku": "PLT-HAW-047",
+      "weight": 0.3,
+      "dimensions": { "width": 10.0, "height": 12.0, "depth": 10.0 },
+      "warrantyInformation": "7 days replacement",
+      "shippingInformation": "Ships in 1-2 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.7,
+          "comment": "Bro, fits perfectly next to my mouse! Zebra stripes pop.",
+          "date": "2025-09-22T16:50:55.053Z",
+          "reviewerName": "Tanzila Rahman",
+          "reviewerEmail": "tanzila.rahman@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 5 days if damaged.",
+      "minimumOrderQuantity": 2,
+      "meta": { "createdAt": "2025-08-25T13:45:02.053Z", "updatedAt": "2025-09-15T09:41:02.053Z", "barcode": "PLANT-00504567890", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/99y3GrTK/jade-plant.jpg"],
+      "thumbnail": "https://i.ibb.co.com/99y3GrTK/jade-plant.jpg"
+    },
+    {
+      "id": 48,
+      "title": "Cast Iron Plant (Aspidistra)",
+      "description": "Cast Iron Plant — unkillable, dark green leaves. Extreme low light, perfect for dark corners.",
+      "category": "Indestructible",
+      "price": 499,
+      "discountPercentage": 11.0,
+      "rating": 3.4,
+      "stock": 60,
+      "tags": ["low-light", "tough", "indoor"],
+      "brand": "IronRoot",
+      "sku": "PLT-CAS-048",
+      "weight": 3.5,
+      "dimensions": { "width": 40.0, "height": 80.0, "depth": 40.0 },
+      "warrantyInformation": "30 days replacement",
+      "shippingInformation": "Ships in 3-5 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 4.0,
+          "comment": "Bro, forgot it existed for 2 months – still green! Legend.",
+          "date": "2025-09-24T10:30:22.053Z",
+          "reviewerName": "Rasel Mia",
+          "reviewerEmail": "rasel.mia@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 14 days if unhealthy.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-08-27T10:20:02.053Z", "updatedAt": "2025-09-17T09:41:02.053Z", "barcode": "PLANT-00515678901", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/hFxMF0LM/boston-fern.jpg"],
+      "thumbnail": "https://i.ibb.co.com/hFxMF0LM/boston-fern.jpg"
+    },
+    {
+      "id": 49,
+      "title": "Cosmos",
+      "description": "Cosmos — delicate, daisy-like blooms. Full sun, self-seeding, perfect for wild gardens.",
+      "category": "Wildflower Mix",
+      "price": 119,
+      "discountPercentage": 28.0,
+      "rating": 3.1,
+      "stock": 180,
+      "tags": ["wildflower", "easy", "butterfly"],
+      "brand": "MeadowBloom",
+      "sku": "PLT-COS-049",
+      "weight": 0.4,
+      "dimensions": { "width": 15.0, "height": 90.0, "depth": 15.0 },
+      "warrantyInformation": "7 days replacement if seeds fail",
+      "shippingInformation": "Ships in 1-2 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.5,
+          "comment": "Bro, backyard turned into a meadow! Bees love it.",
+          "date": "2025-09-26T12:40:33.053Z",
+          "reviewerName": "Sohana Yasmin",
+          "reviewerEmail": "sohana.yasmin@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 5 days if seeds bad.",
+      "minimumOrderQuantity": 5,
+      "meta": { "createdAt": "2025-08-29T11:30:02.053Z", "updatedAt": "2025-09-19T09:41:02.053Z", "barcode": "PLANT-00526789012", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/1Jf23nLH/marigold.jpg"],
+      "thumbnail": "https://i.ibb.co.com/1Jf23nLH/marigold.jpg"
+    },
+    {
+      "id": 50,
+      "title": "Croton",
+      "description": "Croton — rainbow foliage, waxy leaves. Bright light, perfect for color splash indoors.",
+      "category": "Colorful Foliage",
+      "price": 599,
+      "discountPercentage": 10.0,
+      "rating": 3.3,
+      "stock": 50,
+      "tags": ["colorful", "indoor", "waxy"],
+      "brand": "RainbowLeaf",
+      "sku": "PLT-CRO-050",
+      "weight": 2.8,
+      "dimensions": { "width": 35.0, "height": 70.0, "depth": 35.0 },
+      "warrantyInformation": "15 days replacement if color fades",
+      "shippingInformation": "Ships in 3-5 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.8,
+          "comment": "Bro, leaves change color with light! Living artwork.",
+          "date": "2025-09-28T14:50:44.053Z",
+          "reviewerName": "Imran Siddique",
+          "reviewerEmail": "imran.siddique@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 10 days if damaged.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-08-31T13:45:02.053Z", "updatedAt": "2025-09-21T09:41:02.053Z", "barcode": "PLANT-00537890123", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/YTdLV2rv/zz-plant.jpg"],
+      "thumbnail": "https://i.ibb.co.com/YTdLV2rv/zz-plant.jpg"
+    },
+    {
+      "id": 51,
+      "title": "Begonia Rex",
+      "description": "Begonia Rex — painted leaves, swirls & spots. Indirect light, perfect for shelves.",
+      "category": "Artistic Foliage",
+      "price": 449,
+      "discountPercentage": 13.0,
+      "rating": 3.5,
+      "stock": 65,
+      "tags": ["foliage", "patterned", "compact"],
+      "brand": "PaintedLeaf",
+      "sku": "PLT-BEG-051",
+      "weight": 1.5,
+      "dimensions": { "width": 30.0, "height": 40.0, "depth": 30.0 },
+      "warrantyInformation": "10 days replacement if leaves curl",
+      "shippingInformation": "Ships in 2-4 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 4.1,
+          "comment": "Bro, each leaf is a painting! Shelf game elevated.",
+          "date": "2025-09-30T10:30:55.053Z",
+          "reviewerName": "Fatima Zahra",
+          "reviewerEmail": "fatima.zahra@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 7 days if damaged.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-09-02T10:20:02.053Z", "updatedAt": "2025-09-23T09:41:02.053Z", "barcode": "PLANT-00548901234", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/PzTykMv8/aloe-vera.jpg"],
+      "thumbnail": "https://i.ibb.co.com/PzTykMv8/aloe-vera.jpg"
+    },
+    {
+      "id": 52,
+      "title": "Jasmine (Jasminum)",
+      "description": "Jasmine — intensely fragrant white blooms. Part sun, climbs or trails, perfect for evenings.",
+      "category": "Fragrant Climbers",
+      "price": 529,
+      "discountPercentage": 12.0,
+      "rating": 3.7,
+      "stock": 40,
+      "tags": ["fragrant", "climbing", "night-bloom"],
+      "brand": "ScentedVine",
+      "sku": "PLT-JAS-052",
+      "weight": 3.2,
+      "dimensions": { "width": 45.0, "height": 300.0, "depth": 45.0 },
+      "warrantyInformation": "15 days replacement if no scent",
+      "shippingInformation": "Ships in 5-7 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 4.3,
+          "comment": "Bro, balcony smells like heaven at night! Pure romance.",
+          "date": "2025-10-02T12:40:22.053Z",
+          "reviewerName": "Kamal Uddin",
+          "reviewerEmail": "kamal.uddin@example.com"
+        }
+      ],
+      "returnPolicy": "No returns after planting.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-09-04T11:30:02.053Z", "updatedAt": "2025-09-25T09:41:02.053Z", "barcode": "PLANT-00559012345", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/MxHV2VXG/spider-plant.jpg"],
+      "thumbnail": "https://i.ibb.co.com/MxHV2VXG/spider-plant.jpg"
+    },
+    {
+      "id": 53,
+      "title": "Sedum (Stonecrop)",
+      "description": "Sedum — fleshy leaves, star-shaped flowers. Full sun, drought-tolerant, perfect for rock gardens.",
+      "category": "Rock Garden",
+      "price": 189,
+      "discountPercentage": 22.0,
+      "rating": 3.0,
+      "stock": 110,
+      "tags": ["succulent", "groundcover", "sun"],
+      "brand": "RockBloom",
+      "sku": "PLT-SED-053",
+      "weight": 0.7,
+      "dimensions": { "width": 25.0, "height": 20.0, "depth": 25.0 },
+      "warrantyInformation": "7 days replacement",
+      "shippingInformation": "Ships in 2-3 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.2,
+          "comment": "Bro, rock garden looks alive now! No water, no problem.",
+          "date": "2025-10-04T14:50:33.053Z",
+          "reviewerName": "Shaila Akter",
+          "reviewerEmail": "shaila.akter@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 5 days if damaged.",
+      "minimumOrderQuantity": 3,
+      "meta": { "createdAt": "2025-09-06T13:45:02.053Z", "updatedAt": "2025-09-27T09:41:02.053Z", "barcode": "PLANT-00560123456", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/k2VQJff7/bougainvillea.jpg"],
+      "thumbnail": "https://i.ibb.co.com/k2VQJff7/bougainvillea.jpg"
+    },
+    {
+      "id": 54,
+      "title": "Kentia Palm",
+      "description": "Kentia Palm — elegant, arching fronds. Low light, slow-growing, luxury indoor tree.",
+      "category": "Luxury Palms",
+      "price": 1499,
+      "discountPercentage": 6.0,
+      "rating": 3.8,
+      "stock": 20,
+      "tags": ["palm", "luxury", "tall"],
+      "brand": "EliteGreen",
+      "sku": "PLT-KEN-054",
+      "weight": 8.5,
+      "dimensions": { "width": 80.0, "height": 200.0, "depth": 80.0 },
+      "warrantyInformation": "30 days replacement",
+      "shippingInformation": "Ships in 6-8 business days",
+      "availabilityStatus": "Low Stock",
+      "reviews": [
+        {
+          "rating": 4.5,
+          "comment": "Bro, lobby looks like a 5-star hotel now! Classy AF.",
+          "date": "2025-10-06T16:30:44.053Z",
+          "reviewerName": "Rahim Khan",
+          "reviewerEmail": "rahim.khan@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 15 days if damaged.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-09-08T10:20:02.053Z", "updatedAt": "2025-09-29T09:41:02.053Z", "barcode": "PLANT-00571234567", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/mrsTZSWW/peace-lily.jpg"],
+      "thumbnail": "https://i.ibb.co.com/mrsTZSWW/peace-lily.jpg"
+    },
+    {
+      "id": 55,
+      "title": "Impatiens",
+      "description": "Impatiens — non-stop blooms in shade. Perfect for shady balconies or under trees.",
+      "category": "Shade Annuals",
+      "price": 159,
+      "discountPercentage": 24.0,
+      "rating": 3.1,
+      "stock": 130,
+      "tags": ["shade", "flowering", "easy"],
+      "brand": "ShadePop",
+      "sku": "PLT-IMP-055",
+      "weight": 0.6,
+      "dimensions": { "width": 20.0, "height": 35.0, "depth": 20.0 },
+      "warrantyInformation": "7 days replacement if no blooms",
+      "shippingInformation": "Ships in 2-3 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.4,
+          "comment": "Bro, shady corner finally has color! Pink explosion.",
+          "date": "2025-10-08T10:40:55.053Z",
+          "reviewerName": "Sadia Noor",
+          "reviewerEmail": "sadia.noor@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 5 days if wilted.",
+      "minimumOrderQuantity": 4,
+      "meta": { "createdAt": "2025-09-10T11:30:02.053Z", "updatedAt": "2025-10-01T09:41:02.053Z", "barcode": "PLANT-00582345678", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/spnYTLMy/echeveria-lola.jpg"],
+      "thumbnail": "https://i.ibb.co.com/spnYTLMy/echeveria-lola.jpg"
+    },
+    {
+      "id": 56,
+      "title": "Alocasia Polly",
+      "description": "Alocasia Polly — arrow-shaped, glossy leaves. Bright indirect, dramatic, perfect for drama.",
+      "category": "Dramatic Foliage",
+      "price": 799,
+      "discountPercentage": 9.0,
+      "rating": 3.6,
+      "stock": 35,
+      "tags": ["large-leaf", "glossy", "statement"],
+      "brand": "DramaLeaf",
+      "sku": "PLT-ALO-056",
+      "weight": 4.0,
+      "dimensions": { "width": 50.0, "height": 90.0, "depth": 50.0 },
+      "warrantyInformation": "15 days replacement if leaves droop",
+      "shippingInformation": "Ships in 4-6 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 4.2,
+          "comment": "Bro, leaves like elephant ears! Total showstopper.",
+          "date": "2025-10-10T12:50:22.053Z",
+          "reviewerName": "Tarek Islam",
+          "reviewerEmail": "tarek.islam@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 10 days if unhealthy.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-09-12T13:45:02.053Z", "updatedAt": "2025-10-03T09:41:02.053Z", "barcode": "PLANT-00593456789", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/ynBqrtbb/pothos.jpg"],
+      "thumbnail": "https://i.ibb.co.com/ynBqrtbb/pothos.jpg"
+    },
+    {
+      "id": 57,
+      "title": "Basil (Ocimum Basilicum)",
+      "description": "Basil — aromatic leaves, pesto king. Full sun, perfect for kitchen windows.",
+      "category": "Culinary Herbs",
+      "price": 99,
+      "discountPercentage": 30.0,
+      "rating": 3.5,
+      "stock": 200,
+      "tags": ["herb", "edible", "kitchen"],
+      "brand": "KitchenHerb",
+      "sku": "PLT-BAS-057",
+      "weight": 0.3,
+      "dimensions": { "width": 15.0, "height": 35.0, "depth": 15.0 },
+      "warrantyInformation": "7 days replacement if no growth",
+      "shippingInformation": "Ships in 1-2 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 4.0,
+          "comment": "Bro, fresh pesto every week! Grows like crazy.",
+          "date": "2025-10-12T14:30:33.053Z",
+          "reviewerName": "Sumaiya Akter",
+          "reviewerEmail": "sumaiya.akter@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 5 days if seeds fail.",
+      "minimumOrderQuantity": 3,
+      "meta": { "createdAt": "2025-09-14T10:20:02.053Z", "updatedAt": "2025-10-05T09:41:02.053Z", "barcode": "PLANT-00604567890", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/twMDzP9N/rose-bush.jpg"],
+      "thumbnail": "https://i.ibb.co.com/twMDzP9N/rose-bush.jpg"
+    },
+    {
+      "id": 58,
+      "title": "Hoya Carnosa",
+      "description": "Hoya — waxy leaves, star-shaped blooms. Bright indirect, perfect for hanging or climbing.",
+      "category": "Wax Plants",
+      "price": 429,
+      "discountPercentage": 14.0,
+      "rating": 3.4,
+      "stock": 70,
+      "tags": ["waxy", "flowering", "trailing"],
+      "brand": "WaxVine",
+      "sku": "PLT-HOY-058",
+      "weight": 1.8,
+      "dimensions": { "width": 30.0, "height": 80.0, "depth": 30.0 },
+      "warrantyInformation": "10 days replacement if no growth",
+      "shippingInformation": "Ships in 3-5 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.9,
+          "comment": "Bro, smells like chocolate when it blooms! Hanging basket GOAT.",
+          "date": "2025-10-14T16:40:44.053Z",
+          "reviewerName": "Fahim Reza",
+          "reviewerEmail": "fahim.reza@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 7 days if damaged.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-09-16T11:30:02.053Z", "updatedAt": "2025-10-07T09:41:02.053Z", "barcode": "PLANT-00615678901", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/5XDRY0mg/areca-palm.jpg"],
+      "thumbnail": "https://i.ibb.co.com/5XDRY0mg/areca-palm.jpg"
+    },
+    {
+      "id": 59,
+      "title": "Pansy (Viola)",
+      "description": "Pansy — happy faces in cool colors. Cool weather, perfect for fall & spring pots.",
+      "category": "Cool Season Annuals",
+      "price": 149,
+      "discountPercentage": 26.0,
+      "rating": 3.2,
+      "stock": 140,
+      "tags": ["cool-season", "colorful", "edible-flower"],
+      "brand": "CoolBloom",
+      "sku": "PLT-PAN-059",
+      "weight": 0.5,
+      "dimensions": { "width": 20.0, "height": 25.0, "depth": 20.0 },
+      "warrantyInformation": "7 days replacement if no blooms",
+      "shippingInformation": "Ships in 2-3 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.6,
+          "comment": "Bro, porch pots smiling at me every morning! Fall vibes.",
+          "date": "2025-10-16T10:50:55.053Z",
+          "reviewerName": "Rina Islam",
+          "reviewerEmail": "rina.islam@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 5 days if wilted.",
+      "minimumOrderQuantity": 4,
+      "meta": { "createdAt": "2025-09-18T13:45:02.053Z", "updatedAt": "2025-10-09T09:41:02.053Z", "barcode": "PLANT-00626789012", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/Nggy36Df/money-plant-ceramic.jpg"],
+      "thumbnail": "https://i.ibb.co.com/Nggy36Df/money-plant-ceramic.jpg"
+    },
+    {
+      "id": 60,
+      "title": "Yucca",
+      "description": "Yucca — sword-like leaves, architectural. Full sun, drought-tolerant, perfect for modern decor.",
+      "category": "Architectural Succulents",
+      "price": 699,
+      "discountPercentage": 10.0,
+      "rating": 3.3,
+      "stock": 45,
+      "tags": ["succulent", "tall", "modern"],
+      "brand": "DesertSpike",
+      "sku": "PLT-YUC-060",
+      "weight": 5.5,
+      "dimensions": { "width": 50.0, "height": 150.0, "depth": 50.0 },
+      "warrantyInformation": "20 days replacement",
+      "shippingInformation": "Ships in 5-7 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.8,
+          "comment": "Bro, living room got that desert modern vibe! Sharp but safe.",
+          "date": "2025-10-18T12:30:22.053Z",
+          "reviewerName": "Arif Hossain",
+          "reviewerEmail": "arif.hossain@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 10 days if damaged.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-09-20T10:20:02.053Z", "updatedAt": "2025-10-11T09:41:02.053Z", "barcode": "PLANT-00637890123", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/4ggGnmtS/hibiscus.jpg"],
+      "thumbnail": "https://i.ibb.co.com/4ggGnmtS/hibiscus.jpg"
+    },
+    {
+      "id": 61,
+      "title": "Rosemary (Rosmarinus)",
+      "description": "Rosemary — woody, pine-scented. Full sun, perfect for cooking & borders.",
+      "category": "Mediterranean Herbs",
+      "price": 199,
+      "discountPercentage": 20.0,
+      "rating": 3.5,
+      "stock": 100,
+      "tags": ["herb", "edible", "scented"],
+      "brand": "MedHerb",
+      "sku": "PLT-ROS-061",
+      "weight": 0.8,
+      "dimensions": { "width": 25.0, "height": 60.0, "depth": 25.0 },
+      "warrantyInformation": "10 days replacement if no scent",
+      "shippingInformation": "Ships in 2-3 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 4.0,
+          "comment": "Bro, roast chicken levelled up! Smells like Italy.",
+          "date": "2025-10-20T14:40:33.053Z",
+          "reviewerName": "Sanjida Parvin",
+          "reviewerEmail": "sanjida.parvin@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 7 days if unhealthy.",
+      "minimumOrderQuantity": 2,
+      "meta": { "createdAt": "2025-09-22T11:30:02.053Z", "updatedAt": "2025-10-13T09:41:02.053Z", "barcode": "PLANT-00648901234", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/99y3GrTK/jade-plant.jpg"],
+      "thumbnail": "https://i.ibb.co.com/99y3GrTK/jade-plant.jpg"
+    },
+    {
+      "id": 62,
+      "title": "Caladium",
+      "description": "Caladium — heart-shaped, colorful leaves. Shade-loving, perfect for underplanting.",
+      "category": "Shade Foliage",
+      "price": 379,
+      "discountPercentage": 16.0,
+      "rating": 3.4,
+      "stock": 75,
+      "tags": ["foliage", "colorful", "shade"],
+      "brand": "HeartLeaf",
+      "sku": "PLT-CAL-062",
+      "weight": 1.2,
+      "dimensions": { "width": 30.0, "height": 50.0, "depth": 30.0 },
+      "warrantyInformation": "10 days replacement if leaves fade",
+      "shippingInformation": "Ships in 3-5 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.9,
+          "comment": "Bro, shady patio got color now! Pink hearts everywhere.",
+          "date": "2025-10-22T16:50:44.053Z",
+          "reviewerName": "Tanvir Rahman",
+          "reviewerEmail": "tanvir.rahman@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 7 days if damaged.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-09-24T13:45:02.053Z", "updatedAt": "2025-10-15T09:41:02.053Z", "barcode": "PLANT-00659012345", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/hFxMF0LM/boston-fern.jpg"],
+      "thumbnail": "https://i.ibb.co.com/hFxMF0LM/boston-fern.jpg"
+    },
+    {
+      "id": 63,
+      "title": "Passion Flower (Passiflora)",
+      "description": "Passion Flower — exotic, intricate blooms. Full sun, climbs fast, perfect for trellises.",
+      "category": "Exotic Climbers",
+      "price": 599,
+      "discountPercentage": 11.0,
+      "rating": 3.6,
+      "stock": 40,
+      "tags": ["exotic", "climbing", "fruit"],
+      "brand": "TropicalPassion",
+      "sku": "PLT-PAS-063",
+      "weight": 3.8,
+      "dimensions": { "width": 50.0, "height": 400.0, "depth": 50.0 },
+      "warrantyInformation": "15 days replacement if no growth",
+      "shippingInformation": "Ships in 5-7 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 4.2,
+          "comment": "Bro, flowers look alien! And I got fruit too!",
+          "date": "2025-10-24T10:30:55.053Z",
+          "reviewerName": "Jamil Akter",
+          "reviewerEmail": "jamil.akter@example.com"
+        }
+      ],
+      "returnPolicy": "No returns after planting.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-09-26T10:20:02.053Z", "updatedAt": "2025-10-17T09:41:02.053Z", "barcode": "PLANT-00660123456", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/1Jf23nLH/marigold.jpg"],
+      "thumbnail": "https://i.ibb.co.com/1Jf23nLH/marigold.jpg"
+    },
+    {
+      "id": 64,
+      "title": "Euphorbia Milii (Crown of Thorns)",
+      "description": "Crown of Thorns — thorny stems, bright bracts. Full sun, drought-tolerant, perfect for security + beauty.",
+      "category": "Thorny Beauties",
+      "price": 329,
+      "discountPercentage": 18.0,
+      "rating": 3.2,
+      "stock": 85,
+      "tags": ["thorny", "flowering", "sun"],
+      "brand": "ThornBloom",
+      "sku": "PLT-EUP-064",
+      "weight": 1.5,
+      "dimensions": { "width": 35.0, "height": 60.0, "depth": 35.0 },
+      "warrantyInformation": "10 days replacement if no bracts",
+      "shippingInformation": "Ships in 3-5 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.7,
+          "comment": "Bro, red bracts all year! And keeps cats away.",
+          "date": "2025-10-26T12:40:22.053Z",
+          "reviewerName": "Nasrin Sultana",
+          "reviewerEmail": "nasrin.sultana@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 7 days if damaged.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-09-28T11:30:02.053Z", "updatedAt": "2025-10-19T09:41:02.053Z", "barcode": "PLANT-00671234567", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/YTdLV2rv/zz-plant.jpg"],
+      "thumbnail": "https://i.ibb.co.com/YTdLV2rv/zz-plant.jpg"
+    },
+    {
+      "id": 65,
+      "title": "Ponytail Palm",
+      "description": "Ponytail Palm — bulbous base, curly leaves. Low water, perfect for modern minimalism.",
+      "category": "Minimalist Trees",
+      "price": 749,
+      "discountPercentage": 9.0,
+      "rating": 3.5,
+      "stock": 50,
+      "tags": ["palm", "minimal", "drought"],
+      "brand": "DesertChic",
+      "sku": "PLT-PON-065",
+      "weight": 6.0,
+      "dimensions": { "width": 50.0, "height": 120.0, "depth": 50.0 },
+      "warrantyInformation": "20 days replacement",
+      "shippingInformation": "Ships in 4-6 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 4.0,
+          "comment": "Bro, looks like a mini Dr. Seuss tree! Zero maintenance.",
+          "date": "2025-10-28T14:50:33.053Z",
+          "reviewerName": "Omar Faruk",
+          "reviewerEmail": "omar.faruk@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 10 days if damaged.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-09-30T13:45:02.053Z", "updatedAt": "2025-10-21T09:41:02.053Z", "barcode": "PLANT-00682345678", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/PzTykMv8/aloe-vera.jpg"],
+      "thumbnail": "https://i.ibb.co.com/PzTykMv8/aloe-vera.jpg"
+    },
+    {
+      "id": 66,
+      "title": "Salvia",
+      "description": "Salvia — spikes of blue, purple, red. Full sun, attracts pollinators, perfect for borders.",
+      "category": "Pollinator Plants",
+      "price": 219,
+      "discountPercentage": 20.0,
+      "rating": 3.3,
+      "stock": 95,
+      "tags": ["perennial", "pollinator", "spikes"],
+      "brand": "BeeBloom",
+      "sku": "PLT-SAL-066",
+      "weight": 0.9,
+      "dimensions": { "width": 30.0, "height": 80.0, "depth": 30.0 },
+      "warrantyInformation": "7 days replacement if no growth",
+      "shippingInformation": "Ships in 2-3 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.8,
+          "comment": "Bro, bees and butterflies party all day! Blue spikes fire.",
+          "date": "2025-10-30T16:30:44.053Z",
+          "reviewerName": "Karim Rahman",
+          "reviewerEmail": "karim.rahman@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 5 days if damaged.",
+      "minimumOrderQuantity": 2,
+      "meta": { "createdAt": "2025-10-02T10:20:02.053Z", "updatedAt": "2025-10-23T09:41:02.053Z", "barcode": "PLANT-00693456789", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/MxHV2VXG/spider-plant.jpg"],
+      "thumbnail": "https://i.ibb.co.com/MxHV2VXG/spider-plant.jpg"
+    },
+    {
+      "id": 67,
+      "title": "Fittonia (Nerve Plant)",
+      "description": "Fittonia — veined leaves, pink/white/green. High humidity, perfect for terrariums.",
+      "category": "Terrarium Plants",
+      "price": 249,
+      "discountPercentage": 17.0,
+      "rating": 3.4,
+      "stock": 110,
+      "tags": ["mini", "veined", "humidity"],
+      "brand": "NerveLeaf",
+      "sku": "PLT-FIT-067",
+      "weight": 0.4,
+      "dimensions": { "width": 15.0, "height": 15.0, "depth": 15.0 },
+      "warrantyInformation": "7 days replacement if veins fade",
+      "shippingInformation": "Ships in 2-3 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.9,
+          "comment": "Bro, terrarium looks like a neon jungle! Pink veins pop.",
+          "date": "2025-11-01T10:40:55.053Z",
+          "reviewerName": "Sabrina Islam",
+          "reviewerEmail": "sabrina.islam@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 5 days if wilted.",
+      "minimumOrderQuantity": 2,
+      "meta": { "createdAt": "2025-10-04T11:30:02.053Z", "updatedAt": "2025-10-25T09:41:02.053Z", "barcode": "PLANT-00704567890", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/k2VQJff7/bougainvillea.jpg"],
+      "thumbnail": "https://i.ibb.co.com/k2VQJff7/bougainvillea.jpg"
+    },
+    {
+      "id": 68,
+      "title": "Majesty Palm",
+      "description": "Majesty Palm — lush, feathery fronds. Bright light, high humidity, tropical indoor vibe.",
+      "category": "Tropical Palms",
+      "price": 899,
+      "discountPercentage": 8.0,
+      "rating": 3.5,
+      "stock": 30,
+      "tags": ["palm", "tropical", "lush"],
+      "brand": "RoyalPalm",
+      "sku": "PLT-MAJ-068",
+      "weight": 7.0,
+      "dimensions": { "width": 70.0, "height": 180.0, "depth": 70.0 },
+      "warrantyInformation": "20 days replacement",
+      "shippingInformation": "Ships in 5-7 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 4.1,
+          "comment": "Bro, living room feels like Bali! Mist daily – thriving.",
+          "date": "2025-11-03T12:50:22.053Z",
+          "reviewerName": "Firoz Khan",
+          "reviewerEmail": "firoz.khan@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 10 days if damaged.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-10-06T13:45:02.053Z", "updatedAt": "2025-10-27T09:41:02.053Z", "barcode": "PLANT-00715678901", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/mrsTZSWW/peace-lily.jpg"],
+      "thumbnail": "https://i.ibb.co.com/mrsTZSWW/peace-lily.jpg"
+    },
+    {
+      "id": 69,
+      "title": "Nasturtium",
+      "description": "Nasturtium — edible flowers & leaves, peppery taste. Full sun, perfect for salads & pots.",
+      "category": "Edible Flowers",
+      "price": 169,
+      "discountPercentage": 25.0,
+      "rating": 3.3,
+      "stock": 120,
+      "tags": ["edible", "flowering", "easy"],
+      "brand": "SaladBloom",
+      "sku": "PLT-NAS-069",
+      "weight": 0.5,
+      "dimensions": { "width": 25.0, "height": 40.0, "depth": 25.0 },
+      "warrantyInformation": "7 days replacement if seeds fail",
+      "shippingInformation": "Ships in 1-2 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.8,
+          "comment": "Bro, salad garnish straight from the pot! Spicy flowers.",
+          "date": "2025-11-05T14:30:33.053Z",
+          "reviewerName": "Mahmuda Begum",
+          "reviewerEmail": "mahmuda.begum@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 5 days if seeds bad.",
+      "minimumOrderQuantity": 3,
+      "meta": { "createdAt": "2025-10-08T10:20:02.053Z", "updatedAt": "2025-10-29T09:41:02.053Z", "barcode": "PLANT-00726789012", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/spnYTLMy/echeveria-lola.jpg"],
+      "thumbnail": "https://i.ibb.co.com/spnYTLMy/echeveria-lola.jpg"
+    },
+    {
+      "id": 70,
+      "title": "Strelitzia Reginae (Bird of Paradise)",
+      "description": "Bird of Paradise — crane-like orange blooms. Bright light, statement plant for large spaces.",
+      "category": "Iconic Tropicals",
+      "price": 1599,
+      "discountPercentage": 7.0,
+      "rating": 3.9,
+      "stock": 20,
+      "tags": ["exotic", "orange", "large"],
+      "brand": "ParadiseBloom",
+      "sku": "PLT-STR-070",
+      "weight": 8.0,
+      "dimensions": { "width": 70.0, "height": 180.0, "depth": 70.0 },
+      "warrantyInformation": "30 days replacement if no buds",
+      "shippingInformation": "Ships in 6-8 business days",
+      "availabilityStatus": "Low Stock",
+      "reviews": [
+        {
+          "rating": 4.6,
+          "comment": "Bro, first bloom opened – looks like a real bird! Instagram gold.",
+          "date": "2025-11-07T16:40:44.053Z",
+          "reviewerName": "Zara Siddika",
+          "reviewerEmail": "zara.siddika@example.com"
+        }
+      ],
+      "returnPolicy": "No returns after blooming.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-10-10T11:30:02.053Z", "updatedAt": "2025-10-31T09:41:02.053Z", "barcode": "PLANT-00737890123", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/ynBqrtbb/pothos.jpg"],
+      "thumbnail": "https://i.ibb.co.com/ynBqrtbb/pothos.jpg"
+    },
+    {
+      "id": 71,
+      "title": "Thyme (Thymus Vulgaris)",
+      "description": "Thyme — tiny aromatic leaves, culinary staple. Full sun, perfect for rockeries or pots.",
+      "category": "Culinary Herbs",
+      "price": 109,
+      "discountPercentage": 28.0,
+      "rating": 3.4,
+      "stock": 180,
+      "tags": ["herb", "edible", "low-growing"],
+      "brand": "HerbGarden",
+      "sku": "PLT-THY-071",
+      "weight": 0.3,
+      "dimensions": { "width": 20.0, "height": 25.0, "depth": 20.0 },
+      "warrantyInformation": "7 days replacement if no scent",
+      "shippingInformation": "Ships in 1-2 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.9,
+          "comment": "Bro, pizza tastes 10x better now! Fresh thyme on tap.",
+          "date": "2025-11-09T10:50:55.053Z",
+          "reviewerName": "Rasel Khan",
+          "reviewerEmail": "rasel.khan@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 5 days if seeds fail.",
+      "minimumOrderQuantity": 3,
+      "meta": { "createdAt": "2025-10-12T13:45:02.053Z", "updatedAt": "2025-11-01T09:41:02.053Z", "barcode": "PLANT-00748901234", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/twMDzP9N/rose-bush.jpg"],
+      "thumbnail": "https://i.ibb.co.com/twMDzP9N/rose-bush.jpg"
+    },
+    {
+      "id": 72,
+      "title": "Pilea Peperomioides",
+      "description": "Pilea — round pancake leaves, easy propagation. Bright indirect, perfect for desks.",
+      "category": "Trending Houseplants",
+      "price": 399,
+      "discountPercentage": 15.0,
+      "rating": 3.7,
+      "stock": 80,
+      "tags": ["round-leaf", "easy", "propagate"],
+      "brand": "PancakePlant",
+      "sku": "PLT-PIL-072",
+      "weight": 1.0,
+      "dimensions": { "width": 25.0, "height": 35.0, "depth": 25.0 },
+      "warrantyInformation": "10 days replacement if leaves drop",
+      "shippingInformation": "Ships in 2-4 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 4.2,
+          "comment": "Bro, gave babies to all my friends! Desk plant king.",
+          "date": "2025-11-11T12:30:22.053Z",
+          "reviewerName": "Nusrat Jahan",
+          "reviewerEmail": "nusrat.jahan@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 7 days if damaged.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-10-14T10:20:02.053Z", "updatedAt": "2025-11-03T09:41:02.053Z", "barcode": "PLANT-00759012345", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/5XDRY0mg/areca-palm.jpg"],
+      "thumbnail": "https://i.ibb.co.com/5XDRY0mg/areca-palm.jpg"
+    },
+    {
+      "id": 73,
+      "title": "Lantana",
+      "description": "Lantana — multicolored flower clusters. Full sun, butterfly magnet, perfect for hot climates.",
+      "category": "Butterfly Attractors",
+      "price": 229,
+      "discountPercentage": 20.0,
+      "rating": 3.3,
+      "stock": 100,
+      "tags": ["butterfly", "colorful", "sun"],
+      "brand": "ButterflyBush",
+      "sku": "PLT-LAN-073",
+      "weight": 1.0,
+      "dimensions": { "width": 40.0, "height": 70.0, "depth": 40.0 },
+      "warrantyInformation": "7 days replacement if no blooms",
+      "shippingInformation": "Ships in 3-5 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.8,
+          "comment": "Bro, butterflies won’t leave! Flowers change color daily.",
+          "date": "2025-11-13T14:40:33.053Z",
+          "reviewerName": "Shamim Akter",
+          "reviewerEmail": "shamim.akter@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 5 days if wilted.",
+      "minimumOrderQuantity": 2,
+      "meta": { "createdAt": "2025-10-16T11:30:02.053Z", "updatedAt": "2025-11-05T09:41:02.053Z", "barcode": "PLANT-00760123456", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/Nggy36Df/money-plant-ceramic.jpg"],
+      "thumbnail": "https://i.ibb.co.com/Nggy36Df/money-plant-ceramic.jpg"
+    },
+    {
+      "id": 74,
+      "title": "Lady Palm (Rhapis Excelsa)",
+      "description": "Lady Palm — fan-like fronds, elegant. Low light, air-purifying, perfect for offices.",
+      "category": "Elegant Palms",
+      "price": 1199,
+      "discountPercentage": 7.0,
+      "rating": 3.8,
+      "stock": 25,
+      "tags": ["palm", "elegant", "low-light"],
+      "brand": "GracePalm",
+      "sku": "PLT-LAD-074",
+      "weight": 6.5,
+      "dimensions": { "width": 60.0, "height": 150.0, "depth": 60.0 },
+      "warrantyInformation": "30 days replacement",
+      "shippingInformation": "Ships in 5-7 business days",
+      "availabilityStatus": "Low Stock",
+      "reviews": [
+        {
+          "rating": 4.4,
+          "comment": "Bro, office corner looks royal now! Zero light, still lush.",
+          "date": "2025-11-15T16:50:44.053Z",
+          "reviewerName": "Tanjim Hossain",
+          "reviewerEmail": "tanjim.hossain@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 15 days if damaged.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-10-18T13:45:02.053Z", "updatedAt": "2025-11-07T09:41:02.053Z", "barcode": "PLANT-00771234567", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/4ggGnmtS/hibiscus.jpg"],
+      "thumbnail": "https://i.ibb.co.com/4ggGnmtS/hibiscus.jpg"
+    },
+    {
+      "id": 75,
+      "title": "Vinca (Catharanthus)",
+      "description": "Vinca — glossy leaves, pinwheel flowers. Full sun, heat-tolerant, perfect for ground cover.",
+      "category": "Heat-Tolerant Annuals",
+      "price": 139,
+      "discountPercentage": 27.0,
+      "rating": 3.2,
+      "stock": 150,
+      "tags": ["groundcover", "sun", "heat"],
+      "brand": "SunCover",
+      "sku": "PLT-VIN-075",
+      "weight": 0.5,
+      "dimensions": { "width": 30.0, "height": 30.0, "depth": 30.0 },
+      "warrantyInformation": "7 days replacement if no blooms",
+      "shippingInformation": "Ships in 2-3 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.6,
+          "comment": "Bro, 45°C and still blooming! Ground cover champ.",
+          "date": "2025-11-17T10:30:55.053Z",
+          "reviewerName": "Farhana Yasmin",
+          "reviewerEmail": "farhana.yasmin@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 5 days if wilted.",
+      "minimumOrderQuantity": 5,
+      "meta": { "createdAt": "2025-10-20T10:20:02.053Z", "updatedAt": "2025-11-09T09:41:02.053Z", "barcode": "PLANT-00782345678", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/99y3GrTK/jade-plant.jpg"],
+      "thumbnail": "https://i.ibb.co.com/99y3GrTK/jade-plant.jpg"
+    },
+    {
+      "id": 76,
+      "title": "Oxalis (Shamrock)",
+      "description": "Oxalis — clover-like leaves, purple/white. Part shade, folds at night, perfect for luck.",
+      "category": "Lucky Charm Plants",
+      "price": 299,
+      "discountPercentage": 16.0,
+      "rating": 3.5,
+      "stock": 90,
+      "tags": ["clover", "lucky", "folding"],
+      "brand": "ShamrockGreen",
+      "sku": "PLT-OXA-076",
+      "weight": 0.7,
+      "dimensions": { "width": 20.0, "height": 25.0, "depth": 20.0 },
+      "warrantyInformation": "10 days replacement if leaves don't fold",
+      "shippingInformation": "Ships in 2-4 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 4.0,
+          "comment": "Bro, leaves close at night like magic! Purple ones fire.",
+          "date": "2025-11-19T12:40:22.053Z",
+          "reviewerName": "Salman Hossain",
+          "reviewerEmail": "salman.hossain@example.com"
+        }
+      ],
+      "returnPolicy": "Return within 7 days if damaged.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-10-22T11:30:02.053Z", "updatedAt": "2025-11-11T09:41:02.053Z", "barcode": "PLANT-00793456789", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/hFxMF0LM/boston-fern.jpg"],
+      "thumbnail": "https://i.ibb.co.com/hFxMF0LM/boston-fern.jpg"
+    },
+    {
+      "id": 77,
+      "title": "Canna Lily",
+      "description": "Canna Lily — bold foliage, tropical blooms. Full sun, perfect for dramatic height.",
+      "category": "Tropical Perennials",
+      "price": 449,
+      "discountPercentage": 14.0,
+      "rating": 3.4,
+      "stock": 60,
+      "tags": ["tropical", "tall", "bold"],
+      "brand": "TropicGiant",
+      "sku": "PLT-CAN-077",
+      "weight": 3.0,
+      "dimensions": { "width": 50.0, "height": 180.0, "depth": 50.0 },
+      "warrantyInformation": "15 days replacement if no rhizomes",
+      "shippingInformation": "Ships in 4-6 business days",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 3.9,
+          "comment": "Bro, backyard looks like Hawaii! Red blooms massive.",
+          "date": "2025-11-21T14:50:33.053Z",
+          "reviewerName": "Rafi Siddique",
+          "reviewerEmail": "rafi.siddique@example.com"
+        }
+      ],
+      "returnPolicy": "No returns after planting.",
+      "minimumOrderQuantity": 1,
+      "meta": { "createdAt": "2025-10-24T13:45:02.053Z", "updatedAt": "2025-11-13T09:41:02.053Z", "barcode": "PLANT-00804567890", "qrCode": "" },
+      "images": ["https://i.ibb.co.com/1Jf23nLH/marigold.jpg"],
+      "thumbnail": "https://i.ibb.co.com/1Jf23nLH/marigold.jpg"
     }
   ]
 }
+  

@@ -17,4 +17,13 @@ export interface Product {
   images: string[];
   thumbnail: string;
     category?: string;
+    stock?:number;
+    tags?:string;
+    brand?: string;
+    sku?:string;
+    weight?:number;
+    shippingInformation?:string;
+    availabilityStatus?:string;
+    returnPolicy?:string;
+
 }
