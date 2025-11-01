@@ -94,13 +94,13 @@ export default function ProductRightSection({ product }: Props) {
         </div>
 
         {/* AddToCartButton */}
-        <div className="flex items-center md:gap-4 gap-3 md:mt-6 h-[70px] justify-center lg:justify-start">
+        <div className="flex items-center md:gap-4 gap-3 md:mt-6 h-[70px] justify-center md:justify-start">
           <div className="md:w-[200px] w-[150px]">
             <AddToCartButton product={product} />
           </div>
 
           {/* Buy Now Button */}
-          <button className="px-4 py-1.5 bg-red-500 text-white font-semibold rounded-lg hover:bg-red-600 transition flex items-center justify-center text-xs gap-1 md:w-[200px] w-[150px]">
+          <button className="px-4 py-1.5 bg-red-500 text-white font-semibold rounded-lg hover:bg-red-600 transition flex items-center justify-center text-xs gap-1 md:w-[200px] w-[150px] cursor-pointer">
             <p className="flex gap-2 items-center ">
               <GiShoppingCart className="text-xl font-bold"></GiShoppingCart>
               Buy Now

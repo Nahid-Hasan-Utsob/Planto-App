@@ -13,10 +13,10 @@ export default function ProductTabs({ product }: Props) {
   return (
     <div className="max-w-7xl mx-auto p-5">
       {/* Tab Buttons */}
-      <div className="flex gap-3 mb-4">
+      <div className="flex gap-3 mb-4 ">
         <button
           onClick={() => setActiveTab("description")}
-          className={`px-4 py-1 rounded-md font-semibold transition ${
+          className={`px-4 py-1 rounded-md cursor-pointer lg:font-semibold transition ${
             activeTab === "description"
                 ? "bg-yellow-400 text-sm text-black"
               : "bg-white/5 text-sm  text-white"
@@ -26,7 +26,7 @@ export default function ProductTabs({ product }: Props) {
         </button>
         <button
           onClick={() => setActiveTab("reviews")}
-          className={`px-4 py-1 text-sm rounded-md font-semibold transition ${
+          className={`px-4 py-1 text-sm rounded-md cursor-pointer lg:font-semibold transition ${
             activeTab === "reviews"
               ? "bg-yellow-400 text-sm text-black"
               : "bg-white/5  text-sm text-white"
@@ -37,11 +37,11 @@ export default function ProductTabs({ product }: Props) {
       </div>
 
       {/* Tab Content */}
-      <div className="min-h-[300px] md:min-h-[400px] p-5  ">
+      <div className="min-h-[300px] md:min-h-[400px]  lg:p-5 p-1 ">
         {activeTab === "description" && (
-          <div className="bg-white/5 rounded-2xl min-h-[400px] p-5">
-            <h3 className="text-xl font-bold mb-2 text-yellow-400">Product Description</h3>
-            <p className="text-gray-300">{product.description || "No description available."}</p>
+          <div className="bg-white/5 rounded-2xl lg:min-h-[400px] h-fit  p-5">
+            <h3 className="md:text-xl text-sm font-bold mb-2 text-yellow-400">Product Description</h3>
+            <p className="text-gray-300 text-sm lg:text-base">{product.description || "No description available."}</p>
           </div>
         )}
 
@@ -56,14 +56,14 @@ export default function ProductTabs({ product }: Props) {
                     key={i}
                     className="rounded-xl  p-5 bg-white/8 shadow hover:shadow-md transition"
                   >
-                    <p className="font-bold text-base text-white">{r.reviewerName || "Anonymous"}</p>
+                    <p className="font-bold lg:text-base text-sm text-white">{r.reviewerName || "Anonymous"}</p>
                     <p className="text-gray-300 my-1  text-xs">{r.reviewerEmail || "-"}</p>
                     <p className="text-yellow-300 text-xs">
                       {Array.from({ length: 5 }, (_, idx) => (
                         <span key={idx}>{r.rating > idx ? "★" : "☆"}</span>
                       ))}
                     </p>
-                    <p className="text-gray-100 text-sm">{r.comment || "-"}</p>
+                    <p className="text-gray-100 lg:text-sm text-xs">{r.comment || "-"}</p>
                   </li>
                 ))}
               </ul>
