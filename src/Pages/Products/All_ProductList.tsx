@@ -126,8 +126,8 @@ const All_ProductList: React.FC = () => {
   // Loader screen
   if (isLoading || loading) {
     return (
-      <div className="flex justify-center items-center h-[80vh]  backdrop-blur-2xl rounded-2xl">
-        <HashLoader color="#ffff00" size={35} />
+      <div className="flex justify-center items-center h-screen  rounded-2xl">
+        <HashLoader color="#ffff00" size={33} />
       </div>
     );
   }
