@@ -16,7 +16,7 @@ export default function ProductRightSection({ product }: Props) {
       <div className="flex flex-col">
         <h1 className="lg:text-3xl md:text-2xl text-xl font-bold md:mb-2 mb-1">{product.title}</h1>
 
-        <div className="w-[90%]">
+        <div className="md:w-[90%]">
           <p
             className="lg:text-base md:text-sm text-xs text-white/80
         "
@@ -26,7 +26,7 @@ export default function ProductRightSection({ product }: Props) {
         </div>
 
         <div className="text-2xl font-bold  lg:my-3 my-2 flex justify-between gap-2">
-     <div className="flex lg:flex-none justify-between md:justify-start w-full">
+     <div className="flex lg:flex-none justify-between px-2 md:px-0 md:justify-start w-full">
           <div>
              <span className="text-red-400"> Tk.</span> {product.price}/-
           </div>
@@ -46,8 +46,8 @@ export default function ProductRightSection({ product }: Props) {
             Additional Details
           </p>
 
-          <div className="flex my-2 md:my-4 md:gap-10 gap-2">
-            <div className="flex flex-col gap-1 ">
+          <div className="flex my-3 md:my-4 md:gap-10 gap-2">
+            <div className="w-1/2 flex flex-col gap-1 ">
               <div className="flex gap-1">
                 <div className="flex items-center md:gap-2 gap-1 font-bold md:text-xs text-[10px]">
                   <p className="text-gray-300">Rating:</p>
@@ -72,7 +72,7 @@ export default function ProductRightSection({ product }: Props) {
                 <p className="text-yellow-400">{product.brand}</p>
               </div>
             </div>
-            <div className="flex flex-col gap-1">
+            <div className="w-1/2 flex flex-col gap-1">
               <div className="flex md:items-center md:gap-2 gap-1 font-bold md:text-xs text-[10px]">
                 <p className="text-gray-300">Delivery:</p>
                 <p className="text-yellow-400 ">{product.shippingInformation}</p>
@@ -94,7 +94,7 @@ export default function ProductRightSection({ product }: Props) {
         </div>
 
         {/* AddToCartButton */}
-        <div className="flex items-center md:gap-4 gap-2 md:mt-6 h-[70px]">
+        <div className="flex items-center md:gap-4 gap-3 md:mt-6 h-[70px] justify-center lg:justify-start">
           <div className="md:w-[200px] w-[150px]">
             <AddToCartButton product={product} />
           </div>

@@ -35,7 +35,7 @@ export default function ProductDetailsPage() {
     <div className="min-h-screen flex flex-col  text-white lg:my-10">
       <div className="flex flex-col justify-around  lg:flex-row    lg:p-5 lg:gap-10 gap-5"> 
         {/* Left Image */}
-        <div className="w-[25%]  mx-auto  flex justify-center items-start ">
+        <div className="md:w-[25%]  mx-auto  flex justify-center items-start my-5">
           <img
             src={product.thumbnail}
             alt={product.title}
