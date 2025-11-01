@@ -33,9 +33,9 @@ export default function ProductDetailsPage() {
 
   return (
     <div className="min-h-screen flex flex-col  text-white">
-      <div className="flex flex-col justify-around  lg:flex-row mx-auto   p-5 gap-10"> 
+      <div className="flex flex-col justify-around  lg:flex-row    p-5 gap-10"> 
         {/* Left Image */}
-        <div className=" w-11/12 flex justify-center items-start ">
+        <div className="w-[25%]  mx-auto  flex justify-center items-start ">
           <img
             src={product.thumbnail}
             alt={product.title}
@@ -44,7 +44,7 @@ export default function ProductDetailsPage() {
         </div>
 
         {/* Right Details */}
-        <div className="lg:w-1/2 flex flex-col gap-4">
+        <div className="lg:w-[60%] flex flex-col gap-4">
           <ProductRightSection product={product} />
         </div>
       </div>

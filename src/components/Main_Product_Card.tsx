@@ -15,9 +15,9 @@ const StarRating: React.FC<{ rating: number }> = ({ rating }) => {
   const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
 
   const stars = [];
-  for (let i = 0; i < fullStars; i++) stars.push(<FaStar key={`full-${i}`} />);
-  if (hasHalfStar) stars.push(<FaStarHalfAlt key="half" />);
-  for (let i = 0; i < emptyStars; i++) stars.push(<FaRegStar key={`empty-${i}`} />);
+  for (let i = 0; i < fullStars; i++) staTk.push(<FaStar key={`full-${i}`} />);
+  if (hasHalfStar) staTk.push(<FaStarHalfAlt key="half" />);
+  for (let i = 0; i < emptyStars; i++) staTk.push(<FaRegStar key={`empty-${i}`} />);
 
   return (
     <div className="lg:flex text-yellow-400 lg:gap-[3px] gap-0.5 text-xs lg:text-base hidden">
@@ -128,7 +128,7 @@ const Main_Product_Card: React.FC<MainProductCardProps> = ({ products }) => {
         {/* 🛒 Desktop Add to Cart button */}
         <div className="lg:flex hidden justify-between items-center mt-auto">
           <p className="text-white text-sm md:text-base lg:text-[35px] font-bold">
-            Rs. {price}/-
+            Tk. {price}/-
           </p>
           <button
             onClick={handleAddToCart} // ✅ login check এখানে কাজ করবে
@@ -147,7 +147,7 @@ const Main_Product_Card: React.FC<MainProductCardProps> = ({ products }) => {
         {/* 📱 Mobile Add to Cart */}
         <div className="flex items-center justify-between md:h-[47px] mt-1 md:mt-0 lg:hidden">
           <p className="lg:mt-2 font-semibold text-white text-[15px] my-1 lg:text-[35px] md:text-xl">
-            <span className="text-red-500">Rs.</span> {price}/-
+            <span className="text-red-500">Tk.</span> {price}/-
           </p>
           <div className="flex mt-1 lg:hidden">
             {Array.from({ length: 5 }, (_, i) => (

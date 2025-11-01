@@ -433,7 +433,7 @@
     {
       "id": 14,
       "title": "Rose Bush (Hybrid Tea)",
-      "description": "Hybrid Tea Rose — deep red, fragrant blooms. Full sun, weekly care, perfect for cut flowers.",
+      "description": "Hybrid Tea Rose — deep red, fragrant blooms. Full sun, weekly care, perfect for cut floweTk.",
       "category": "Outdoor Plants",
       "price": 899,
       "discountPercentage": 8.0,
@@ -529,7 +529,7 @@
     {
       "id": 17,
       "title": "Bird of Paradise",
-      "description": "Bird of Paradise — exotic, crane-like flowers. Bright light, tropical vibe, perfect for patios.",
+      "description": "Bird of Paradise — exotic, crane-like floweTk. Bright light, tropical vibe, perfect for patios.",
       "category": "Tropical Plants",
       "price": 1599,
       "discountPercentage": 7.5,
@@ -657,7 +657,7 @@
     {
       "id": 21,
       "title": "Bonsai Ficus",
-      "description": "Bonsai Ficus — miniature tree, artistic shaping. Bright light, perfect for zen corners.",
+      "description": "Bonsai Ficus — miniature tree, artistic shaping. Bright light, perfect for zen corneTk.",
       "category": "Bonsai & Miniatures",
       "price": 1199,
       "discountPercentage": 6.0,
@@ -689,7 +689,7 @@
     {
       "id": 22,
       "title": "Petunia (Wave Series)",
-      "description": "Petunia Wave — cascading blooms in vibrant colors. Full sun, perfect for hanging baskets.",
+      "description": "Petunia Wave — cascading blooms in vibrant coloTk. Full sun, perfect for hanging baskets.",
       "category": "Balcony & Patio",
       "price": 189,
       "discountPercentage": 22.0,
@@ -945,7 +945,7 @@
     {
       "id": 30,
       "title": "Aglaonema (Chinese Evergreen)",
-      "description": "Aglaonema — colorful foliage, low light. Air-purifying, perfect for beginners.",
+      "description": "Aglaonema — colorful foliage, low light. Air-purifying, perfect for beginneTk.",
       "category": "Beginner-Friendly",
       "price": 449,
       "discountPercentage": 12.0,
@@ -1009,7 +1009,7 @@
     {
       "id": 32,
       "title": "Dracaena Marginata",
-      "description": "Dracaena — spiky, colorful edges. Low light, architectural, perfect for corners.",
+      "description": "Dracaena — spiky, colorful edges. Low light, architectural, perfect for corneTk.",
       "category": "Architectural Plants",
       "price": 599,
       "discountPercentage": 10.0,
@@ -1169,7 +1169,7 @@
     {
       "id": 37,
       "title": "Dahlia",
-      "description": "Dahlia — dinner-plate blooms in every color. Full sun, perfect for cut flowers.",
+      "description": "Dahlia — dinner-plate blooms in every color. Full sun, perfect for cut floweTk.",
       "category": "Cut Flower Plants",
       "price": 329,
       "discountPercentage": 18.0,
@@ -1267,7 +1267,7 @@
     {
       "id": 41,
       "title": "Kalanchoe Blossfeldiana",
-      "description": "Kalanchoe — clusters of bright flowers. Full sun, low water, perfect for sunny windows.",
+      "description": "Kalanchoe — clusters of bright floweTk. Full sun, low water, perfect for sunny windows.",
       "category": "Flowering Succulents",
       "price": 259,
       "discountPercentage": 18.0,
@@ -1395,7 +1395,7 @@
     {
       "id": 45,
       "title": "Cyclamen",
-      "description": "Cyclamen — upswept petals, marbled leaves. Cool temps, perfect for winter bloom indoors.",
+      "description": "Cyclamen — upswept petals, marbled leaves. Cool temps, perfect for winter bloom indooTk.",
       "category": "Winter Bloomers",
       "price": 399,
       "discountPercentage": 14.0,
@@ -1491,7 +1491,7 @@
     {
       "id": 48,
       "title": "Cast Iron Plant (Aspidistra)",
-      "description": "Cast Iron Plant — unkillable, dark green leaves. Extreme low light, perfect for dark corners.",
+      "description": "Cast Iron Plant — unkillable, dark green leaves. Extreme low light, perfect for dark corneTk.",
       "category": "Indestructible",
       "price": 499,
       "discountPercentage": 11.0,
@@ -1555,7 +1555,7 @@
     {
       "id": 50,
       "title": "Croton",
-      "description": "Croton — rainbow foliage, waxy leaves. Bright light, perfect for color splash indoors.",
+      "description": "Croton — rainbow foliage, waxy leaves. Bright light, perfect for color splash indooTk.",
       "category": "Colorful Foliage",
       "price": 599,
       "discountPercentage": 10.0,
@@ -1651,7 +1651,7 @@
     {
       "id": 53,
       "title": "Sedum (Stonecrop)",
-      "description": "Sedum — fleshy leaves, star-shaped flowers. Full sun, drought-tolerant, perfect for rock gardens.",
+      "description": "Sedum — fleshy leaves, star-shaped floweTk. Full sun, drought-tolerant, perfect for rock gardens.",
       "category": "Rock Garden",
       "price": 189,
       "discountPercentage": 22.0,
@@ -1843,7 +1843,7 @@
     {
       "id": 59,
       "title": "Pansy (Viola)",
-      "description": "Pansy — happy faces in cool colors. Cool weather, perfect for fall & spring pots.",
+      "description": "Pansy — happy faces in cool coloTk. Cool weather, perfect for fall & spring pots.",
       "category": "Cool Season Annuals",
       "price": 149,
       "discountPercentage": 26.0,
@@ -1907,7 +1907,7 @@
     {
       "id": 61,
       "title": "Rosemary (Rosmarinus)",
-      "description": "Rosemary — woody, pine-scented. Full sun, perfect for cooking & borders.",
+      "description": "Rosemary — woody, pine-scented. Full sun, perfect for cooking & bordeTk.",
       "category": "Mediterranean Herbs",
       "price": 199,
       "discountPercentage": 20.0,
@@ -2067,7 +2067,7 @@
     {
       "id": 66,
       "title": "Salvia",
-      "description": "Salvia — spikes of blue, purple, red. Full sun, attracts pollinators, perfect for borders.",
+      "description": "Salvia — spikes of blue, purple, red. Full sun, attracts pollinators, perfect for bordeTk.",
       "category": "Pollinator Plants",
       "price": 219,
       "discountPercentage": 20.0,
@@ -2180,7 +2180,7 @@
       "reviews": [
         {
           "rating": 3.8,
-          "comment": "Bro, salad garnish straight from the pot! Spicy flowers.",
+          "comment": "Bro, salad garnish straight from the pot! Spicy floweTk.",
           "date": "2025-11-05T14:30:33.053Z",
           "reviewerName": "Mahmuda Begum",
           "reviewerEmail": "mahmuda.begum@example.com"
@@ -2291,7 +2291,7 @@
     {
       "id": 73,
       "title": "Lantana",
-      "description": "Lantana — multicolored flower clusters. Full sun, butterfly magnet, perfect for hot climates.",
+      "description": "Lantana — multicolored flower clusteTk. Full sun, butterfly magnet, perfect for hot climates.",
       "category": "Butterfly Attractors",
       "price": 229,
       "discountPercentage": 20.0,
@@ -2355,7 +2355,7 @@
     {
       "id": 75,
       "title": "Vinca (Catharanthus)",
-      "description": "Vinca — glossy leaves, pinwheel flowers. Full sun, heat-tolerant, perfect for ground cover.",
+      "description": "Vinca — glossy leaves, pinwheel floweTk. Full sun, heat-tolerant, perfect for ground cover.",
       "category": "Heat-Tolerant Annuals",
       "price": 139,
       "discountPercentage": 27.0,

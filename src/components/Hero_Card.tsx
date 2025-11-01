@@ -63,7 +63,7 @@ const Hero_Card: React.FC<HeroCardProps> = ({ data, reverse = false }) => {
             </p>
             <div className="flex items-center justify-between h-[47px] lg:block">
               <p className="lg:mt-2 font-semibold text-white text-[15px] my-1 lg:text-[35px]">
-                <span className="text-red-500">Rs.</span> {price}/-
+                <span className="text-red-500">Tk.</span> {price}/-
               </p>
               {/* Rating Section */}
               <div className="flex mt-1 lg:hidden">
